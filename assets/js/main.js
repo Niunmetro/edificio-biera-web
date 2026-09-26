@@ -115,7 +115,7 @@
     if (!priv.checked) { priv.focus(); return showErr('Necesitamos tu conformidad con la información de privacidad.'); }
     send.disabled = true;
     send.textContent = 'Enviando…';
-    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+    fetch(form.action, { method: 'POST', body: new URLSearchParams(new FormData(form)) })
       .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
       .then(function (res) {
         if (!res.ok) throw new Error(res.error || 'error');
