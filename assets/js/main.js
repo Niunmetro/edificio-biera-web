@@ -226,4 +226,48 @@
   }
   window.addEventListener('hashchange', openFromHash);
   setTimeout(openFromHash, 500);
+
+  // Mapa interactivo (Leaflet autoalojado + teselas CARTO/OpenStreetMap, sin cookies). Se carga al acercarse a la sección.
+  var mapEl = document.getElementById('map');
+  if (mapEl && B.pois && B.pois.items && B.pois.items.length) {
+    var mapStarted = false;
+    function loadMap() {
+      if (mapStarted) return; mapStarted = true;
+      var css = document.createElement('link'); css.rel = 'stylesheet'; css.href = '/assets/vendor/leaflet/leaflet.css'; document.head.appendChild(css);
+      var s = document.createElement('script'); s.src = '/assets/vendor/leaflet/leaflet.js'; s.onload = initMap; document.head.appendChild(s);
+    }
+    function initMap() {
+      var L = window.L; if (!L) return;
+      var c = B.pois.center, items = B.pois.items;
+      var ph = mapEl.querySelector('.map-ph'); if (ph) ph.remove();
+      var map = L.map(mapEl, { scrollWheelZoom: false, zoomControl: true, attributionControl: true, tap: false });
+      map.attributionControl.setPrefix(false);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' }).addTo(map);
+      var here = L.marker([c.lat, c.lon], { icon: L.divIcon({ className: 'mk mk-here', html: '<span class="mk-dot"></span><span class="mk-lbl">' + T['map.here'] + '</span>', iconSize: [0, 0], iconAnchor: [0, 0] }), zIndexOffset: 1000, keyboard: false }).addTo(map);
+      var markers = [];
+      items.forEach(function (p, i) {
+        var m = L.marker([p.lat, p.lon], { icon: L.divIcon({ className: 'mk mk-poi mk-' + p.cat, html: '<span class="mk-dot"></span>', iconSize: [0, 0], iconAnchor: [0, 0] }), title: p.name }).addTo(map);
+        m.bindPopup('<strong>' + p.name + '</strong><br>' + p.label, { closeButton: false, offset: [0, -6], maxWidth: 240 });
+        m.on('click', function () { setActive(i); track('mapa', { x: p.name }); });
+        markers.push(m);
+      });
+      var lis = mapEl.parentNode.querySelectorAll('.poi-b');
+      function setActive(i) { lis.forEach(function (b, k) { b.classList.toggle('on', k === i); }); }
+      lis.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var i = +b.getAttribute('data-i'), p = items[i];
+          setActive(i);
+          map.flyTo([(p.lat + c.lat) / 2, (p.lon + c.lon) / 2], Math.max(map.getZoom(), 13), { duration: .8 });
+          markers[i].openPopup();
+          track('mapa', { x: p.name });
+        });
+      });
+      // Encuadre inicial: el edificio y los puntos cercanos (≤ 7 km); los lejanos se alcanzan desde la lista
+      var group = L.featureGroup(markers.filter(function (m, i) { return items[i].km <= 7; }).concat([here]));
+      map.fitBounds(group.getBounds(), { padding: [40, 40], maxZoom: 14 });
+      map.on('popupclose', function () { setActive(-1); });
+    }
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { loadMap(); o.disconnect(); } }, { rootMargin: '600px 0px' }).observe(mapEl);
+    else loadMap();
+  }
 })();

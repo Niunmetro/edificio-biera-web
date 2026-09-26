@@ -132,7 +132,7 @@
   "q8.s": "Pre-installation of fibre optic cabling and data points in the home.",
   "loc.lbl": "Location",
   "loc.h2": "Between the city and the mountains.",
-  "loc.p": "On the Carretera de Santa Catalina, on the corner of Calle Los Mateos, south of Murcia. Next to the Ronda Sur, with quick access to the motorways. Opposite, a large sports centre that has recently opened.",
+  "loc.p": "On Carretera de Santa Catalina, at the corner of Calle Los Mateos, south of Murcia: 3 minutes by car from El Carmen station and 6 from the city centre, with the Ronda Sur ring road and the motorways next door. Opposite, a large newly opened sports centre; to the south, Santo Ángel and the El Valle hills.",
   "loc.d1": "Hospital Mesa del Castillo",
   "loc.d2": "Estación del Carmen",
   "loc.d3": "Hospital Virgen de la Arrixaca",
@@ -243,5 +243,12 @@
   "faq.q5": "When will the homes be delivered?",
   "faq.a5": "The team is finalising the completion and handover schedule. JD León will give you in writing the dates and conditions that apply to the home you are interested in.",
   "faq.q6": "How can I visit or reserve?",
-  "faq.a6": "By appointment through JD León Inmobiliaria (+34 640 51 24 34 · info@jdleon.com): they will show you the building and its surroundings and walk you through the plans, finishes and availability. If you decide to go ahead, you will receive the reservation process and timings in writing."
+  "faq.a6": "By appointment through JD León Inmobiliaria (+34 640 51 24 34 · info@jdleon.com): they will show you the building and its surroundings and walk you through the plans, finishes and availability. If you decide to go ahead, you will receive the reservation process and timings in writing.",
+  "map.aria": "Interactive map of the area with nearby points of interest",
+  "map.here": "Edificio Biera",
+  "map.note": "Interactive map. Approximate distances and times from the building; map data © OpenStreetMap.",
+  "map.drive": "{n} min by car",
+  "map.walk": "{n} min on foot",
+  "map.km": "{km} km",
+  "map.list": "Points of interest"
 }

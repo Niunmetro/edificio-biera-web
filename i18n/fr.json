@@ -132,7 +132,7 @@
   "q8.s": "Précâblage fibre optique et prises réseau dans le logement.",
   "loc.lbl": "Emplacement",
   "loc.h2": "Entre la ville et la montagne.",
-  "loc.p": "Sur la Carretera de Santa Catalina, à l’angle de la rue Los Mateos, au sud de Murcie. À proximité de la Ronda Sur, avec un accès rapide aux voies rapides. En face, un grand centre sportif récemment ouvert.",
+  "loc.p": "Sur la Carretera de Santa Catalina, à l’angle de la Calle Los Mateos, au sud de Murcie : à 3 minutes en voiture de la gare del Carmen et à 6 du centre-ville, avec la rocade Ronda Sur et les autoroutes à côté. En face, un grand centre sportif récemment ouvert ; vers le sud, Santo Ángel et les collines d’El Valle.",
   "loc.d1": "Hospital Mesa del Castillo",
   "loc.d2": "Estación del Carmen",
   "loc.d3": "Hospital Virgen de la Arrixaca",
@@ -243,5 +243,12 @@
   "faq.q5": "Quand les logements seront-ils livrés ?",
   "faq.a5": "L’équipe finalise le calendrier d’achèvement et de livraison. JD León vous communiquera par écrit les dates et les conditions applicables au logement qui vous intéresse.",
   "faq.q6": "Comment visiter ou réserver ?",
-  "faq.a6": "Sur rendez-vous auprès de JD León Inmobiliaria (+34 640 51 24 34 · info@jdleon.com) : on vous fait découvrir l’immeuble et son environnement et on vous présente les plans, les prestations et les disponibilités. Si vous décidez de poursuivre, vous recevrez par écrit le processus de réservation et les délais."
+  "faq.a6": "Sur rendez-vous auprès de JD León Inmobiliaria (+34 640 51 24 34 · info@jdleon.com) : on vous fait découvrir l’immeuble et son environnement et on vous présente les plans, les prestations et les disponibilités. Si vous décidez de poursuivre, vous recevrez par écrit le processus de réservation et les délais.",
+  "map.aria": "Carte interactive du quartier avec les points d’intérêt à proximité",
+  "map.here": "Edificio Biera",
+  "map.note": "Carte interactive. Distances et temps approximatifs depuis l’immeuble ; cartographie © OpenStreetMap.",
+  "map.drive": "{n} min en voiture",
+  "map.walk": "{n} min à pied",
+  "map.km": "{km} km",
+  "map.list": "Points d’intérêt"
 }

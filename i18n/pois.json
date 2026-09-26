@@ -1,0 +1,125 @@
+{
+  "center": {
+    "lat": 37.95958,
+    "lon": -1.13591
+  },
+  "items": [
+    {
+      "id": "carmen",
+      "cat": "transporte",
+      "lat": 37.9764,
+      "lon": -1.1294,
+      "km": 2.7,
+      "drive": 3,
+      "name": {
+        "es": "Estación del Carmen (AVE y Cercanías)",
+        "en": "El Carmen station (high-speed rail)",
+        "fr": "Gare del Carmen (AVE et trains régionaux)"
+      }
+    },
+    {
+      "id": "catedral",
+      "cat": "centro",
+      "lat": 37.98407,
+      "lon": -1.12864,
+      "km": 4.3,
+      "drive": 6,
+      "name": {
+        "es": "Centro de Murcia · Catedral",
+        "en": "Murcia city centre · Cathedral",
+        "fr": "Centre de Murcie · Cathédrale"
+      }
+    },
+    {
+      "id": "mesa",
+      "cat": "salud",
+      "lat": 37.96947,
+      "lon": -1.12809,
+      "km": 1.9,
+      "drive": 3,
+      "name": {
+        "es": "Hospital Mesa del Castillo",
+        "en": "Mesa del Castillo Hospital",
+        "fr": "Hôpital Mesa del Castillo"
+      }
+    },
+    {
+      "id": "santoangel",
+      "cat": "barrio",
+      "lat": 37.93326,
+      "lon": -1.12512,
+      "km": 4.0,
+      "drive": 7,
+      "name": {
+        "es": "Santo Ángel",
+        "en": "Santo Ángel",
+        "fr": "Santo Ángel"
+      }
+    },
+    {
+      "id": "malecon",
+      "cat": "ocio",
+      "lat": 37.9826,
+      "lon": -1.13475,
+      "km": 3.4,
+      "drive": 4,
+      "name": {
+        "es": "Jardín del Malecón",
+        "en": "Malecón gardens",
+        "fr": "Jardin du Malecón"
+      }
+    },
+    {
+      "id": "arrixaca",
+      "cat": "salud",
+      "lat": 37.93216,
+      "lon": -1.16254,
+      "km": 6.0,
+      "drive": 7,
+      "name": {
+        "es": "Hospital Virgen de la Arrixaca",
+        "en": "Virgen de la Arrixaca Hospital",
+        "fr": "Hôpital Virgen de la Arrixaca"
+      }
+    },
+    {
+      "id": "um",
+      "cat": "educacion",
+      "lat": 38.01471,
+      "lon": -1.16764,
+      "km": 9.7,
+      "drive": 10,
+      "name": {
+        "es": "Universidad de Murcia · Campus de Espinardo",
+        "en": "University of Murcia · Espinardo campus",
+        "fr": "Université de Murcie · campus d’Espinardo"
+      }
+    },
+    {
+      "id": "ucam",
+      "cat": "educacion",
+      "lat": 37.99126,
+      "lon": -1.1852,
+      "km": 8.9,
+      "drive": 12,
+      "name": {
+        "es": "UCAM · Campus de Los Jerónimos",
+        "en": "UCAM · Los Jerónimos campus",
+        "fr": "UCAM · campus de Los Jerónimos"
+      }
+    },
+    {
+      "id": "aeropuerto",
+      "cat": "transporte",
+      "lat": 37.803,
+      "lon": -1.125,
+      "km": 22.8,
+      "drive": 21,
+      "name": {
+        "es": "Aeropuerto Región de Murcia (Corvera)",
+        "en": "Región de Murcia airport (Corvera)",
+        "fr": "Aéroport Región de Murcia (Corvera)"
+      }
+    }
+  ]
+}

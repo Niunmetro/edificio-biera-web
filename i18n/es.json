@@ -132,7 +132,7 @@
   "q8.s": "Preinstalación de fibra óptica y tomas de datos en la vivienda.",
   "loc.lbl": "Ubicación",
   "loc.h2": "Entre la ciudad y la montaña.",
-  "loc.p": "En la Carretera de Santa Catalina, esquina con la calle Los Mateos, al sur de Murcia. Junto a la Ronda Sur y con acceso rápido a las autovías. Enfrente, un gran centro deportivo de reciente apertura.",
+  "loc.p": "En la Carretera de Santa Catalina, esquina con la calle Los Mateos, al sur de Murcia: a 3 minutos en coche de la estación del Carmen y a 6 del centro, con la Ronda Sur y las autovías al lado. Enfrente, un gran centro deportivo de reciente apertura; hacia el sur, Santo Ángel y la sierra de El Valle.",
   "loc.d1": "Hospital Mesa del Castillo",
   "loc.d2": "Estación del Carmen",
   "loc.d3": "Hospital Virgen de la Arrixaca",
@@ -243,5 +243,12 @@
   "faq.q5": "¿Cuándo se entregan las viviendas?",
   "faq.a5": "El equipo está cerrando el calendario de finalización y entrega. JD León te facilitará por escrito las fechas y las condiciones aplicables a la vivienda que te interese.",
   "faq.q6": "¿Cómo puedo visitar o reservar?",
-  "faq.a6": "Con cita previa a través de JD León Inmobiliaria (640 51 24 34 · info@jdleon.com): te acompañan a conocer el edificio y su entorno y te explican planos, calidades y disponibilidad. Si decides seguir adelante, recibirás por escrito el proceso de reserva y los plazos."
+  "faq.a6": "Con cita previa a través de JD León Inmobiliaria (640 51 24 34 · info@jdleon.com): te acompañan a conocer el edificio y su entorno y te explican planos, calidades y disponibilidad. Si decides seguir adelante, recibirás por escrito el proceso de reserva y los plazos.",
+  "map.aria": "Mapa interactivo de la zona con los puntos de interés cercanos",
+  "map.here": "Edificio Biera",
+  "map.note": "Mapa interactivo. Distancias y tiempos aproximados desde el edificio; cartografía © OpenStreetMap.",
+  "map.drive": "{n} min en coche",
+  "map.walk": "{n} min a pie",
+  "map.km": "{km} km",
+  "map.list": "Puntos de interés"
 }

@@ -12,6 +12,7 @@ def load(p):
 
 tpl = open(os.path.join(ROOT, "src", "template.html"), encoding="utf-8").read()
 units = load("i18n/units.json")
+pois = load("i18n/pois.json")
 
 def num(s, lang):
     return s.replace(",", ".") if lang == "en" else s
@@ -42,6 +43,21 @@ f"""      <li class="row" data-d="{u['d']}" data-v="{u['v']}">
       </li>""")
     return "\n".join(out)
 
+def poi_label(p, d):
+    parts = [d["map.km"].replace("{km}", num(str(p["km"]).replace(".", ","), d["lang"]))]
+    if p.get("drive"): parts.append(d["map.drive"].replace("{n}", str(p["drive"])))
+    if p.get("walk"): parts.append(d["map.walk"].replace("{n}", str(p["walk"])))
+    return " · ".join(parts)
+
+def poi_rows(d):
+    out = []
+    for i, p in enumerate(pois["items"]):
+        out.append(f"""          <li class="poi-i"><button type="button" class="poi-b" data-i="{i}"><span class="poi-n">{p["name"][d["lang"]]}</span><span class="poi-d">{poi_label(p, d)}</span></button></li>""")
+    return "\n".join(out)
+
+def poi_json(d):
+    return {"center": pois["center"], "items": [{"lat": p["lat"], "lon": p["lon"], "km": p["km"], "cat": p.get("cat", ""), "name": p["name"][d["lang"]], "label": poi_label(p, d)} for p in pois["items"]]}
+
 def faq_ld(d):
     strip = lambda s: re.sub(r"<[^>]+>", "", s).replace("\u00a0", " ")
     items = [{"@type": "Question", "name": strip(d[f"faq.q{i}"]), "acceptedAnswer": {"@type": "Answer", "text": strip(d[f"faq.a{i}"])}} for i in range(1, 7)]
@@ -55,7 +71,8 @@ def js_json(d):
         "lang": d["lang"],
         "action": FORM_ACTION,
         "units": {str(u["v"]): {"name": d[f"u.name.{u['v']}"], "dist": d["u." + u["dist"]], "constr": num(u["constr"], d["lang"]), "d": u["d"]} for u in units},
-        "t": {k: d[k] for k in ("f.ok.p_wa", "f.err.name", "f.err.tel", "f.err.email", "f.err.priv", "f.err.send", "f.sending", "f.ok.p", "f.ok.ref", "wa.text", "wa.text_unit", "units.count", "units.count1", "units.viv", "units.plan_alt", "cta.plan")},
+        "pois": poi_json(d),
+        "t": {k: d[k] for k in ("map.here", "f.ok.p_wa", "f.err.name", "f.err.tel", "f.err.email", "f.err.priv", "f.err.send", "f.sending", "f.ok.p", "f.ok.ref", "wa.text", "wa.text_unit", "units.count", "units.count1", "units.viv", "units.plan_alt", "cta.plan")},
     }
     return json.dumps(j, ensure_ascii=False)
 
@@ -64,6 +81,7 @@ for lang, outp, og in LANGS:
     d = load(f"i18n/{lang}.json")
     d["units.rows"] = rows(d)
     d["faq_ld"] = faq_ld(d)
+    d["poi.rows"] = poi_rows(d)
     d["units.options"] = options(d)
     d["js_json"] = js_json(d)
     d["og_locale"] = og
