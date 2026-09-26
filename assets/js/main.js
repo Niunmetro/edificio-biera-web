@@ -19,6 +19,8 @@
     else { origen = sessionStorage.getItem('biera_o') || (document.referrer && document.referrer.indexOf(location.hostname) < 0 ? 'web:' + new URL(document.referrer).hostname : 'directo'); }
   } catch (e) {}
   try { var _y = new URLSearchParams(location.search).get('y'); if (_y && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) { document.querySelector('.pg').style.marginTop = (-Math.min(20000, +_y || 0)) + 'px'; } } catch (e) {}
+  // Al recargar (F5) la página vuelve arriba, salvo que la URL lleve un ancla
+  try { if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; if (!location.hash) window.scrollTo(0, 0); } } catch (e) {}
   var origenInput = document.getElementById('origen');
   if (origenInput) origenInput.value = origen;
 
