@@ -22,7 +22,7 @@
   "hero.h1": "Plus qu’une maison, <span class=\"nw\">un art de vivre.</span>",
   "hero.from": "À partir de",
   "hero.vat": "+ TVA",
-  "hero.sub": "<span class=\"nw\">3 et 4 chambres + bureau</span> · <span class=\"nw\">solarium privé</span> · <span class=\"nw\">parking</span>",
+  "hero.sub": "<span class=\"nw\">3 chambres + bureau</span> · <span class=\"nw\">4 chambres + bureau</span>",
   "hero.alt": "Façade de l’Edificio Biera au coucher du soleil : dix maisons en triplex aux lignes méditerranéennes, avec jardinières et lumière chaude",
   "proj.lbl": "Le projet",
   "proj.h2": "Une architecture méditerranéenne au sud de Murcie.",
@@ -225,5 +225,7 @@
   "gal.a_noche": "Façade de l’immeuble illuminée à la tombée de la nuit",
   "gal.a_bano": "Salle de bains avec douche vitrée et meuble suspendu",
   "gal.a_terraza2": "Terrasse avec bains de soleil, table et jardinière",
-  "gal.a_dorm": "Chambre principale avec tête de lit capitonnée et tableau"
+  "gal.a_dorm": "Chambre principale avec tête de lit capitonnée et tableau",
+  "hero.modes_l": "Deux configurations",
+  "hero.sub2": "<span class=\"nw\">3 ou 4 salles de bains et WC</span> · <span class=\"nw\">solarium privé</span> · <span class=\"nw\">parking</span>"
 }

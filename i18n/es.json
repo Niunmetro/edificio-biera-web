@@ -22,7 +22,7 @@
   "hero.h1": "Más que una vivienda, <span class=\"nw\">un estilo de vida.</span>",
   "hero.from": "Desde",
   "hero.vat": "+ IVA",
-  "hero.sub": "<span class=\"nw\">3 y 4 dormitorios + estudio</span> · <span class=\"nw\">solárium privado</span> · <span class=\"nw\">aparcamiento</span>",
+  "hero.sub": "<span class=\"nw\">3 dormitorios + estudio</span> · <span class=\"nw\">4 dormitorios + estudio</span>",
   "hero.alt": "Fachada del Edificio Biera al atardecer: diez tríplex de líneas mediterráneas con jardineras y luz cálida",
   "proj.lbl": "El proyecto",
   "proj.h2": "Arquitectura mediterránea <span class=\"nw\">al sur de Murcia.</span>",
@@ -225,5 +225,7 @@
   "gal.a_noche": "Fachada del edificio iluminada al anochecer",
   "gal.a_bano": "Baño con ducha de vidrio y mueble suspendido",
   "gal.a_terraza2": "Terraza con tumbonas, mesa y jardinera de plantas",
-  "gal.a_dorm": "Dormitorio principal con cabecero tapizado y cuadro"
+  "gal.a_dorm": "Dormitorio principal con cabecero tapizado y cuadro",
+  "hero.modes_l": "Dos modalidades",
+  "hero.sub2": "<span class=\"nw\">3 o 4 baños y aseos</span> · <span class=\"nw\">solárium privado</span> · <span class=\"nw\">aparcamiento</span>"
 }

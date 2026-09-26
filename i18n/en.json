@@ -22,7 +22,7 @@
   "hero.h1": "<span class=\"nw\">More than a home,</span> <span class=\"nw\">a way of life.</span>",
   "hero.from": "From",
   "hero.vat": "+ VAT",
-  "hero.sub": "<span class=\"nw\">3 and 4 bedrooms + study</span> · <span class=\"nw\">private roof terrace</span> · <span class=\"nw\">parking</span>",
+  "hero.sub": "<span class=\"nw\">3 bedrooms + study</span> · <span class=\"nw\">4 bedrooms + study</span>",
   "hero.alt": "Façade of Edificio Biera at sunset: ten triplex townhouses with Mediterranean lines, planters and warm light",
   "proj.lbl": "The project",
   "proj.h2": "Mediterranean architecture south of Murcia.",
@@ -225,5 +225,7 @@
   "gal.a_noche": "The building’s façade lit up at nightfall",
   "gal.a_bano": "Bathroom with glass shower and wall-hung vanity unit",
   "gal.a_terraza2": "Terrace with sun loungers, table and a planter with greenery",
-  "gal.a_dorm": "Master bedroom with upholstered headboard and artwork"
+  "gal.a_dorm": "Master bedroom with upholstered headboard and artwork",
+  "hero.modes_l": "Two layouts",
+  "hero.sub2": "<span class=\"nw\">3 or 4 bathrooms and WCs</span> · <span class=\"nw\">private roof terrace</span> · <span class=\"nw\">parking</span>"
 }

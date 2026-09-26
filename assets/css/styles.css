@@ -526,3 +526,9 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
   .mbar a.main{margin:0;border-radius:0;min-height:56px;padding:0 12px}
   .office a{display:inline-block;padding:8px 0;margin:-4px 0}
 }
+
+/* Hero: modalidades y baños, legibles */
+.price{gap:10px}
+.price .sub{font-size:17px;font-weight:400;opacity:1;line-height:1.5;max-width:40ch;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+.price .sub b{font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:12px;display:block;opacity:.85;margin-bottom:2px}
+@media (max-width:760px){.price{gap:6px}.price .sub{font-size:15px;max-width:none;text-shadow:none}.price .sub b{font-size:11px}}
