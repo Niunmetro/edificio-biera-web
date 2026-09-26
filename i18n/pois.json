@@ -5,6 +5,20 @@
   },
   "items": [
     {
+      "id": "gym",
+      "cat": "deporte",
+      "lat": 37.95905,
+      "lon": -1.13565,
+      "km": 0.1,
+      "drive": null,
+      "walk": 1,
+      "name": {
+        "es": "Nuevo centro deportivo · enfrente del edificio",
+        "en": "New sports centre · opposite the building",
+        "fr": "Nouveau centre sportif · en face de l’immeuble"
+      }
+    },
+    {
       "id": "carmen",
       "cat": "transporte",
       "lat": 37.9764,
@@ -54,6 +68,19 @@
         "es": "Santo Ángel",
         "en": "Santo Ángel",
         "fr": "Santo Ángel"
+      }
+    },
+    {
+      "id": "valle",
+      "cat": "naturaleza",
+      "lat": 37.92881,
+      "lon": -1.13965,
+      "km": 4.5,
+      "drive": 7,
+      "name": {
+        "es": "Parque Regional de El Valle · centro de visitantes",
+        "en": "El Valle Regional Park · visitor centre",
+        "fr": "Parc régional d’El Valle · centre d’accueil"
       }
     },
     {
