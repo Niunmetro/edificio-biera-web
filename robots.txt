@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /leads/
+Sitemap: https://edificiobiera.com/sitemap.xml
