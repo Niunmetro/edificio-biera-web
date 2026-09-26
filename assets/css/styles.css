@@ -404,10 +404,12 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
 .sec-gal{margin-top:0}
 .bleed{width:min(1152px,100% - 48px);margin-inline:auto;height:auto;aspect-ratio:1448/1086;max-height:none}
 .bleed img{object-position:center 30%}
-.units,.uhead,.row{--cols:56px minmax(0,1.45fr) minmax(0,1.55fr) 112px 92px 92px minmax(0,1.9fr) 152px}
+.units,.uhead,.row{--cols:56px minmax(0,1.4fr) minmax(0,2fr) 104px 88px 88px minmax(0,1.5fr) 152px}
+.uhead,.row,.row .rh,.row .ud{gap:0 16px}
+.row .dd .sep{display:none}.row .dd .nw{display:block}
 .row .acts .btn{width:100%}
 .uhead{align-items:end}
-@supports not (grid-template-columns:subgrid){.row .rh{grid-template-columns:56px minmax(0,1.45fr)}.row .ud{grid-template-columns:minmax(0,1.55fr) 112px 92px 92px minmax(0,1.9fr) 152px}}
+@supports not (grid-template-columns:subgrid){.row .rh{grid-template-columns:56px minmax(0,1.4fr)}.row .ud{grid-template-columns:minmax(0,2fr) 104px 88px 88px minmax(0,1.5fr) 152px}}
 .manif{align-items:first baseline}
 .manif .stack{padding-top:0}
 .lvl{align-items:baseline}
@@ -531,4 +533,4 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
 .price{gap:10px}
 .price .sub{font-size:17px;font-weight:400;opacity:1;line-height:1.5;max-width:40ch;text-shadow:0 1px 12px rgba(0,0,0,.35)}
 .price .sub b{font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:12px;display:block;opacity:.85;margin-bottom:2px}
-@media (max-width:760px){.price{gap:6px}.price .sub{font-size:15px;max-width:none;text-shadow:none}.price .sub b{font-size:11px}}
+@media (max-width:760px){.price{gap:6px}.price .sub{font-size:15px;max-width:none;text-shadow:none}.price .sub b{font-size:11px}.price .modes .sep{display:none}.price .modes .nw{display:block}}

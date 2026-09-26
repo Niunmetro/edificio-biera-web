@@ -16,8 +16,8 @@ units = load("i18n/units.json")
 def num(s, lang):
     return s.replace(",", ".") if lang == "en" else s
 
-def nw(text):
-    return " · ".join(f'<span class="nw">{p}</span>' for p in text.split(" · "))
+def nw(text, sep=" · "):
+    return sep.join(f'<span class="nw">{p}</span>' for p in text.split(" · "))
 
 def rows(d):
     out = []
@@ -29,10 +29,10 @@ f"""      <li class="row" data-d="{u['d']}" data-v="{u['v']}">
         <button class="rh" type="button" aria-expanded="false" aria-controls="ud{u['v']}">
           <span class="num serif">{n}</span>
           <span class="ty"><span class="serif nm">{name}</span><small>{d['u.or.' + u['orient']]}</small></span>
-          <span class="sum"><span>{d['u.' + u['dist']]}</span> · <span>{num(u['constr'], d['lang'])}\u00a0m²</span> · <span>{d['u.short.' + u['gar'][4:]]}</span></span>
+          <span class="sum">{nw(d['u.' + u['dist']])} · <span>{num(u['constr'], d['lang'])}\u00a0m²</span> · <span>{d['u.short.' + u['gar'][4:]]}</span></span>
         </button>
         <div class="ud" id="ud{u['v']}">
-          <span class="dd"><b>{d['units.th.dist']}</b>{nw(d['u.' + u['dist']])}</span>
+          <span class="dd"><b>{d['units.th.dist']}</b>{nw(d['u.' + u['dist']], '<span class="sep"> · </span>')}</span>
           <span class="m2 r"><b>{d['units.th.constr']}</b>{num(u['constr'], d['lang'])}\u00a0m²</span>
           <span class="m2 r"><b>{d['units.th.util']}</b>{num(u['util'], d['lang'])}\u00a0m²</span>
           <span class="m2 r"><b>{d['units.th.sol']}</b>{num(u['sol'], d['lang'])}\u00a0m²</span>
