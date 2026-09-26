@@ -16,7 +16,8 @@
         "en": "Santo Ángel · residential area",
         "fr": "Santo Ángel · zone résidentielle"
       },
-      "short": "Santo Ángel"
+      "short": "Santo Ángel",
+      "top": true
     },
     {
       "id": "alberca",
@@ -31,7 +32,23 @@
         "fr": "La Alberca · zone résidentielle"
       },
       "short": "La Alberca",
-      "side": "left"
+      "side": "left",
+      "top": true
+    },
+    {
+      "id": "catedral",
+      "cat": "centro",
+      "lat": 37.98407,
+      "lon": -1.12864,
+      "km": 4.3,
+      "drive": 6,
+      "name": {
+        "es": "Centro de Murcia · Catedral",
+        "en": "Murcia city centre · Cathedral",
+        "fr": "Centre de Murcie · Cathédrale"
+      },
+      "top": true,
+      "short": "Centro de Murcia"
     },
     {
       "id": "gym",
@@ -58,19 +75,6 @@
         "es": "Estación del Carmen (AVE y Cercanías)",
         "en": "El Carmen station (high-speed rail)",
         "fr": "Gare del Carmen (AVE et trains régionaux)"
-      }
-    },
-    {
-      "id": "catedral",
-      "cat": "centro",
-      "lat": 37.98407,
-      "lon": -1.12864,
-      "km": 4.3,
-      "drive": 6,
-      "name": {
-        "es": "Centro de Murcia · Catedral",
-        "en": "Murcia city centre · Cathedral",
-        "fr": "Centre de Murcie · Cathédrale"
       }
     },
     {

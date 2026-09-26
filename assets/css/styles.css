@@ -632,13 +632,12 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
 @media (max-width:760px){.map{min-height:360px}.poi-side{padding:18px 16px}.poi-n{font-size:18px}.poi-d{font-size:13px}.mk-here .mk-lbl{display:none}}
 @media (prefers-reduced-motion:reduce){.mk-here .mk-dot::after{animation:none}}
 
-/* Barrios destacados en el mapa */
-.mk-barrio .mk-dot{width:16px;height:16px;left:-8px;top:-8px;background:var(--amber);border-width:3px}
-.mk-barrio .mk-lbl{position:absolute;left:14px;top:-9px;white-space:nowrap;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink);background:rgba(247,245,241,.92);padding:2px 8px;box-shadow:0 1px 4px rgba(30,36,41,.12)}
-.poi-i.barrio .poi-n{font-size:21px;padding-left:18px;position:relative}
-.poi-i.barrio .poi-n::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--amber)}
-.poi-tag{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--amber);padding-left:18px}
-@media (max-width:760px){.mk-barrio .mk-lbl{display:block}.poi-i.barrio .poi-n{font-size:20px}}
+/* Puntos destacados en el mapa (barrios y centro) */
+.mk-top .mk-dot{width:15px;height:15px;left:-7.5px;top:-7.5px;background:var(--ink);border-width:2.5px}
+.mk-top .mk-lbl{position:absolute;left:14px;top:-9px;white-space:nowrap;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ink);background:rgba(247,245,241,.92);padding:2px 8px;box-shadow:0 1px 4px rgba(30,36,41,.12)}
+.poi-i.top .poi-n{font-size:21px;font-weight:600;padding-left:18px;position:relative}
+.poi-i.top .poi-n::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--ink)}
+@media (max-width:760px){.poi-i.top .poi-n{font-size:20px}}
 
 /* ===== Navegación por secciones ===== */
 .nav{display:flex;align-items:center;gap:26px}

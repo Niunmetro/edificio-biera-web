@@ -246,8 +246,8 @@
       var here = L.marker([c.lat, c.lon], { icon: L.divIcon({ className: 'mk mk-here', html: '<span class="mk-dot"></span><span class="mk-lbl">' + T['map.here'] + '</span>', iconSize: [0, 0], iconAnchor: [0, 0] }), zIndexOffset: 1000, keyboard: false }).addTo(map);
       var markers = [];
       items.forEach(function (p, i) {
-        var lbl = p.cat === 'barrio' ? '<span class="mk-lbl">' + (p.short || p.name) + '</span>' : '';
-        var m = L.marker([p.lat, p.lon], { icon: L.divIcon({ className: 'mk mk-poi mk-' + p.cat + (p.side === 'left' ? ' mk-left' : ''), html: '<span class="mk-dot"></span>' + lbl, iconSize: [0, 0], iconAnchor: [0, 0] }), title: p.name, zIndexOffset: p.cat === 'barrio' ? 500 : 0 }).addTo(map);
+        var lbl = p.top ? '<span class="mk-lbl">' + (p.short || p.name) + '</span>' : '';
+        var m = L.marker([p.lat, p.lon], { icon: L.divIcon({ className: 'mk mk-poi mk-' + p.cat + (p.top ? ' mk-top' : '') + (p.side === 'left' ? ' mk-left' : ''), html: '<span class="mk-dot"></span>' + lbl, iconSize: [0, 0], iconAnchor: [0, 0] }), title: p.name, zIndexOffset: p.top ? 500 : 0 }).addTo(map);
         m.bindPopup('<strong>' + p.name + '</strong><br>' + p.label, { closeButton: false, offset: [0, -6], maxWidth: 240 });
         m.on('click', function () { setActive(i); track('mapa', { x: p.name }); });
         markers.push(m);
