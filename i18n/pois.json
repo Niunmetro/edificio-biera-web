@@ -10,7 +10,7 @@
       "lat": 37.9452,
       "lon": -1.1318,
       "km": 1.7,
-      "drive": 3,
+      "drive": 4,
       "name": {
         "es": "Santo Ángel · zona residencial",
         "en": "Santo Ángel · residential area",
@@ -25,7 +25,7 @@
       "lat": 37.945,
       "lon": -1.1422,
       "km": 2.0,
-      "drive": 4,
+      "drive": 5,
       "name": {
         "es": "La Alberca · zona residencial",
         "en": "La Alberca · residential area",
@@ -40,8 +40,8 @@
       "cat": "centro",
       "lat": 37.9828,
       "lon": -1.1316,
-      "km": 3.7,
-      "drive": 5,
+      "km": 3.8,
+      "drive": 6,
       "name": {
         "es": "Centro de Murcia · casco histórico",
         "en": "Murcia city centre · old town",
@@ -69,8 +69,8 @@
       "cat": "transporte",
       "lat": 37.9764,
       "lon": -1.1294,
-      "km": 2.7,
-      "drive": 3,
+      "km": 2.8,
+      "drive": 7,
       "name": {
         "es": "Estación del Carmen (AVE y Cercanías)",
         "en": "El Carmen station (high-speed rail)",
@@ -82,8 +82,8 @@
       "cat": "salud",
       "lat": 37.96947,
       "lon": -1.12809,
-      "km": 1.9,
-      "drive": 3,
+      "km": 1.8,
+      "drive": 4,
       "name": {
         "es": "Hospital Mesa del Castillo",
         "en": "Mesa del Castillo Hospital",
@@ -95,8 +95,8 @@
       "cat": "naturaleza",
       "lat": 37.92881,
       "lon": -1.13965,
-      "km": 4.5,
-      "drive": 7,
+      "km": 4.6,
+      "drive": 9,
       "name": {
         "es": "Parque Regional de El Valle · centro de visitantes",
         "en": "El Valle Regional Park · visitor centre",
@@ -108,8 +108,8 @@
       "cat": "ocio",
       "lat": 37.9826,
       "lon": -1.13475,
-      "km": 3.4,
-      "drive": 4,
+      "km": 3.8,
+      "drive": 5,
       "name": {
         "es": "Jardín del Malecón",
         "en": "Malecón gardens",
@@ -121,7 +121,7 @@
       "cat": "salud",
       "lat": 37.93216,
       "lon": -1.16254,
-      "km": 6.0,
+      "km": 6.3,
       "drive": 7,
       "name": {
         "es": "Hospital Virgen de la Arrixaca",
@@ -134,8 +134,8 @@
       "cat": "educacion",
       "lat": 38.01471,
       "lon": -1.16764,
-      "km": 9.7,
-      "drive": 10,
+      "km": 9.4,
+      "drive": 9,
       "name": {
         "es": "Universidad de Murcia · Campus de Espinardo",
         "en": "University of Murcia · Espinardo campus",
@@ -147,8 +147,8 @@
       "cat": "educacion",
       "lat": 37.99126,
       "lon": -1.1852,
-      "km": 8.9,
-      "drive": 12,
+      "km": 11.3,
+      "drive": 11,
       "name": {
         "es": "UCAM · Campus de Los Jerónimos",
         "en": "UCAM · Los Jerónimos campus",
@@ -160,13 +160,14 @@
       "cat": "transporte",
       "lat": 37.803,
       "lon": -1.125,
-      "km": 22.8,
-      "drive": 21,
+      "km": 24.9,
+      "drive": 23,
       "name": {
         "es": "Aeropuerto Región de Murcia (Corvera)",
         "en": "Región de Murcia airport (Corvera)",
         "fr": "Aéroport Región de Murcia (Corvera)"
       }
     }
-  ]
+  ],
+  "source": "Distancias y tiempos en coche según Google Maps (ruta más rápida), 26/09/2026; Santo Ángel y La Alberca medidos hasta su entrada desde el edificio."
 }
