@@ -135,7 +135,8 @@
         .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
         .then(function (res) {
           if (!res.ok) throw new Error(res.error || 'error');
-          okP.innerHTML = fmt(T['f.ok.p'], { ref: res.ref ? fmt(T['f.ok.ref'], { ref: res.ref }) : '', tel: tel.value.replace(/</g, ''), wa: waHref() });
+          var canal = form.querySelector('input[name="canal"]:checked');
+          okP.innerHTML = fmt(T[canal && canal.value === 'whatsapp' && T['f.ok.p_wa'] ? 'f.ok.p_wa' : 'f.ok.p'], { ref: res.ref ? fmt(T['f.ok.ref'], { ref: res.ref }) : '', tel: tel.value.replace(/</g, ''), wa: waHref() });
           form.hidden = true;
           ok.hidden = false;
           ok.focus();
@@ -204,3 +205,8 @@
     sync();
   }
 })();
+
+  // FAQ: registrar qué preguntas se abren
+  document.querySelectorAll('.fq').forEach(function (d, i) {
+    d.addEventListener('toggle', function () { if (d.open) track('faq', { q: i + 1 }); });
+  });

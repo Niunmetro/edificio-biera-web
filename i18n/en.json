@@ -228,5 +228,20 @@
   "hero.sub2": "<span class=\"nw\">3 or 4 bathrooms and WCs</span> · <span class=\"nw\">private roof terrace</span> · <span class=\"nw\">parking</span>",
   "fig2.m": "bedrooms + attic study",
   "fig2.bn": "3 <span class=\"or\">or</span> 4",
-  "fig2.bt": "bathrooms and WCs"
+  "fig2.bt": "bathrooms and WCs in every home",
+  "f.ok.p_wa": "We have received your request about Edificio Biera{ref}. Daniel León from JD León Inmobiliaria will message you on WhatsApp at {tel}. If you prefer, message him first on <a class=\"u\" href=\"{wa}\">WhatsApp</a> or call <a class=\"u\" href=\"tel:+34640512434\">640 51 24 34</a>.",
+  "faq.lbl": "Frequently asked questions",
+  "faq.h2": "What people ask before visiting.",
+  "faq.q1": "What is the attic study?",
+  "faq.a1": "Every home has a third floor under the roof with an extra room of 7.85 to 16.30 m² usable area, depending on the home, next to the private roof terrace. It can be an office, a study, a guest bedroom or a playroom.",
+  "faq.q2": "Does every home have parking?",
+  "faq.a2": "Yes. Six homes (1 to 5 and 8) have a private closed garage in the basement with its own staircase; the other four come with a parking space. The homes table shows which one belongs to each.",
+  "faq.q3": "Is the kitchen fitted?",
+  "faq.a3": "No. The kitchen is delivered unfitted, so each owner can choose the design and appliances they prefer. Floor and bathroom finishes are chosen, from the options available, at the Porcelanosa showroom.",
+  "faq.q4": "What does the price include?",
+  "faq.a4": "Each home is sold as a whole: its three floors, the private roof terrace and the closed garage or parking space that belongs to it. Prices are quoted before VAT; the applicable VAT (10%) is not included.",
+  "faq.q5": "When will the homes be delivered?",
+  "faq.a5": "The team is finalising the completion and handover schedule. JD León will give you in writing the dates and conditions that apply to the home you are interested in.",
+  "faq.q6": "How can I visit or reserve?",
+  "faq.a6": "By appointment through JD León Inmobiliaria (+34 640 51 24 34 · info@jdleon.com): they will show you the building and its surroundings and walk you through the plans, finishes and availability. If you decide to go ahead, you will receive the reservation process and timings in writing."
 }

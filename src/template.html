@@ -29,8 +29,9 @@
 <link rel="stylesheet" href="/assets/css/styles.css?v={{v}}">
 <script>document.documentElement.className+=" js"</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ApartmentComplex","name":"Edificio Biera","description":"{{ld.description}}","numberOfAccommodationUnits":10,"address":{"@type":"PostalAddress","streetAddress":"Carretera de Santa Catalina, esquina C/ Los Mateos","postalCode":"30012","addressLocality":"Murcia","addressCountry":"ES"},"image":"https://edificiobiera.com/assets/img/og.jpg","url":"https://edificiobiera.com{{path}}","offers":{"@type":"AggregateOffer","lowPrice":330000,"priceCurrency":"EUR","offerCount":10}}
+{"@context":"https://schema.org","@type":"ApartmentComplex","name":"Edificio Biera","description":"{{ld.description}}","numberOfAccommodationUnits":10,"address":{"@type":"PostalAddress","streetAddress":"Carretera de Santa Catalina, esquina C/ Los Mateos","postalCode":"30012","addressLocality":"Murcia","addressCountry":"ES"},"image":"https://edificiobiera.com/assets/img/og.jpg","url":"https://edificiobiera.com{{path}}","offers":{"@type":"AggregateOffer","lowPrice":330000,"priceCurrency":"EUR"}}
 </script>
+<script type="application/ld+json">{{faq_ld}}</script>
 </head>
 <body>
 <div class="pg">
@@ -96,13 +97,12 @@
     </div>
   </div>
   <div class="wrap figs-wrap">
+    <div class="modes rv">
+      <p class="ml">{{hero.modes_l}}</p>
+      <p class="mrow"><span class="mo"><b>3</b> {{fig2.m}}</span><span class="msep" aria-hidden="true"></span><span class="mo"><b>4</b> {{fig2.m}}</span></p>
+      <p class="mbath"><b>{{fig2.bn}}</b> {{fig2.bt}}</p>
+    </div>
     <div class="figs">
-      <div class="fig modes rv">
-        <span class="ml">{{hero.modes_l}}</span>
-        <span class="mo"><span class="n serif">3</span><span class="mt">{{fig2.m}}</span></span>
-        <span class="mo"><span class="n serif">4</span><span class="mt">{{fig2.m}}</span></span>
-        <span class="mo bath"><span class="n serif">{{fig2.bn}}</span><span class="mt">{{fig2.bt}}</span></span>
-      </div>
       <div class="fig rv"><span class="n serif">{{fig1.n}}</span><span class="t">{{fig1.t}}</span></div>
       <div class="fig rv"><span class="n serif">{{fig3.n}}<span class="un">{{fig3.u}}</span></span><span class="t">{{fig3.t}}</span></div>
       <div class="fig rv"><span class="n serif">{{fig4.n}}</span><span class="t">{{fig4.t}}</span></div>
@@ -240,6 +240,23 @@
         </g>
       </svg>
       <p class="cap">{{loc.note}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-faq" id="faq" aria-labelledby="t-faq">
+  <div class="wrap faq-wrap">
+    <div class="stack-s rv">
+      <p class="lbl acc">{{faq.lbl}}</p>
+      <h2 class="h2 serif" id="t-faq">{{faq.h2}}</h2>
+    </div>
+    <div class="faq rv">
+      <details class="fq" name="faq"><summary><span class="fq-q serif">{{faq.q1}}</span><span class="fx" aria-hidden="true"></span></summary><div class="fa"><p>{{faq.a1}}</p></div></details>
+      <details class="fq" name="faq"><summary><span class="fq-q serif">{{faq.q2}}</span><span class="fx" aria-hidden="true"></span></summary><div class="fa"><p>{{faq.a2}}</p></div></details>
+      <details class="fq" name="faq"><summary><span class="fq-q serif">{{faq.q3}}</span><span class="fx" aria-hidden="true"></span></summary><div class="fa"><p>{{faq.a3}}</p></div></details>
+      <details class="fq" name="faq"><summary><span class="fq-q serif">{{faq.q4}}</span><span class="fx" aria-hidden="true"></span></summary><div class="fa"><p>{{faq.a4}}</p></div></details>
+      <details class="fq" name="faq"><summary><span class="fq-q serif">{{faq.q5}}</span><span class="fx" aria-hidden="true"></span></summary><div class="fa"><p>{{faq.a5}}</p></div></details>
+      <details class="fq" name="faq"><summary><span class="fq-q serif">{{faq.q6}}</span><span class="fx" aria-hidden="true"></span></summary><div class="fa"><p>{{faq.a6}}</p></div></details>
     </div>
   </div>
 </section>

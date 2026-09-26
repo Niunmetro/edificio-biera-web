@@ -228,5 +228,20 @@
   "hero.sub2": "<span class=\"nw\">3 o 4 baños y aseos</span> · <span class=\"nw\">solárium privado</span> · <span class=\"nw\">aparcamiento</span>",
   "fig2.m": "dormitorios + estudio en buhardilla",
   "fig2.bn": "3 <span class=\"or\">o</span> 4",
-  "fig2.bt": "baños y aseos"
+  "fig2.bt": "baños y aseos en todas las viviendas",
+  "f.ok.p_wa": "Hemos recibido tu solicitud sobre el Edificio Biera{ref}. Daniel León, de JD León Inmobiliaria, te escribirá por WhatsApp al {tel}. Si lo prefieres, escríbele tú por <a class=\"u\" href=\"{wa}\">WhatsApp</a> o llama al <a class=\"u\" href=\"tel:+34640512434\">640 51 24 34</a>.",
+  "faq.lbl": "Preguntas frecuentes",
+  "faq.h2": "Lo que nos preguntan antes de visitar.",
+  "faq.q1": "¿Qué es el estudio en buhardilla?",
+  "faq.a1": "Cada vivienda tiene una tercera planta bajo cubierta con una estancia adicional, de entre 7,85 y 16,30 m² útiles según la vivienda, junto al solárium privado. Puede ser despacho, estudio, dormitorio de invitados o cuarto de juegos.",
+  "faq.q2": "¿Todas las viviendas tienen aparcamiento?",
+  "faq.a2": "Sí. Seis viviendas (de la 1 a la 5 y la 8) tienen garaje cerrado en el sótano, con escalera propia; las otras cuatro cuentan con plaza de aparcamiento. La tabla de viviendas indica cuál corresponde a cada una.",
+  "faq.q3": "¿La cocina se entrega amueblada?",
+  "faq.a3": "No. La cocina se entrega sin amueblar, para que cada propietario elija el diseño y el equipamiento que prefiera. Los acabados de suelos y baños se eligen, entre las opciones previstas, en el showroom de Porcelanosa.",
+  "faq.q4": "¿Qué incluye el precio?",
+  "faq.a4": "Cada vivienda se vende completa: sus tres plantas, el solárium privado y el garaje cerrado o la plaza de aparcamiento que le corresponde. Los precios se indican sin IVA; el IVA aplicable (10 %) no está incluido.",
+  "faq.q5": "¿Cuándo se entregan las viviendas?",
+  "faq.a5": "El equipo está cerrando el calendario de finalización y entrega. JD León te facilitará por escrito las fechas y las condiciones aplicables a la vivienda que te interese.",
+  "faq.q6": "¿Cómo puedo visitar o reservar?",
+  "faq.a6": "Con cita previa a través de JD León Inmobiliaria (640 51 24 34 · info@jdleon.com): te acompañan a conocer el edificio y su entorno y te explican planos, calidades y disponibilidad. Si decides seguir adelante, recibirás por escrito el proceso de reserva y los plazos."
 }

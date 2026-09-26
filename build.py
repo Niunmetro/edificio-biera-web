@@ -42,6 +42,11 @@ f"""      <li class="row" data-d="{u['d']}" data-v="{u['v']}">
       </li>""")
     return "\n".join(out)
 
+def faq_ld(d):
+    strip = lambda s: re.sub(r"<[^>]+>", "", s).replace("\u00a0", " ")
+    items = [{"@type": "Question", "name": strip(d[f"faq.q{i}"]), "acceptedAnswer": {"@type": "Answer", "text": strip(d[f"faq.a{i}"])}} for i in range(1, 7)]
+    return json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": items}, ensure_ascii=False)
+
 def options(d):
     return "\n".join(f"              <option value=\"v{u['v']}\">{d['units.viv']} {u['v']:02d} · {d['u.name.' + str(u['v'])]}</option>" for u in units)
 
@@ -50,7 +55,7 @@ def js_json(d):
         "lang": d["lang"],
         "action": FORM_ACTION,
         "units": {str(u["v"]): {"name": d[f"u.name.{u['v']}"], "dist": d["u." + u["dist"]], "constr": num(u["constr"], d["lang"]), "d": u["d"]} for u in units},
-        "t": {k: d[k] for k in ("f.err.name", "f.err.tel", "f.err.email", "f.err.priv", "f.err.send", "f.sending", "f.ok.p", "f.ok.ref", "wa.text", "wa.text_unit", "units.count", "units.count1", "units.viv", "units.plan_alt", "cta.plan")},
+        "t": {k: d[k] for k in ("f.ok.p_wa", "f.err.name", "f.err.tel", "f.err.email", "f.err.priv", "f.err.send", "f.sending", "f.ok.p", "f.ok.ref", "wa.text", "wa.text_unit", "units.count", "units.count1", "units.viv", "units.plan_alt", "cta.plan")},
     }
     return json.dumps(j, ensure_ascii=False)
 
@@ -58,6 +63,7 @@ missing_all = set()
 for lang, outp, og in LANGS:
     d = load(f"i18n/{lang}.json")
     d["units.rows"] = rows(d)
+    d["faq_ld"] = faq_ld(d)
     d["units.options"] = options(d)
     d["js_json"] = js_json(d)
     d["og_locale"] = og
