@@ -7,9 +7,9 @@
     {
       "id": "santoangel",
       "cat": "barrio",
-      "lat": 37.9435,
-      "lon": -1.13,
-      "km": 2.2,
+      "lat": 37.9461,
+      "lon": -1.1328,
+      "km": 1.7,
       "drive": 3,
       "name": {
         "es": "Santo Ángel · zona residencial",
@@ -22,10 +22,10 @@
     {
       "id": "alberca",
       "cat": "barrio",
-      "lat": 37.9427,
-      "lon": -1.1364,
-      "km": 2.4,
-      "drive": 3,
+      "lat": 37.944,
+      "lon": -1.142,
+      "km": 3.1,
+      "drive": 4,
       "name": {
         "es": "La Alberca · zona residencial",
         "en": "La Alberca · residential area",
@@ -38,14 +38,14 @@
     {
       "id": "catedral",
       "cat": "centro",
-      "lat": 37.98407,
-      "lon": -1.12864,
-      "km": 4.3,
-      "drive": 6,
+      "lat": 37.9828,
+      "lon": -1.1316,
+      "km": 3.7,
+      "drive": 5,
       "name": {
-        "es": "Centro de Murcia · Catedral",
-        "en": "Murcia city centre · Cathedral",
-        "fr": "Centre de Murcie · Cathédrale"
+        "es": "Centro de Murcia · casco histórico",
+        "en": "Murcia city centre · old town",
+        "fr": "Centre de Murcie · centre historique"
       },
       "top": true,
       "short": "Centro de Murcia"
