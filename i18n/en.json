@@ -30,8 +30,6 @@
   "proj.p2": "Inside: Porcelanosa Grupo flooring and bathrooms, and JUNG switches.",
   "fig1.n": "10",
   "fig1.t": "new-build triplex townhouses, each with a private roof terrace",
-  "fig2.n": "3 <span class=\"or\">or</span> 4",
-  "fig2.t": "bedrooms + attic study, with <span class=\"nw\">3 or 4</span> bathrooms and WCs",
   "fig3.n": "18–77",
   "fig3.u": "m²",
   "fig3.t": "of private roof terrace, depending on the home",
@@ -227,5 +225,8 @@
   "gal.a_terraza2": "Terrace with sun loungers, table and a planter with greenery",
   "gal.a_dorm": "Master bedroom with upholstered headboard and artwork",
   "hero.modes_l": "Two layouts",
-  "hero.sub2": "<span class=\"nw\">3 or 4 bathrooms and WCs</span> · <span class=\"nw\">private roof terrace</span> · <span class=\"nw\">parking</span>"
+  "hero.sub2": "<span class=\"nw\">3 or 4 bathrooms and WCs</span> · <span class=\"nw\">private roof terrace</span> · <span class=\"nw\">parking</span>",
+  "fig2.m": "bedrooms + attic study",
+  "fig2.bn": "3 <span class=\"or\">or</span> 4",
+  "fig2.bt": "bathrooms and WCs"
 }
