@@ -270,5 +270,16 @@
   "u.gar.box26": "Box fermé, 26 m², avec escalier privatif",
   "u.gar.box25": "Box fermé, 25 m², avec escalier privatif",
   "u.short.box26": "Box fermé",
-  "u.short.box25": "Box fermé"
+  "u.short.box25": "Box fermé",
+  "more.lbl": "Plus d’intérieurs",
+  "more.h2": "Chaque typologie, son caractère.",
+  "more.note": "Visuels indicatifs des logements 5 et 7 et du sous-sol ; mobilier et décoration non inclus, la cuisine est livrée non équipée.",
+  "more.d1": "Logement 7 · cuisine ouverte sur le séjour",
+  "more.d2": "Logement 7 · séjour",
+  "more.d3": "Logement 7 · salle à manger et escalier",
+  "more.d4": "Logement 7 · solarium",
+  "more.d5": "Logement 5 · séjour",
+  "more.d6": "Logement 5 · cuisine",
+  "more.d7": "Logement 5 · chambre double",
+  "more.d8": "Sous-sol · box fermés"
 }

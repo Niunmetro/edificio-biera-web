@@ -270,5 +270,16 @@
   "u.gar.box26": "Garaje cerrado, 26 m², con escalera propia",
   "u.gar.box25": "Garaje cerrado, 25 m², con escalera propia",
   "u.short.box26": "Garaje cerrado",
-  "u.short.box25": "Garaje cerrado"
+  "u.short.box25": "Garaje cerrado",
+  "more.lbl": "Más interiores",
+  "more.h2": "Cada tipología, su carácter.",
+  "more.note": "Infografías orientativas de las viviendas 5 y 7 y del sótano; mobiliario y decoración no incluidos, la cocina se entrega sin amueblar.",
+  "more.d1": "Vivienda 7 · cocina abierta al salón",
+  "more.d2": "Vivienda 7 · salón",
+  "more.d3": "Vivienda 7 · comedor y escalera",
+  "more.d4": "Vivienda 7 · solárium",
+  "more.d5": "Vivienda 5 · salón",
+  "more.d6": "Vivienda 5 · cocina",
+  "more.d7": "Vivienda 5 · dormitorio doble",
+  "more.d8": "Sótano · garajes cerrados"
 }
