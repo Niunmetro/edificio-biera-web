@@ -250,5 +250,13 @@
   "map.drive": "{n} min en coche",
   "map.walk": "{n} min a pie",
   "map.km": "{km} km",
-  "map.list": "Puntos de interés"
+  "map.list": "Puntos de interés",
+  "map.tag": "Barrio destacado",
+  "nav.label": "Secciones",
+  "nav.viv": "Viviendas",
+  "nav.map": "Mapa",
+  "nav.gal": "Galería",
+  "nav.qual": "Calidades",
+  "nav.faq": "Preguntas",
+  "nav.contact": "Contacto"
 }

@@ -5,6 +5,34 @@
   },
   "items": [
     {
+      "id": "santoangel",
+      "cat": "barrio",
+      "lat": 37.9435,
+      "lon": -1.13,
+      "km": 2.2,
+      "drive": 3,
+      "name": {
+        "es": "Santo Ángel · zona residencial",
+        "en": "Santo Ángel · residential area",
+        "fr": "Santo Ángel · zone résidentielle"
+      },
+      "short": "Santo Ángel"
+    },
+    {
+      "id": "alberca",
+      "cat": "barrio",
+      "lat": 37.9427,
+      "lon": -1.1364,
+      "km": 2.4,
+      "drive": 3,
+      "name": {
+        "es": "La Alberca · zona residencial",
+        "en": "La Alberca · residential area",
+        "fr": "La Alberca · zone résidentielle"
+      },
+      "short": "La Alberca"
+    },
+    {
       "id": "gym",
       "cat": "deporte",
       "lat": 37.95905,
@@ -55,19 +83,6 @@
         "es": "Hospital Mesa del Castillo",
         "en": "Mesa del Castillo Hospital",
         "fr": "Hôpital Mesa del Castillo"
-      }
-    },
-    {
-      "id": "santoangel",
-      "cat": "barrio",
-      "lat": 37.93326,
-      "lon": -1.12512,
-      "km": 4.0,
-      "drive": 7,
-      "name": {
-        "es": "Santo Ángel",
-        "en": "Santo Ángel",
-        "fr": "Santo Ángel"
       }
     },
     {

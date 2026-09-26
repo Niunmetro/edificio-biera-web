@@ -250,5 +250,13 @@
   "map.drive": "{n} min en voiture",
   "map.walk": "{n} min à pied",
   "map.km": "{km} km",
-  "map.list": "Points d’intérêt"
+  "map.list": "Points d’intérêt",
+  "map.tag": "Quartier prisé",
+  "nav.label": "Sections",
+  "nav.viv": "Logements",
+  "nav.map": "Carte",
+  "nav.gal": "Galerie",
+  "nav.qual": "Prestations",
+  "nav.faq": "Questions",
+  "nav.contact": "Contact"
 }

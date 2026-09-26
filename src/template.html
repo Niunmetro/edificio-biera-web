@@ -48,6 +48,14 @@
   </div>
   <div class="top">
     <a class="wordmark" href="#inicio">{{brand}}</a>
+    <nav class="nav" aria-label="{{nav.label}}">
+      <a href="#viviendas" data-track="nav-viviendas">{{nav.viv}}</a>
+      <a href="#ubicacion" data-track="nav-mapa">{{nav.map}}</a>
+      <a href="#galeria" data-track="nav-galeria">{{nav.gal}}</a>
+      <a href="#calidades" data-track="nav-calidades">{{nav.qual}}</a>
+      <a href="#faq" data-track="nav-faq">{{nav.faq}}</a>
+      <a href="#contacto" data-track="nav-contacto">{{nav.contact}}</a>
+    </nav>
     <nav class="lang" aria-label="{{lang.label}}">
       <a href="/" hreflang="es" lang="es"{{cur.es}}>ES</a>
       <a href="/en/" hreflang="en" lang="en"{{cur.en}}>EN</a>
@@ -75,6 +83,14 @@
 
 <div class="hdr" id="hdr">
   <a class="wordmark" href="#inicio">{{brand}}</a>
+  <nav class="nav" aria-label="{{nav.label}}">
+    <a href="#viviendas" data-track="nav-viviendas">{{nav.viv}}</a>
+    <a href="#ubicacion" data-track="nav-mapa">{{nav.map}}</a>
+    <a href="#galeria" data-track="nav-galeria">{{nav.gal}}</a>
+    <a href="#calidades" data-track="nav-calidades">{{nav.qual}}</a>
+    <a href="#faq" data-track="nav-faq">{{nav.faq}}</a>
+    <a href="#contacto" data-track="nav-contacto">{{nav.contact}}</a>
+  </nav>
   <div class="hdr-r">
     <nav class="lang" aria-label="{{lang.label}}">
       <a href="/" hreflang="es" lang="es"{{cur.es}}>ES</a>
@@ -171,7 +187,7 @@
   </div>
 </section>
 
-<section class="sec sec-gal" aria-label="{{gal.note}}">
+<section class="sec sec-gal" id="galeria" aria-label="{{gal.note}}">
   <figure class="g1 rv">
     <picture><source media="(max-width:760px)" srcset="/assets/img/interior-cocina-m.webp" type="image/webp"><source media="(max-width:760px)" srcset="/assets/img/interior-cocina-m.jpg"><source srcset="/assets/img/interior-cocina.webp" type="image/webp"><img src="/assets/img/interior-cocina.jpg" alt="{{gal.alt1}}" loading="lazy" decoding="async" width="1589" height="730"></picture>
     <figcaption>{{gal.cap1}}</figcaption>

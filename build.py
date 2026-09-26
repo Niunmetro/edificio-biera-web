@@ -52,11 +52,13 @@ def poi_label(p, d):
 def poi_rows(d):
     out = []
     for i, p in enumerate(pois["items"]):
-        out.append(f"""          <li class="poi-i"><button type="button" class="poi-b" data-i="{i}"><span class="poi-n">{p["name"][d["lang"]]}</span><span class="poi-d">{poi_label(p, d)}</span></button></li>""")
+        barrio = p.get("cat") == "barrio"
+        tag = f'<span class="poi-tag">{d["map.tag"]}</span>' if barrio else ""
+        out.append(f"""          <li class="poi-i{' barrio' if barrio else ''}"><button type="button" class="poi-b" data-i="{i}"><span class="poi-n">{p["name"][d["lang"]]}</span>{tag}<span class="poi-d">{poi_label(p, d)}</span></button></li>""")
     return "\n".join(out)
 
 def poi_json(d):
-    return {"center": pois["center"], "items": [{"lat": p["lat"], "lon": p["lon"], "km": p["km"], "cat": p.get("cat", ""), "name": p["name"][d["lang"]], "label": poi_label(p, d)} for p in pois["items"]]}
+    return {"center": pois["center"], "items": [{"lat": p["lat"], "lon": p["lon"], "km": p["km"], "cat": p.get("cat", ""), "short": p.get("short", ""), "name": p["name"][d["lang"]], "label": poi_label(p, d)} for p in pois["items"]]}
 
 def faq_ld(d):
     strip = lambda s: re.sub(r"<[^>]+>", "", s).replace("\u00a0", " ")

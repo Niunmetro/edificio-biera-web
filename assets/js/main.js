@@ -171,7 +171,7 @@
   var heroCtas = document.querySelector('.hero .ctas'), contact = document.getElementById('contacto');
   var pastHero = false, inContact = false, typing = false;
   function upd() {
-    if (hdr) { var onH = pastHero && !isMobile.matches; hdr.classList.toggle('on', onH); hdr.inert = !onH; }
+    if (hdr) { var onH = pastHero; hdr.classList.toggle('on', onH); hdr.inert = !onH; }
     if (mbar) { var on = pastHero && !inContact && !typing && isMobile.matches; mbar.classList.toggle('on', on); mbar.inert = !on; }
   }
   if ('IntersectionObserver' in window) {
@@ -246,7 +246,8 @@
       var here = L.marker([c.lat, c.lon], { icon: L.divIcon({ className: 'mk mk-here', html: '<span class="mk-dot"></span><span class="mk-lbl">' + T['map.here'] + '</span>', iconSize: [0, 0], iconAnchor: [0, 0] }), zIndexOffset: 1000, keyboard: false }).addTo(map);
       var markers = [];
       items.forEach(function (p, i) {
-        var m = L.marker([p.lat, p.lon], { icon: L.divIcon({ className: 'mk mk-poi mk-' + p.cat, html: '<span class="mk-dot"></span>', iconSize: [0, 0], iconAnchor: [0, 0] }), title: p.name }).addTo(map);
+        var lbl = p.cat === 'barrio' ? '<span class="mk-lbl">' + (p.short || p.name) + '</span>' : '';
+        var m = L.marker([p.lat, p.lon], { icon: L.divIcon({ className: 'mk mk-poi mk-' + p.cat, html: '<span class="mk-dot"></span>' + lbl, iconSize: [0, 0], iconAnchor: [0, 0] }), title: p.name, zIndexOffset: p.cat === 'barrio' ? 500 : 0 }).addTo(map);
         m.bindPopup('<strong>' + p.name + '</strong><br>' + p.label, { closeButton: false, offset: [0, -6], maxWidth: 240 });
         m.on('click', function () { setActive(i); track('mapa', { x: p.name }); });
         markers.push(m);
@@ -269,5 +270,16 @@
     }
     if ('IntersectionObserver' in window) new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { loadMap(); o.disconnect(); } }, { rootMargin: '600px 0px' }).observe(mapEl);
     else loadMap();
+  }
+
+  // Navegación por secciones: resalta la sección visible
+  var navLinks = document.querySelectorAll('.nav a[href^="#"]');
+  if (navLinks.length && 'IntersectionObserver' in window) {
+    var navSecs = [];
+    navLinks.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s && navSecs.indexOf(s) < 0) navSecs.push(s); });
+    var navIO = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { var id = '#' + e.target.id; navLinks.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === id); }); } });
+    }, { rootMargin: '-35% 0px -55% 0px' });
+    navSecs.forEach(function (s) { navIO.observe(s); });
   }
 })();

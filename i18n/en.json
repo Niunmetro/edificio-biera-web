@@ -250,5 +250,13 @@
   "map.drive": "{n} min by car",
   "map.walk": "{n} min on foot",
   "map.km": "{km} km",
-  "map.list": "Points of interest"
+  "map.list": "Points of interest",
+  "map.tag": "Popular neighbourhood",
+  "nav.label": "Sections",
+  "nav.viv": "Homes",
+  "nav.map": "Map",
+  "nav.gal": "Gallery",
+  "nav.qual": "Finishes",
+  "nav.faq": "FAQ",
+  "nav.contact": "Contact"
 }
