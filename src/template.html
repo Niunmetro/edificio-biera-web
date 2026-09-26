@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<link rel="canonical" href="https://edificiobiera.com{{path}}">
+<link rel="alternate" hreflang="es" href="https://edificiobiera.com/">
+<link rel="alternate" hreflang="en" href="https://edificiobiera.com/en/">
+<link rel="alternate" hreflang="fr" href="https://edificiobiera.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://edificiobiera.com/">
+<meta name="theme-color" content="#1E2429">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:title" content="{{meta.og_title}}">
+<meta property="og:description" content="{{meta.og_description}}">
+<meta property="og:url" content="https://edificiobiera.com{{path}}">
+<meta property="og:image" content="https://edificiobiera.com/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/cormorant-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/cormorant-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/styles.css?v={{v}}">
+<script>document.documentElement.className+=" js"</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ApartmentComplex","name":"Edificio Biera","description":"{{ld.description}}","numberOfAccommodationUnits":10,"address":{"@type":"PostalAddress","streetAddress":"Carretera de Santa Catalina, esquina C/ Los Mateos","postalCode":"30012","addressLocality":"Murcia","addressCountry":"ES"},"image":"https://edificiobiera.com/assets/img/og.jpg","url":"https://edificiobiera.com{{path}}","offers":{"@type":"AggregateOffer","lowPrice":330000,"priceCurrency":"EUR","offerCount":10}}
+</script>
+</head>
+<body>
+<div class="pg">
+
+<header class="hero" id="inicio">
+  <div class="hero-media">
+    <picture>
+      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.webp" type="image/webp">
+      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.jpg">
+      <source srcset="/assets/img/fachada.webp" type="image/webp">
+      <img class="bg" src="/assets/img/fachada.jpg" alt="{{hero.alt}}" fetchpriority="high" width="1600" height="1022">
+    </picture>
+    <div class="scrim" aria-hidden="true"></div>
+  </div>
+  <div class="top">
+    <a class="wordmark" href="#inicio">{{brand}}</a>
+    <nav class="lang" aria-label="{{lang.label}}">
+      <a href="/" hreflang="es" lang="es"{{cur.es}}>ES</a>
+      <a href="/en/" hreflang="en" lang="en"{{cur.en}}>EN</a>
+      <a href="/fr/" hreflang="fr" lang="fr"{{cur.fr}}>FR</a>
+    </nav>
+    <a class="tel" href="tel:+34640512434" data-track="cabecera-llamar"><span class="who">{{tel.who}}</span><span class="num">640 51 24 34</span></a>
+  </div>
+  <div class="bottom">
+    <div class="intro">
+      <p class="lbl kick"><span>{{hero.kick1}}</span><span class="sep"> · </span><span>{{hero.kick2}}</span></p>
+      <h1 class="h1 serif it">{{hero.h1}}</h1>
+    </div>
+    <div class="price">
+      <span class="lbl">{{hero.from}}</span>
+      <span class="v serif">330.000 € <small>{{hero.vat}}</small></span>
+      <span class="sub">{{hero.sub}}</span>
+    </div>
+    <div class="ctas">
+      <a class="btn btn-light" href="#solicitud" data-track="hero-info">{{cta.info}}</a>
+      <a class="btn btn-ghost" href="tel:+34640512434" data-track="hero-llamar">{{cta.call}}</a>
+    </div>
+  </div>
+</header>
+
+<div class="hdr" id="hdr">
+  <a class="wordmark" href="#inicio">{{brand}}</a>
+  <div class="hdr-r">
+    <nav class="lang" aria-label="{{lang.label}}">
+      <a href="/" hreflang="es" lang="es"{{cur.es}}>ES</a>
+      <a href="/en/" hreflang="en" lang="en"{{cur.en}}>EN</a>
+      <a href="/fr/" hreflang="fr" lang="fr"{{cur.fr}}>FR</a>
+    </nav>
+    <a class="tel" href="tel:+34640512434" data-track="hdr-llamar"><span class="num">640 51 24 34</span></a>
+    <a class="btn btn-ink btn-sm" href="#solicitud" data-track="hdr-info">{{cta.info}}</a>
+  </div>
+</div>
+
+<main>
+<section class="sec" id="proyecto" aria-labelledby="t-proyecto">
+  <div class="wrap manif rv">
+    <p class="lbl acc">{{proj.lbl}}</p>
+    <h2 class="h2 serif" id="t-proyecto">{{proj.h2}}</h2>
+    <div class="stack">
+      <p class="body">{{proj.p1}}</p>
+      <p class="body">{{proj.p2}}</p>
+    </div>
+  </div>
+  <div class="wrap figs-wrap">
+    <div class="figs">
+      <div class="fig rv"><span class="n serif">{{fig1.n}}</span><span class="t">{{fig1.t}}</span></div>
+      <div class="fig rv"><span class="n serif">{{fig2.n}}</span><span class="t">{{fig2.t}}</span></div>
+      <div class="fig rv"><span class="n serif">{{fig3.n}}<span class="un">{{fig3.u}}</span></span><span class="t">{{fig3.t}}</span></div>
+      <div class="fig rv"><span class="n serif">{{fig4.n}}</span><span class="t">{{fig4.t}}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec casa" id="casa" aria-labelledby="t-casa">
+  <figure class="bleed rv">
+    <picture><source srcset="/assets/img/aerea-1.webp" type="image/webp"><img src="/assets/img/aerea-1.jpg" alt="{{casa.alt}}" loading="lazy" decoding="async" width="1100" height="540"></picture>
+  </figure>
+  <div class="wrap levels">
+    <div class="levels-h rv">
+      <p class="lbl acc">{{casa.lbl}}</p>
+      <h2 class="h2 serif" id="t-casa">{{casa.h2}}</h2>
+    </div>
+    <div class="lvls">
+      <div class="lvl rv"><span class="k">{{casa.l1.k}}</span><div><h3 class="serif">{{casa.l1.h}}</h3><p>{{casa.l1.p}}</p></div></div>
+      <div class="lvl rv"><span class="k">{{casa.l2.k}}</span><div><h3 class="serif">{{casa.l2.h}}</h3><p>{{casa.l2.p}}</p></div></div>
+      <div class="lvl rv"><span class="k">{{casa.l3.k}}</span><div><h3 class="serif">{{casa.l3.h}}</h3><p>{{casa.l3.p}}</p></div></div>
+      <div class="lvl rv"><span class="k">{{casa.l4.k}}</span><div><h3 class="serif">{{casa.l4.h}}</h3><p>{{casa.l4.p}}</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-units" id="viviendas" aria-labelledby="t-viviendas">
+  <div class="wrap">
+    <div class="units-head rv">
+      <div class="stack-s">
+        <p class="lbl acc">{{units.lbl}}</p>
+        <h2 class="h2 serif" id="t-viviendas">{{units.h2}}</h2>
+      </div>
+      <div class="tabs" role="group" aria-label="{{units.th.dist}}">
+        <button class="tab on" type="button" data-filter="all" aria-pressed="true">{{units.all}} <span class="c">10</span></button>
+        <button class="tab" type="button" data-filter="3" aria-pressed="false">{{units.3d}} <span class="c">2</span></button>
+        <button class="tab" type="button" data-filter="4" aria-pressed="false">{{units.4d}} <span class="c">8</span></button>
+      </div>
+    </div>
+    <p id="units-status" class="sr-only" aria-live="polite"></p>
+    <div class="uhead" aria-hidden="true">
+      <span>{{units.th.n}}</span><span>{{units.th.name}}</span><span>{{units.th.dist}}</span><span class="r">{{units.th.constr}}</span><span class="r">{{units.th.util}}</span><span class="r">{{units.th.sol}}</span><span>{{units.th.gar}}</span><span></span>
+    </div>
+    <ol class="units" id="units">
+{{units.rows}}
+    </ol>
+    <p class="cap">{{units.note}}</p>
+  </div>
+</section>
+
+<section class="sec sec-gal" aria-label="{{gal.note}}">
+  <figure class="g1 rv">
+    <picture><source srcset="/assets/img/interior-cocina.webp" type="image/webp"><img src="/assets/img/interior-cocina.jpg" alt="{{gal.alt1}}" loading="lazy" decoding="async" width="1589" height="730"></picture>
+    <figcaption>{{gal.cap1}}</figcaption>
+  </figure>
+  <div class="wrap">
+    <div class="gal">
+      <figure class="g2 rv"><picture><source srcset="/assets/img/interior-salon.webp" type="image/webp"><img src="/assets/img/interior-salon.jpg" alt="{{gal.alt2}}" loading="lazy" decoding="async" width="1475" height="488"></picture></figure>
+      <figure class="g3 rv"><picture><source srcset="/assets/img/aerea-2.webp" type="image/webp"><img src="/assets/img/aerea-2.jpg" alt="{{gal.alt3}}" loading="lazy" decoding="async" width="837" height="575"></picture></figure>
+      <figure class="g4 rv"><picture><source srcset="/assets/img/dormitorio.webp" type="image/webp"><img src="/assets/img/dormitorio.jpg" alt="{{gal.alt4}}" loading="lazy" decoding="async" width="622" height="940"></picture></figure>
+      <div class="gq rv"><p class="serif it">{{gal.quote}}</p></div>
+    </div>
+    <p class="cap">{{gal.note}}</p>
+  </div>
+</section>
+
+<section class="sec dark" id="calidades" aria-labelledby="t-calidades">
+  <div class="wrap">
+    <div class="manif rv">
+      <p class="lbl amber">{{qual.lbl}}</p>
+      <h2 class="h2 serif" id="t-calidades">{{qual.h2}}</h2>
+      <div class="stack"><p class="body">{{qual.p}}</p></div>
+    </div>
+    <div class="qual">
+      <div class="q rv"><span class="b">{{q1.b}}</span><span class="d serif">{{q1.d}}</span><span class="s">{{q1.s}}</span></div>
+      <div class="q rv"><span class="b">{{q2.b}}</span><span class="d serif">{{q2.d}}</span><span class="s">{{q2.s}}</span></div>
+      <div class="q rv"><span class="b">{{q3.b}}</span><span class="d serif">{{q3.d}}</span><span class="s">{{q3.s}}</span></div>
+      <div class="q rv"><span class="b">{{q4.b}}</span><span class="d serif">{{q4.d}}</span><span class="s">{{q4.s}}</span></div>
+      <div class="q rv"><span class="b">{{q5.b}}</span><span class="d serif">{{q5.d}}</span><span class="s">{{q5.s}}</span></div>
+      <div class="q rv"><span class="b">{{q6.b}}</span><span class="d serif">{{q6.d}}</span><span class="s">{{q6.s}}</span></div>
+      <div class="q rv"><span class="b">{{q7.b}}</span><span class="d serif">{{q7.d}}</span><span class="s">{{q7.s}}</span></div>
+      <div class="q rv"><span class="b">{{q8.b}}</span><span class="d serif">{{q8.d}}</span><span class="s">{{q8.s}}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="ubicacion" aria-labelledby="t-ubicacion">
+  <div class="wrap loc">
+    <div class="rv">
+      <p class="lbl acc">{{loc.lbl}}</p>
+      <h2 class="h2 serif h2-gap-s" id="t-ubicacion">{{loc.h2}}</h2>
+      <p class="body">{{loc.p}}</p>
+    </div>
+    <ul class="dist rv">
+      <li><span>{{loc.d1}}</span><span class="km serif">{{loc.km1}}</span></li>
+      <li><span>{{loc.d2}}</span><span class="km serif">{{loc.km2}}</span></li>
+      <li><span>{{loc.d3}}</span><span class="km serif">{{loc.km3}}</span></li>
+    </ul>
+    <div class="ruler rv">
+      <svg viewBox="0 0 1152 190" width="100%" role="img" aria-label="{{loc.svg}}">
+        <line x1="40" y1="150" x2="1112" y2="150" stroke="#1E2429" stroke-width="1"/>
+        <g stroke="#9AA4AC" stroke-width="1"><line x1="240" y1="146" x2="240" y2="154"/><line x1="440" y1="146" x2="440" y2="154"/><line x1="640" y1="146" x2="640" y2="154"/><line x1="840" y1="146" x2="840" y2="154"/><line x1="1040" y1="146" x2="1040" y2="154"/></g>
+        <g font-family="Jost, sans-serif" font-size="13" fill="#66717B" text-anchor="middle"><text x="240" y="178">1 km</text><text x="440" y="178">2 km</text><text x="640" y="178">3 km</text><text x="840" y="178">4 km</text><text x="1040" y="178">5 km</text></g>
+        <circle cx="40" cy="150" r="7" fill="#1E2429"/>
+        <text x="40" y="118" font-family="Jost, sans-serif" font-size="12" letter-spacing="3" fill="#1E2429">BIERA</text>
+        <g stroke="#56697A" stroke-width="1" fill="#56697A"><circle cx="360" cy="150" r="5"/><line x1="360" y1="145" x2="360" y2="74"/><circle cx="740" cy="150" r="5"/><line x1="740" y1="145" x2="740" y2="44"/><circle cx="1000" cy="150" r="5"/><line x1="1000" y1="145" x2="1000" y2="74"/></g>
+        <g font-family="Cormorant Garamond, serif" fill="#1E2429">
+          <text x="360" y="62" font-size="22" text-anchor="middle">{{loc.d1}}</text><text x="360" y="34" font-size="30" text-anchor="middle">{{loc.km1}}</text>
+          <text x="740" y="32" font-size="22" text-anchor="middle">{{loc.d2}}</text><text x="740" y="6" font-size="30" text-anchor="middle" dominant-baseline="hanging">{{loc.km2}}</text>
+          <text x="1000" y="62" font-size="22" text-anchor="middle">{{loc.d3}}</text><text x="1000" y="34" font-size="30" text-anchor="middle">{{loc.km3}}</text>
+        </g>
+      </svg>
+      <p class="cap">{{loc.note}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto" aria-labelledby="t-contacto">
+  <div class="cl">
+    <div class="cl-in">
+      <div class="stack rv">
+        <p class="lbl">{{con.lbl}}</p>
+        <h2 class="h2 serif it" id="t-contacto">{{con.h2}}</h2>
+        <p class="cl-lede">{{con.p}}</p>
+      </div>
+      <div class="stack rv">
+        <div>
+          <p class="lbl who">{{con.who}}</p>
+          <a class="phone serif" href="tel:+34640512434" data-track="contacto-llamar">640 51 24 34</a>
+        </div>
+        <div class="ctas ctas-0">
+          <a class="btn btn-light" href="tel:+34640512434" data-track="contacto-llamar-btn">{{cta.call}}</a>
+          <a class="btn btn-ghost" href="https://wa.me/34640512434" data-wa data-track="contacto-whatsapp" rel="noopener">{{cta.wa}}</a>
+        </div>
+        <div class="office">
+          <div><p class="lbl-s">{{con.office}}</p><a href="tel:+34601704111">601 704 111</a><br>info@jdleon.com</div>
+          <div><p class="lbl-s">{{con.addr}}</p>Av. de Madrid, 21 bajo<br>30500 Molina de Segura</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cr" id="solicitud">
+    <div class="cr-in">
+      <p class="lbl acc">{{cta.info}}</p>
+      <p class="trust">{{con.trust}}</p>
+      <p class="pick" id="pick" hidden>{{con.pick}} <b id="pick-t"></b> · <button type="button" class="u" id="pick-x">{{con.pick_change}}</button></p>
+      <form class="form" id="lead" action="{{form_action}}" method="post" novalidate>
+        <div class="f"><label for="nombre">{{f.name}}</label><input id="nombre" name="nombre" type="text" autocomplete="name" autocapitalize="words" enterkeyhint="next" required maxlength="120" placeholder=" "></div>
+        <div class="f"><label for="tel">{{f.tel}}</label><input id="tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" enterkeyhint="next" required maxlength="30" placeholder=" "></div>
+        <div class="f full"><label for="viv">{{f.unit}}</label>
+          <select id="viv" name="vivienda">
+            <option value="">{{f.unit.none}}</option>
+            <optgroup label="{{f.unit.g1}}"><option value="3d">{{f.unit.3d}}</option><option value="4d">{{f.unit.4d}}</option></optgroup>
+            <optgroup label="{{f.unit.g2}}">
+{{units.options}}
+            </optgroup>
+          </select></div>
+        <fieldset class="f full radios"><legend>{{f.channel}}</legend>
+          <label><input type="radio" name="canal" value="llamada" checked><span>{{f.ch.call}}</span></label>
+          <label><input type="radio" name="canal" value="whatsapp"><span>{{f.ch.wa}}</span></label>
+        </fieldset>
+        <details class="f full more"><summary>{{f.more}}</summary>
+          <div class="more-in">
+            <div class="f"><label for="email">{{f.email}} <span class="opt">{{f.opt}}</span></label><input id="email" name="email" type="email" autocomplete="email" maxlength="160" placeholder=" "></div>
+            <div class="f"><label for="cuando">{{f.when}}</label>
+              <select id="cuando" name="plazo"><option value="" selected>{{f.when.none}}</option><option value="pronto">{{f.when.soon}}</option><option value="3-6m">{{f.when.mid}}</option><option value="despues">{{f.when.later}}</option></select></div>
+            <div class="f full"><label for="msg">{{f.msg}} <span class="opt">{{f.opt}}</span></label><textarea id="msg" name="mensaje" maxlength="2000"></textarea></div>
+          </div>
+        </details>
+        <div class="hp" aria-hidden="true"><label for="web">Web</label><input id="web" name="web" type="text" tabindex="-1" autocomplete="off"></div>
+        <input type="hidden" name="origen" id="origen" value="directo">
+        <input type="hidden" name="idioma" value="{{lang_uc}}">
+        <label class="chk f full"><input type="checkbox" name="privacidad" value="si" required><span>{{f.priv}}</span></label>
+        <p class="priv-mini f full">{{f.priv_mini}} <button type="button" class="u" id="priv-more">{{f.priv_more}}</button></p>
+        <p class="err" id="err" role="alert" hidden></p>
+        <div class="f full"><button class="btn btn-ink" type="submit" id="send">{{cta.send}}</button></div>
+      </form>
+      <div class="ok" id="ok" role="status" hidden tabindex="-1">
+        <h3 class="serif it ok-t">{{f.ok.h}}</h3>
+        <p class="ok-p" id="ok-p"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="credits" aria-label="{{team.lbl}}">
+  <div class="wrap">
+    <p class="lbl acc">{{team.lbl}}</p>
+    <div class="team rv">
+      <div><b>{{team.1k}}</b><span class="serif">{{team.1v}}</span></div>
+      <div><b>{{team.2k}}</b><span class="serif">{{team.2v}}</span></div>
+      <div><b>{{team.3k}}</b><span class="serif">{{team.3v}}</span></div>
+      <div><b>{{team.4k}}</b><span class="serif">{{team.4v}}</span></div>
+      <div><b>{{team.5k}}</b><span class="serif">{{team.5v}}</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="stack-s">
+        <div class="wordmark light">{{brand}}</div>
+        <div class="foot-sells">{{foot.sells}}</div>
+      </div>
+      <div class="foot-addr">{{foot.addr}}</div>
+    </div>
+    <details id="aviso"><summary>{{foot.legal_t}}</summary><p>{{foot.legal}}</p></details>
+    <details id="privacidad"><summary>{{foot.priv_t}}</summary><p>{{foot.priv}}</p></details>
+    <div class="foot-bot">
+      <span>{{foot.bot}}</span>
+      <nav class="lang" aria-label="{{lang.label}}"><a href="/" hreflang="es"{{cur.es}}>ES</a><a href="/en/" hreflang="en"{{cur.en}}>EN</a><a href="/fr/" hreflang="fr"{{cur.fr}}>FR</a></nav>
+      <span>© 2026 Edificio Biera</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="{{con.lbl}}">
+  <a href="tel:+34640512434" data-track="barra-llamar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>{{bar.call}}</a>
+  <a href="https://wa.me/34640512434" data-wa data-track="barra-whatsapp" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.2 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.3 0 .5a6.6 6.6 0 0 0 3.1 2.8c.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.4.5a2 2 0 0 1-1.6 1.9c-.9.2-2.3-.2-3.9-1.3a10.4 10.4 0 0 1-3.2-3.6c-.6-1.2-.5-2.5-.1-3.5z" fill="currentColor"/></svg>{{bar.wa}}</a>
+  <a class="main" href="#solicitud" data-track="barra-info">{{bar.main}}</a>
+</nav>
+
+<dialog class="plan" id="plan" aria-labelledby="plan-t">
+  <div class="plan-in">
+    <div class="plan-head">
+      <span class="serif plan-t" id="plan-t"></span>
+      <button class="btn btn-ghost btn-sm" type="button" id="plan-close">{{cta.close}}</button>
+    </div>
+    <div class="plan-scroll" tabindex="0">
+      <picture><source id="plan-src" srcset="" type="image/webp"><img id="plan-img" src="" alt="" width="1400" height="990" decoding="async"></picture>
+    </div>
+    <p class="plan-hint">{{units.plan_hint}}</p>
+    <div class="plan-acts">
+      <a class="btn btn-light btn-sm" href="#solicitud" id="plan-want">{{cta.info}}</a>
+      <a class="u plan-full" id="plan-full" href="" target="_blank" rel="noopener">{{cta.open_plan}}</a>
+    </div>
+  </div>
+</dialog>
+
+</div>
+<script>window.BIERA={{js_json}};</script>
+<script src="/assets/js/main.js?v={{v}}" defer></script>
+</body>
+</html>

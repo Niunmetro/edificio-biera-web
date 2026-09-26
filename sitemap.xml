@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://edificiobiera.com/</loc><lastmod>2026-09-26</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://edificiobiera.com/</loc><lastmod>2026-09-26</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://edificiobiera.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://edificiobiera.com/en/"/><xhtml:link rel="alternate" hreflang="fr" href="https://edificiobiera.com/fr/"/></url>
+  <url><loc>https://edificiobiera.com/en/</loc><lastmod>2026-09-26</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://edificiobiera.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://edificiobiera.com/en/"/><xhtml:link rel="alternate" hreflang="fr" href="https://edificiobiera.com/fr/"/></url>
+  <url><loc>https://edificiobiera.com/fr/</loc><lastmod>2026-09-26</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://edificiobiera.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://edificiobiera.com/en/"/><xhtml:link rel="alternate" hreflang="fr" href="https://edificiobiera.com/fr/"/></url>
 </urlset>
