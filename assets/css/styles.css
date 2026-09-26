@@ -658,3 +658,6 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
 }
 
 .mk-left .mk-lbl{left:auto;right:14px;text-align:right}
+
+/* La cabecera fija y la barra móvil deben quedar por encima del mapa (Leaflet usa z-index hasta 1000) */
+.hdr{z-index:1200}.mbar{z-index:1200}
