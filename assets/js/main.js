@@ -12,8 +12,10 @@
   // Origen de la visita (?o=valla, ?o=lona, ?o=idealista…), se conserva durante la sesión
   var origen = 'directo';
   try {
-    var q = new URLSearchParams(location.search).get('o');
-    if (q) { origen = q.replace(/[^a-z0-9_-]/gi, '').slice(0, 30) || 'directo'; sessionStorage.setItem('biera_o', origen); }
+    var sp = new URLSearchParams(location.search), q = sp.get('o');
+    // Campañas con UTM (utm_source/medium/campaign) → origen "utm:fuente/medio/campaña"
+    if (!q && sp.get('utm_source')) q = 'utm:' + ['utm_source', 'utm_medium', 'utm_campaign'].map(function (k) { return (sp.get(k) || '').replace(/[^a-z0-9_-]/gi, '').slice(0, 20); }).filter(Boolean).join('/');
+    if (q) { origen = q.replace(/[^a-z0-9_:\/-]/gi, '').slice(0, 64) || 'directo'; sessionStorage.setItem('biera_o', origen); }
     else { origen = sessionStorage.getItem('biera_o') || (document.referrer && document.referrer.indexOf(location.hostname) < 0 ? 'web:' + new URL(document.referrer).hostname : 'directo'); }
   } catch (e) {}
   try { var _y = new URLSearchParams(location.search).get('y'); if (_y && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) { document.querySelector('.pg').style.marginTop = (-Math.min(20000, +_y || 0)) + 'px'; } } catch (e) {}
@@ -204,9 +206,22 @@
     if (!reduce && 'IntersectionObserver' in window) new IntersectionObserver(function (e) { e[0].isIntersecting ? go() : vid.pause(); }, { threshold: .25 }).observe(vid);
     sync();
   }
-})();
 
   // FAQ: registrar qué preguntas se abren
   document.querySelectorAll('.fq').forEach(function (d, i) {
     d.addEventListener('toggle', function () { if (d.open) track('faq', { q: i + 1 }); });
   });
+
+  // Enlace directo a una vivienda (#v06): abre su plano (escritorio) o su ficha (móvil)
+  function openFromHash() {
+    var m = /^#v0?(\d{1,2})$/.exec(location.hash);
+    if (!m || !U[m[1]]) return;
+    var row = document.querySelector('.row[data-v="' + m[1] + '"]');
+    if (!row) return;
+    row.scrollIntoView({ block: 'center' });
+    if (isCompact.matches) { if (!row.classList.contains('open')) row.querySelector('.rh').click(); }
+    else openPlan(m[1]);
+  }
+  window.addEventListener('hashchange', openFromHash);
+  setTimeout(openFromHash, 500);
+})();
