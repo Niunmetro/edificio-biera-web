@@ -1,0 +1,23 @@
+{
+  "name": "biera-promo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Vídeo promocional Edificio Biera (Remotion)",
+  "scripts": {
+    "studio": "npx remotion studio src/index.ts",
+    "render:h": "npx remotion render src/index.ts BieraH out/biera-h.mp4 --codec=h264 --crf=20",
+    "render:v": "npx remotion render src/index.ts BieraV out/biera-v.mp4 --codec=h264 --crf=20"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.483",
+    "@remotion/renderer": "4.0.483",
+    "@remotion/transitions": "4.0.483",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.483"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "typescript": "5.9.3"
+  }
+}

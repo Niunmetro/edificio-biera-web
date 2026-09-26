@@ -105,7 +105,7 @@
   "gal.note": "Infografías orientativas, sin carácter contractual. Mobiliario y decoración no incluidos; la cocina se entrega sin amueblar.",
   "qual.lbl": "Calidades",
   "qual.h2": "Materiales que se notan al tacto.",
-  "qual.p": "Suelos y baños de Porcelanosa Grupo, mecanismos JUNG y vidrio Guardian.",
+  "qual.p": "Suelos y baños de Porcelanosa Grupo, mecanismos JUNG y vidrio Guardian. Los acabados están definidos en el proyecto; puedes verlos en el showroom de Porcelanosa, en una visita que organiza JD León.",
   "q1.b": "Suelos",
   "q1.d": "Linkfloor de L’Antic Colonial",
   "q1.s": "Pavimento vinílico de Porcelanosa Grupo en lamas de 22,8 × 180 cm.",
@@ -143,7 +143,7 @@
   "loc.svg": "Distancias desde el Edificio Biera: 1,6 km al Hospital Mesa del Castillo, 3,5 km a la Estación del Carmen y 4,8 km al Hospital Virgen de la Arrixaca",
   "con.lbl": "Visitas e información",
   "con.h2": "Hablemos de tu casa.",
-  "con.p": "Daniel León te explica cada vivienda, resuelve tus dudas y organiza tu visita a la obra.",
+  "con.p": "Daniel León te explica cada vivienda, resuelve tus dudas y organiza tu visita a la obra y al showroom de Porcelanosa.",
   "con.who": "Daniel León · JD León Inmobiliaria",
   "con.office": "Oficina",
   "con.addr": "Dirección",
@@ -237,7 +237,7 @@
   "faq.q2": "¿Todas las viviendas tienen aparcamiento?",
   "faq.a2": "Sí. Seis viviendas (de la 1 a la 5 y la 8) tienen garaje cerrado en el sótano, con escalera propia; las otras cuatro cuentan con plaza de aparcamiento. La tabla de viviendas indica cuál corresponde a cada una.",
   "faq.q3": "¿La cocina se entrega amueblada?",
-  "faq.a3": "No. La cocina se entrega sin amueblar, para que cada propietario elija el diseño y el equipamiento que prefiera.",
+  "faq.a3": "No. La cocina se entrega sin amueblar, para que cada propietario elija el diseño y el equipamiento que prefiera. Los acabados de suelos y baños están definidos en el proyecto y pueden verse en el showroom de Porcelanosa.",
   "faq.q4": "¿Qué incluye el precio?",
   "faq.a4": "Cada vivienda se vende completa: sus tres plantas, el solárium privado y el garaje cerrado o la plaza de aparcamiento que le corresponde. Los precios se indican sin IVA; el IVA aplicable (10 %) no está incluido.",
   "faq.q5": "¿Cuándo se entregan las viviendas?",
@@ -270,5 +270,6 @@
   "u.gar.box26": "Garaje cerrado, 26 m², con escalera propia",
   "u.gar.box25": "Garaje cerrado, 25 m², con escalera propia",
   "u.short.box26": "Garaje cerrado",
-  "u.short.box25": "Garaje cerrado"
+  "u.short.box25": "Garaje cerrado",
+  "logos.lbl": "Participan en el proyecto"
 }

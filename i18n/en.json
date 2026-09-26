@@ -105,7 +105,7 @@
   "gal.note": "Illustrative CGIs, not contractual. Furniture and décor not included; kitchen units are not included.",
   "qual.lbl": "Specifications",
   "qual.h2": "Materials you can feel.",
-  "qual.p": "Floors and bathrooms by Porcelanosa Grupo, JUNG switches and Guardian glass.",
+  "qual.p": "Floors and bathrooms by Porcelanosa Grupo, JUNG switches and Guardian glass. The finishes are defined in the project; you can see them at the Porcelanosa showroom on a visit arranged by JD León.",
   "q1.b": "Flooring",
   "q1.d": "Linkfloor by L’Antic Colonial",
   "q1.s": "Porcelanosa Grupo vinyl flooring in 22.8 × 180 cm planks.",
@@ -143,7 +143,7 @@
   "loc.svg": "Distances from Edificio Biera: 1.6 km to Hospital Mesa del Castillo, 3.5 km to Estación del Carmen and 4.8 km to Hospital Virgen de la Arrixaca",
   "con.lbl": "Viewings and information",
   "con.h2": "Let’s talk about your home.",
-  "con.p": "Daniel León walks you through each home, answers your questions and arranges your visit to the site.",
+  "con.p": "Daniel León walks you through each home, answers your questions and arranges your visit to the site and to the Porcelanosa showroom.",
   "con.who": "Daniel León · JD León Inmobiliaria",
   "con.office": "Office",
   "con.addr": "Address",
@@ -237,7 +237,7 @@
   "faq.q2": "Does every home have parking?",
   "faq.a2": "Yes. Six homes (1 to 5 and 8) have a private closed garage in the basement with its own staircase; the other four come with a parking space. The homes table shows which one belongs to each.",
   "faq.q3": "Is the kitchen fitted?",
-  "faq.a3": "No. The kitchen is delivered unfitted, so each owner can choose the design and appliances they prefer.",
+  "faq.a3": "No. The kitchen is delivered unfitted, so each owner can choose the design and appliances they prefer. Floor and bathroom finishes are defined in the project and can be seen at the Porcelanosa showroom.",
   "faq.q4": "What does the price include?",
   "faq.a4": "Each home is sold as a whole: its three floors, the private roof terrace and the closed garage or parking space that belongs to it. Prices are quoted before VAT; the applicable VAT (10%) is not included.",
   "faq.q5": "When will the homes be delivered?",
@@ -270,5 +270,6 @@
   "u.gar.box26": "Private garage (26 m²) with its own staircase",
   "u.gar.box25": "Private garage (25 m²) with its own staircase",
   "u.short.box26": "Private garage",
-  "u.short.box25": "Private garage"
+  "u.short.box25": "Private garage",
+  "logos.lbl": "Project partners"
 }

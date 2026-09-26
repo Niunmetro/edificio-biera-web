@@ -105,7 +105,7 @@
   "gal.note": "Visuels non contractuels. Mobilier et décoration non compris ; la cuisine est livrée non équipée.",
   "qual.lbl": "Prestations",
   "qual.h2": "Des matériaux qui se révèlent au toucher.",
-  "qual.p": "Sols et salles de bains Porcelanosa Grupo, appareillage JUNG et vitrage Guardian.",
+  "qual.p": "Sols et salles de bains Porcelanosa Grupo, appareillage JUNG et vitrage Guardian. Les finitions sont définies dans le projet ; vous pouvez les voir au showroom Porcelanosa lors d’une visite organisée par JD León.",
   "q1.b": "Sols",
   "q1.d": "Linkfloor de L’Antic Colonial",
   "q1.s": "Sol vinyle Porcelanosa Grupo en lames de 22,8 × 180 cm.",
@@ -143,7 +143,7 @@
   "loc.svg": "Distances depuis l’Edificio Biera : 1,6 km de l’Hospital Mesa del Castillo, 3,5 km de l’Estación del Carmen et 4,8 km de l’Hospital Virgen de la Arrixaca",
   "con.lbl": "Visites et informations",
   "con.h2": "Parlons de votre future maison.",
-  "con.p": "Daniel León vous présente chaque logement, répond à vos questions et organise votre visite du chantier.",
+  "con.p": "Daniel León vous présente chaque logement, répond à vos questions et organise votre visite du chantier et du showroom Porcelanosa.",
   "con.who": "Daniel León · JD León Inmobiliaria",
   "con.office": "Agence",
   "con.addr": "Adresse",
@@ -237,7 +237,7 @@
   "faq.q2": "Tous les logements ont-ils un stationnement ?",
   "faq.a2": "Oui. Six logements (1 à 5 et 8) disposent d’un box fermé en sous-sol, avec escalier privatif ; les quatre autres ont une place de parking. Le tableau des logements indique ce qui correspond à chacun.",
   "faq.q3": "La cuisine est-elle équipée ?",
-  "faq.a3": "Non. La cuisine est livrée non équipée, pour que chaque propriétaire choisisse le design et l’équipement qu’il préfère.",
+  "faq.a3": "Non. La cuisine est livrée non équipée, pour que chaque propriétaire choisisse le design et l’équipement qu’il préfère. Les finitions des sols et des salles de bains sont définies dans le projet et peuvent être vues au showroom Porcelanosa.",
   "faq.q4": "Que comprend le prix ?",
   "faq.a4": "Chaque logement est vendu dans son ensemble : ses trois niveaux, le solarium privé et le box fermé ou la place de parking qui lui correspond. Les prix s’entendent hors TVA ; la TVA applicable (10 %) n’est pas incluse.",
   "faq.q5": "Quand les logements seront-ils livrés ?",
@@ -270,5 +270,6 @@
   "u.gar.box26": "Box fermé, 26 m², avec escalier privatif",
   "u.gar.box25": "Box fermé, 25 m², avec escalier privatif",
   "u.short.box26": "Box fermé",
-  "u.short.box25": "Box fermé"
+  "u.short.box25": "Box fermé",
+  "logos.lbl": "Ils participent au projet"
 }
