@@ -51,6 +51,20 @@
       "short": "Centro de Murcia"
     },
     {
+      "id": "comercial",
+      "cat": "comercio",
+      "lat": 37.9461,
+      "lon": -1.1328,
+      "km": 1.3,
+      "drive": 2,
+      "walk": 18,
+      "name": {
+        "es": "Zona comercial de Santo Ángel · Mercadona, Burger King, supermercados",
+        "en": "Santo Ángel shopping area · Mercadona, Burger King, supermarkets",
+        "fr": "Zone commerciale de Santo Ángel · Mercadona, Burger King, supermarchés"
+      }
+    },
+    {
       "id": "gym",
       "cat": "deporte",
       "lat": 37.95905,
@@ -62,6 +76,48 @@
         "es": "Central Training Santa Catalina · artes marciales y cross training",
         "en": "Central Training Santa Catalina · martial arts & cross training",
         "fr": "Central Training Santa Catalina · arts martiaux et cross training"
+      }
+    },
+    {
+      "id": "makro",
+      "cat": "comercio",
+      "lat": 37.96063,
+      "lon": -1.13311,
+      "km": 0.3,
+      "drive": null,
+      "walk": 4,
+      "name": {
+        "es": "Makro · por el paso subterráneo bajo la autovía",
+        "en": "Makro · via the underpass beneath the motorway",
+        "fr": "Makro · par le passage souterrain sous l’autoroute"
+      }
+    },
+    {
+      "id": "ies",
+      "cat": "educacion",
+      "lat": 37.96188,
+      "lon": -1.13326,
+      "km": 0.3,
+      "drive": null,
+      "walk": 4,
+      "name": {
+        "es": "IES Ingeniero de la Cierva · instituto público",
+        "en": "IES Ingeniero de la Cierva · state secondary school",
+        "fr": "IES Ingeniero de la Cierva · lycée public"
+      }
+    },
+    {
+      "id": "rondasur",
+      "cat": "barrio",
+      "lat": 37.9657,
+      "lon": -1.13264,
+      "km": 1.0,
+      "drive": 1,
+      "walk": 13,
+      "name": {
+        "es": "Ronda Sur · comercios y servicios",
+        "en": "Ronda Sur · shops and services",
+        "fr": "Ronda Sur · commerces et services"
       }
     },
     {
