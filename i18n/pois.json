@@ -7,8 +7,8 @@
     {
       "id": "santoangel",
       "cat": "barrio",
-      "lat": 37.9461,
-      "lon": -1.1328,
+      "lat": 37.9452,
+      "lon": -1.1318,
       "km": 1.7,
       "drive": 3,
       "name": {
@@ -22,9 +22,9 @@
     {
       "id": "alberca",
       "cat": "barrio",
-      "lat": 37.944,
-      "lon": -1.142,
-      "km": 3.1,
+      "lat": 37.945,
+      "lon": -1.1422,
+      "km": 2.0,
       "drive": 4,
       "name": {
         "es": "La Alberca · zona residencial",
