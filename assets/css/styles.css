@@ -656,3 +656,5 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
   .hdr .nav::-webkit-scrollbar{display:none}
   .hdr .nav a{font-size:11px;letter-spacing:.16em;min-height:50px;opacity:.8}
 }
+
+.mk-left .mk-lbl{left:auto;right:14px;text-align:right}

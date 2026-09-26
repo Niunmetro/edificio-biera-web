@@ -30,7 +30,8 @@
         "en": "La Alberca · residential area",
         "fr": "La Alberca · zone résidentielle"
       },
-      "short": "La Alberca"
+      "short": "La Alberca",
+      "side": "left"
     },
     {
       "id": "gym",

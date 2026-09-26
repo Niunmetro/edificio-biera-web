@@ -58,7 +58,7 @@ def poi_rows(d):
     return "\n".join(out)
 
 def poi_json(d):
-    return {"center": pois["center"], "items": [{"lat": p["lat"], "lon": p["lon"], "km": p["km"], "cat": p.get("cat", ""), "short": p.get("short", ""), "name": p["name"][d["lang"]], "label": poi_label(p, d)} for p in pois["items"]]}
+    return {"center": pois["center"], "items": [{"lat": p["lat"], "lon": p["lon"], "km": p["km"], "cat": p.get("cat", ""), "short": p.get("short", ""), "side": p.get("side", ""), "name": p["name"][d["lang"]], "label": poi_label(p, d)} for p in pois["items"]]}
 
 def faq_ld(d):
     strip = lambda s: re.sub(r"<[^>]+>", "", s).replace("\u00a0", " ")
