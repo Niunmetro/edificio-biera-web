@@ -671,5 +671,5 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
 
 /* Logotipos bajo "Quién firma el proyecto" */
 .team>div{display:flex;flex-direction:column;gap:6px}
-.team .tlogo{height:56px;width:auto;max-width:140px;object-fit:contain;object-position:left;margin-top:12px;mix-blend-mode:multiply;opacity:.92}
+.team .tlogo{height:64px;width:auto;max-width:150px;object-fit:contain;object-position:left;margin-top:14px;mix-blend-mode:multiply;opacity:.92}
 @media (max-width:760px){.team .tlogo{height:46px;max-width:120px;margin-top:8px}}
