@@ -35,7 +35,6 @@ export type Layout = {
   hero: number;
   small: number;
   maxText: number;
-  scrimStop: number; // % de altura que cubre el degradado
 };
 
 export const LAYOUT: Record<Orientation, Layout> = {
@@ -47,9 +46,8 @@ export const LAYOUT: Record<Orientation, Layout> = {
     label: 22,
     headline: 80,
     hero: 104,
-    small: 22,
+    small: 24,
     maxText: 1180,
-    scrimStop: 58,
   },
   v: {
     width: 1080,
@@ -60,8 +58,7 @@ export const LAYOUT: Record<Orientation, Layout> = {
     label: 26,
     headline: 86,
     hero: 100,
-    small: 26,
+    small: 28,
     maxText: 920,
-    scrimStop: 62,
   },
 };
