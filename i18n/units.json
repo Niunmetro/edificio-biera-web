@@ -1,7 +1,7 @@
 [
   {"v": 1,  "d": 4, "util": "141,13", "constr": "165,41", "sol": "21,35", "gar": "gar.doble54", "orient": "sur",   "dist": "d4a"},
-  {"v": 2,  "d": 4, "util": "140,00", "constr": "157,56", "sol": "21,25", "gar": "gar.box",     "orient": "sur",   "dist": "d4a"},
-  {"v": 3,  "d": 4, "util": "139,11", "constr": "158,86", "sol": "20,70", "gar": "gar.box",     "orient": "sur",   "dist": "d4a"},
+  {"v": 2,  "d": 4, "util": "140,00", "constr": "157,56", "sol": "21,25", "gar": "gar.box26",     "orient": "sur",   "dist": "d4a"},
+  {"v": 3,  "d": 4, "util": "139,11", "constr": "158,86", "sol": "20,70", "gar": "gar.box25",     "orient": "sur",   "dist": "d4a"},
   {"v": 4,  "d": 4, "util": "138,61", "constr": "158,40", "sol": "21,25", "gar": "gar.box28",   "orient": "sur",   "dist": "d4a"},
   {"v": 5,  "d": 4, "util": "133,89", "constr": "156,19", "sol": "20,70", "gar": "gar.box28",   "orient": "suresq","dist": "d4a"},
   {"v": 6,  "d": 3, "util": "96,70",  "constr": "115,23", "sol": "37,60", "gar": "gar.plaza",   "orient": "este",  "dist": "d3a"},

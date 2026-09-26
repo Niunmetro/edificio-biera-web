@@ -90,6 +90,7 @@
     current = v;
     document.getElementById('plan-t').textContent = T['units.viv'] + ' ' + two(v) + ' · ' + (u.name || '');
     document.getElementById('plan-s').textContent = (u.dist || '') + ' · ' + (u.constr || '') + '\u00a0m²';
+    var pn = document.getElementById('plan-note'); if (pn) { pn.textContent = u.note || ''; pn.hidden = !u.note; }
     var img = document.getElementById('plan-img'), src = document.getElementById('plan-src');
     src.srcset = '/assets/img/plano-v' + v + '.webp';
     img.src = '/assets/img/plano-v' + v + '.jpg';

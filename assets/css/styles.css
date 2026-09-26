@@ -664,3 +664,7 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
 .poi-g{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--mut);padding:18px 0 6px}
 .poi-g:first-child{padding-top:0}
 .poi-g+.poi-i{border-top:0}
+
+/* Nota por vivienda (planos 6 y 7: cocina abierta) */
+.row .unote{grid-column:1/-1;font-size:13px;line-height:1.5;color:var(--mut);font-weight:400;padding-top:8px;max-width:70ch}
+.plan-note{display:block;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.02em;color:#C9C2B7;margin-top:6px;max-width:60ch}

@@ -39,6 +39,7 @@ f"""      <li class="row" data-d="{u['d']}" data-v="{u['v']}">
           <span class="m2 r"><b>{d['units.th.sol']}</b>{num(u['sol'], d['lang'])}\u00a0m²</span>
           <span class="gar"><b>{d['units.th.gar']}</b>{d['u.' + u['gar']]}</span>
           <span class="acts"><button class="btn btn-line btn-sm" type="button" data-plan="{u['v']}" aria-haspopup="dialog">{d['cta.plan']}</button></span>
+{('          <span class="unote">' + d['u.note.' + str(u['v'])] + '</span>') if d.get('u.note.' + str(u['v'])) else ''}
         </div>
       </li>""")
     return "\n".join(out)
@@ -75,7 +76,7 @@ def js_json(d):
     j = {
         "lang": d["lang"],
         "action": FORM_ACTION,
-        "units": {str(u["v"]): {"name": d[f"u.name.{u['v']}"], "dist": d["u." + u["dist"]], "constr": num(u["constr"], d["lang"]), "d": u["d"]} for u in units},
+        "units": {str(u["v"]): {"name": d[f"u.name.{u['v']}"], "dist": d["u." + u["dist"]], "constr": num(u["constr"], d["lang"]), "d": u["d"], "note": d.get(f"u.note.{u['v']}", "")} for u in units},
         "pois": poi_json(d),
         "t": {k: d[k] for k in ("map.here", "f.ok.p_wa", "f.err.name", "f.err.tel", "f.err.email", "f.err.priv", "f.err.send", "f.sending", "f.ok.p", "f.ok.ref", "wa.text", "wa.text_unit", "units.count", "units.count1", "units.viv", "units.plan_alt", "cta.plan")},
     }
