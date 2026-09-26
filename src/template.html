@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{lang}}">
+<html lang="{{lang_html}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -13,6 +13,7 @@
 <meta name="theme-color" content="#1E2429">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="{{og_locale}}">
+{{og_alternates}}
 <meta property="og:title" content="{{meta.og_title}}">
 <meta property="og:description" content="{{meta.og_description}}">
 <meta property="og:url" content="https://edificiobiera.com{{path}}">
@@ -60,7 +61,7 @@
     </div>
     <div class="price">
       <span class="lbl">{{hero.from}}</span>
-      <span class="v serif">330.000 € <small>{{hero.vat}}</small></span>
+      <span class="v serif">{{hero.price}} <small>{{hero.vat}}</small></span>
       <span class="sub">{{hero.sub}}</span>
     </div>
     <div class="ctas">
@@ -105,7 +106,7 @@
 
 <section class="sec casa" id="casa" aria-labelledby="t-casa">
   <figure class="bleed rv">
-    <picture><source srcset="/assets/img/aerea-1.webp" type="image/webp"><img src="/assets/img/aerea-1.jpg" alt="{{casa.alt}}" loading="lazy" decoding="async" width="1100" height="540"></picture>
+    <picture><source srcset="/assets/img/foto-aerea-tarde.webp" type="image/webp"><img src="/assets/img/foto-aerea-tarde.jpg" alt="{{casa.alt}}" loading="lazy" decoding="async" width="1448" height="1086"></picture>
   </figure>
   <div class="wrap levels">
     <div class="levels-h rv">
@@ -127,14 +128,17 @@
       <p class="lbl amber">{{video.lbl}}</p>
       <h2 class="h2 serif" id="t-video">{{video.h2}}</h2>
       <p class="body">{{video.p}}</p>
-      <p class="cap">{{video.note}}</p>
     </div>
-    <div class="vframe rv">
-      <video class="vid" autoplay muted loop playsinline preload="metadata" poster="/assets/video/poster.jpg" width="720" height="1280" aria-label="{{video.h2}}">
-        <source src="/assets/video/biera.webm" type="video/webm">
-        <source src="/assets/video/biera.mp4" type="video/mp4">
-      </video>
-    </div>
+    <figure class="vfig rv">
+      <div class="vframe">
+        <video class="vid" id="vid" autoplay muted loop playsinline preload="metadata" poster="/assets/video/poster.jpg" width="720" height="900" aria-label="{{video.h2}}">
+          <source src="/assets/video/biera.webm" type="video/webm">
+          <source src="/assets/video/biera.mp4" type="video/mp4">
+        </video>
+        <button class="vtoggle" type="button" id="vtoggle" aria-label="{{video.pause}}" data-pause="{{video.pause}}" data-play="{{video.play}}"></button>
+      </div>
+      <figcaption class="cap">{{video.note}}</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -169,14 +173,15 @@
   </figure>
   <div class="wrap">
     <div class="gal">
-      <figure class="g2 rv"><picture><source srcset="/assets/img/interior-salon.webp" type="image/webp"><img src="/assets/img/interior-salon.jpg" alt="{{gal.alt2}}" loading="lazy" decoding="async" width="1475" height="488"></picture></figure>
-      <figure class="g3 rv"><picture><source srcset="/assets/img/aerea-2.webp" type="image/webp"><img src="/assets/img/aerea-2.jpg" alt="{{gal.alt3}}" loading="lazy" decoding="async" width="837" height="575"></picture></figure>
-      <figure class="g4 rv"><picture><source srcset="/assets/img/dormitorio.webp" type="image/webp"><img src="/assets/img/dormitorio.jpg" alt="{{gal.alt4}}" loading="lazy" decoding="async" width="622" height="940"></picture></figure>
+      <figure class="gA rv"><picture><source srcset="/assets/img/foto-terraza.webp" type="image/webp"><img src="/assets/img/foto-terraza.jpg" alt="{{gal.a_terraza}}" loading="lazy" decoding="async" width="1254" height="1254"></picture></figure>
+      <figure class="gB rv"><picture><source srcset="/assets/img/foto-cocina.webp" type="image/webp"><img src="/assets/img/foto-cocina.jpg" alt="{{gal.a_cocina}}" loading="lazy" decoding="async" width="1086" height="1448"></picture></figure>
       <div class="gq rv"><p class="serif it">{{gal.quote}}</p></div>
-      <figure class="g5 rv"><picture><source srcset="/assets/img/vid-noche.webp" type="image/webp"><img src="/assets/img/vid-noche.jpg" alt="{{gal.alt5}}" loading="lazy" decoding="async"></picture></figure>
-      <figure class="g5 rv"><picture><source srcset="/assets/img/vid-salon1.webp" type="image/webp"><img src="/assets/img/vid-salon1.jpg" alt="{{gal.alt6}}" loading="lazy" decoding="async"></picture></figure>
-      <figure class="g5 rv"><picture><source srcset="/assets/img/vid-salon2.webp" type="image/webp"><img src="/assets/img/vid-salon2.jpg" alt="{{gal.alt7}}" loading="lazy" decoding="async"></picture></figure>
-      <figure class="g5 rv"><picture><source srcset="/assets/img/vid-tarde.webp" type="image/webp"><img src="/assets/img/vid-tarde.jpg" alt="{{gal.alt8}}" loading="lazy" decoding="async"></picture></figure>
+      <figure class="gC rv"><picture><source srcset="/assets/img/foto-salon.webp" type="image/webp"><img src="/assets/img/foto-salon.jpg" alt="{{gal.a_salon}}" loading="lazy" decoding="async" width="1536" height="1024"></picture></figure>
+      <figure class="gD rv"><picture><source srcset="/assets/img/foto-dormitorio2.webp" type="image/webp"><img src="/assets/img/foto-dormitorio2.jpg" alt="{{gal.a_dorm2}}" loading="lazy" decoding="async" width="1122" height="1402"></picture></figure>
+      <figure class="g5 rv"><picture><source srcset="/assets/img/foto-fachada-noche.webp" type="image/webp"><img src="/assets/img/foto-fachada-noche.jpg" alt="{{gal.a_noche}}" loading="lazy" decoding="async" width="1448" height="1086"></picture></figure>
+      <figure class="g5 rv"><picture><source srcset="/assets/img/foto-bano.webp" type="image/webp"><img src="/assets/img/foto-bano.jpg" alt="{{gal.a_bano}}" loading="lazy" decoding="async" width="1122" height="1402"></picture></figure>
+      <figure class="g5 rv"><picture><source srcset="/assets/img/foto-terraza2.webp" type="image/webp"><img src="/assets/img/foto-terraza2.jpg" alt="{{gal.a_terraza2}}" loading="lazy" decoding="async" width="1536" height="1024"></picture></figure>
+      <figure class="g5 rv"><picture><source srcset="/assets/img/foto-dormitorio.webp" type="image/webp"><img src="/assets/img/foto-dormitorio.jpg" alt="{{gal.a_dorm}}" loading="lazy" decoding="async" width="1448" height="1086"></picture></figure>
     </div>
     <p class="cap">{{gal.note}}</p>
   </div>
@@ -203,11 +208,11 @@
 </section>
 
 <section class="sec" id="ubicacion" aria-labelledby="t-ubicacion">
-  <div class="wrap loc">
-    <div class="rv">
+  <div class="wrap">
+    <div class="manif rv">
       <p class="lbl acc">{{loc.lbl}}</p>
-      <h2 class="h2 serif h2-gap-s" id="t-ubicacion">{{loc.h2}}</h2>
-      <p class="body">{{loc.p}}</p>
+      <h2 class="h2 serif" id="t-ubicacion">{{loc.h2}}</h2>
+      <div class="stack"><p class="body">{{loc.p}}</p></div>
     </div>
     <ul class="dist rv">
       <li><span>{{loc.d1}}</span><span class="km serif">{{loc.km1}}</span></li>
@@ -222,10 +227,10 @@
         <circle cx="40" cy="160" r="7" fill="#1E2429"/>
         <text x="40" y="128" font-family="Jost, sans-serif" font-size="12" letter-spacing="3" fill="#1E2429">BIERA</text>
         <g stroke="#56697A" stroke-width="1" fill="#56697A"><circle cx="360" cy="160" r="5"/><line x1="360" y1="155" x2="360" y2="120"/><circle cx="740" cy="160" r="5"/><line x1="740" y1="155" x2="740" y2="70"/><circle cx="1000" cy="160" r="5"/><line x1="1000" y1="155" x2="1000" y2="120"/></g>
-        <g font-family="Cormorant Garamond, serif" fill="#1E2429" text-anchor="middle">
-          <text x="360" y="84" font-size="30">{{loc.km1}}</text><text x="360" y="110" font-size="20">{{loc.d1}}</text>
-          <text x="740" y="34" font-size="30">{{loc.km2}}</text><text x="740" y="60" font-size="20">{{loc.d2}}</text>
-          <text x="1000" y="84" font-size="30">{{loc.km3}}</text><text x="1000" y="110" font-size="20">{{loc.d3}}</text>
+        <g font-family="Cormorant Garamond, serif" fill="#1E2429" text-anchor="middle" style="font-variant-numeric:lining-nums">
+          <text x="360" y="78" font-size="30">{{loc.km1}}</text><text x="360" y="108" font-size="19">{{loc.d1}}</text>
+          <text x="740" y="28" font-size="30">{{loc.km2}}</text><text x="740" y="58" font-size="19">{{loc.d2}}</text>
+          <text x="1000" y="78" font-size="30">{{loc.km3}}</text><text x="1000" y="108" font-size="19">{{loc.d3}}</text>
         </g>
       </svg>
       <p class="cap">{{loc.note}}</p>
@@ -251,7 +256,7 @@
           <a class="btn btn-ghost" href="https://wa.me/34640512434" data-wa data-track="contacto-whatsapp" rel="noopener">{{cta.wa}}</a>
         </div>
         <div class="office">
-          <div><p class="lbl-s">{{con.office}}</p><a href="tel:+34601704111">601 704 111</a><br>info@jdleon.com</div>
+          <div><p class="lbl-s">{{con.office}}</p><a href="tel:+34601704111">601 704 111</a><br><a href="mailto:info@jdleon.com">info@jdleon.com</a></div>
           <div><p class="lbl-s">{{con.addr}}</p>Av. de Madrid, 21 bajo<br>30500 Molina de Segura</div>
         </div>
       </div>
@@ -328,7 +333,7 @@
     <details id="privacidad"><summary>{{foot.priv_t}}</summary><p>{{foot.priv}}</p></details>
     <div class="foot-bot">
       <span>{{foot.bot}}</span>
-      <nav class="lang" aria-label="{{lang.label}}"><a href="/" hreflang="es"{{cur.es}}>ES</a><a href="/en/" hreflang="en"{{cur.en}}>EN</a><a href="/fr/" hreflang="fr"{{cur.fr}}>FR</a></nav>
+      <nav class="lang" aria-label="{{lang.label}}"><a href="/" hreflang="es" lang="es"{{cur.es}}>ES</a><a href="/en/" hreflang="en" lang="en"{{cur.en}}>EN</a><a href="/fr/" hreflang="fr" lang="fr"{{cur.fr}}>FR</a></nav>
       <span>© 2026 Edificio Biera</span>
     </div>
   </div>
@@ -343,7 +348,7 @@
 <dialog class="plan" id="plan" aria-labelledby="plan-t">
   <div class="plan-in">
     <div class="plan-head">
-      <span class="serif plan-t" id="plan-t"></span>
+      <span class="plan-tt"><span class="serif plan-t" id="plan-t"></span><small id="plan-s"></small></span>
       <button class="btn btn-ghost btn-sm" type="button" id="plan-close">{{cta.close}}</button>
     </div>
     <div class="plan-scroll" tabindex="0">
