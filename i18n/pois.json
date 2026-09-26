@@ -3,55 +3,76 @@
     "lat": 37.95958,
     "lon": -1.13591
   },
+  "source": "Distancias y tiempos en coche según Google Maps (ruta más rápida), 26/09/2026; a pie según Google Maps para los puntos cercanos.",
   "items": [
     {
       "id": "santoangel",
+      "g": "zonas",
+      "top": true,
       "cat": "barrio",
       "lat": 37.9452,
       "lon": -1.1318,
       "km": 1.7,
       "drive": 4,
+      "short": "Santo Ángel",
       "name": {
         "es": "Santo Ángel · zona residencial",
         "en": "Santo Ángel · residential area",
         "fr": "Santo Ángel · zone résidentielle"
-      },
-      "short": "Santo Ángel",
-      "top": true
+      }
     },
     {
       "id": "alberca",
+      "g": "zonas",
+      "top": true,
       "cat": "barrio",
       "lat": 37.945,
       "lon": -1.1422,
       "km": 2.0,
       "drive": 5,
+      "short": "La Alberca",
+      "side": "left",
       "name": {
         "es": "La Alberca · zona residencial",
         "en": "La Alberca · residential area",
         "fr": "La Alberca · zone résidentielle"
-      },
-      "short": "La Alberca",
-      "side": "left",
-      "top": true
+      }
     },
     {
       "id": "catedral",
+      "g": "zonas",
+      "top": true,
       "cat": "centro",
       "lat": 37.9828,
       "lon": -1.1316,
       "km": 3.8,
       "drive": 6,
+      "short": "Centro de Murcia",
       "name": {
         "es": "Centro de Murcia · casco histórico",
         "en": "Murcia city centre · old town",
         "fr": "Centre de Murcie · centre historique"
-      },
-      "top": true,
-      "short": "Centro de Murcia"
+      }
+    },
+    {
+      "id": "rondasur",
+      "g": "zonas",
+      "cat": "barrio",
+      "lat": 37.9657,
+      "lon": -1.1326,
+      "m": 950,
+      "km": 1.0,
+      "drive": 1,
+      "walk": 13,
+      "name": {
+        "es": "Ronda Sur · comercios y servicios",
+        "en": "Ronda Sur · shops and services",
+        "fr": "Ronda Sur · commerces et services"
+      }
     },
     {
       "id": "comercial",
+      "g": "comercio",
       "cat": "comercio",
       "lat": 37.9461,
       "lon": -1.1328,
@@ -66,25 +87,27 @@
     },
     {
       "id": "gym",
+      "g": "comercio",
       "cat": "deporte",
       "lat": 37.95905,
       "lon": -1.13565,
+      "m": 100,
       "km": 0.1,
-      "drive": null,
       "walk": 1,
       "name": {
-        "es": "Central Training Santa Catalina · artes marciales y cross training",
-        "en": "Central Training Santa Catalina · martial arts & cross training",
-        "fr": "Central Training Santa Catalina · arts martiaux et cross training"
+        "es": "Central Training Santa Catalina · artes marciales y cross training, enfrente",
+        "en": "Central Training Santa Catalina · martial arts & cross training, opposite",
+        "fr": "Central Training Santa Catalina · arts martiaux et cross training, en face"
       }
     },
     {
       "id": "makro",
+      "g": "comercio",
       "cat": "comercio",
       "lat": 37.96063,
       "lon": -1.13311,
-      "km": 0.3,
-      "drive": null,
+      "m": 230,
+      "km": 0.2,
       "walk": 4,
       "name": {
         "es": "Makro · por el paso subterráneo bajo la autovía",
@@ -94,11 +117,12 @@
     },
     {
       "id": "ies",
+      "g": "comercio",
       "cat": "educacion",
       "lat": 37.96188,
       "lon": -1.13326,
-      "km": 0.3,
-      "drive": null,
+      "m": 230,
+      "km": 0.2,
       "walk": 4,
       "name": {
         "es": "IES Ingeniero de la Cierva · instituto público",
@@ -107,21 +131,120 @@
       }
     },
     {
-      "id": "rondasur",
-      "cat": "barrio",
-      "lat": 37.9657,
-      "lon": -1.13264,
-      "km": 1.0,
-      "drive": 1,
-      "walk": 13,
+      "id": "montevida",
+      "g": "comercio",
+      "cat": "comercio",
+      "lat": 37.938247,
+      "lon": -1.150251,
+      "km": 3.5,
+      "drive": 6,
       "name": {
-        "es": "Ronda Sur · comercios y servicios",
-        "en": "Ronda Sur · shops and services",
-        "fr": "Ronda Sur · commerces et services"
+        "es": "Parque Comercial Montevida (La Alberca) · Mercadona, Leroy Merlin",
+        "en": "Montevida retail park (La Alberca) · Mercadona, Leroy Merlin",
+        "fr": "Parc commercial Montevida (La Alberca) · Mercadona, Leroy Merlin"
+      }
+    },
+    {
+      "id": "limonar",
+      "g": "comercio",
+      "cat": "educacion",
+      "lat": 37.9336215,
+      "lon": -1.153176,
+      "km": 5.7,
+      "drive": 7,
+      "name": {
+        "es": "El Limonar International School · colegio internacional (La Alberca)",
+        "en": "El Limonar International School · international school (La Alberca)",
+        "fr": "El Limonar International School · école internationale (La Alberca)"
+      }
+    },
+    {
+      "id": "matute",
+      "g": "comercio",
+      "cat": "educacion",
+      "lat": 37.9718313,
+      "lon": -1.1601715,
+      "km": 5.1,
+      "drive": 11,
+      "name": {
+        "es": "Colegio Ana María Matute · concertado bilingüe",
+        "en": "Ana María Matute school · state-funded bilingual",
+        "fr": "Collège Ana María Matute · école bilingue conventionnée"
+      }
+    },
+    {
+      "id": "clubcampo",
+      "g": "ocio",
+      "cat": "deporte",
+      "lat": 37.9266673,
+      "lon": -1.1608484,
+      "km": 7.1,
+      "drive": 9,
+      "name": {
+        "es": "Real Sociedad Club de Campo · tenis y pádel",
+        "en": "Real Sociedad Club de Campo · tennis and padel",
+        "fr": "Real Sociedad Club de Campo · tennis et padel"
+      }
+    },
+    {
+      "id": "malecon",
+      "g": "ocio",
+      "cat": "ocio",
+      "lat": 37.9826,
+      "lon": -1.13475,
+      "km": 3.8,
+      "drive": 5,
+      "name": {
+        "es": "Jardín del Malecón",
+        "en": "Malecón gardens",
+        "fr": "Jardin du Malecón"
+      }
+    },
+    {
+      "id": "fuensanta",
+      "g": "ocio",
+      "cat": "naturaleza",
+      "lat": 37.9375233,
+      "lon": -1.1182251,
+      "km": 4.2,
+      "drive": 9,
+      "name": {
+        "es": "Santuario de la Fuensanta",
+        "en": "Fuensanta sanctuary",
+        "fr": "Sanctuaire de la Fuensanta"
+      }
+    },
+    {
+      "id": "valle",
+      "g": "ocio",
+      "cat": "naturaleza",
+      "lat": 37.92881,
+      "lon": -1.13965,
+      "km": 4.6,
+      "drive": 9,
+      "name": {
+        "es": "Parque Regional de El Valle · centro de visitantes",
+        "en": "El Valle Regional Park · visitor centre",
+        "fr": "Parc régional d’El Valle · centre d’accueil"
+      }
+    },
+    {
+      "id": "terranatura",
+      "g": "ocio",
+      "cat": "ocio",
+      "lat": 38.0097822,
+      "lon": -1.1634708,
+      "km": 11.0,
+      "drive": 14,
+      "name": {
+        "es": "Terra Natura Murcia · parque de naturaleza",
+        "en": "Terra Natura Murcia · wildlife park",
+        "fr": "Terra Natura Murcia · parc animalier"
       }
     },
     {
       "id": "carmen",
+      "g": "servicios",
       "cat": "transporte",
       "lat": 37.9764,
       "lon": -1.1294,
@@ -135,6 +258,7 @@
     },
     {
       "id": "mesa",
+      "g": "servicios",
       "cat": "salud",
       "lat": 37.96947,
       "lon": -1.12809,
@@ -147,33 +271,8 @@
       }
     },
     {
-      "id": "valle",
-      "cat": "naturaleza",
-      "lat": 37.92881,
-      "lon": -1.13965,
-      "km": 4.6,
-      "drive": 9,
-      "name": {
-        "es": "Parque Regional de El Valle · centro de visitantes",
-        "en": "El Valle Regional Park · visitor centre",
-        "fr": "Parc régional d’El Valle · centre d’accueil"
-      }
-    },
-    {
-      "id": "malecon",
-      "cat": "ocio",
-      "lat": 37.9826,
-      "lon": -1.13475,
-      "km": 3.8,
-      "drive": 5,
-      "name": {
-        "es": "Jardín del Malecón",
-        "en": "Malecón gardens",
-        "fr": "Jardin du Malecón"
-      }
-    },
-    {
       "id": "arrixaca",
+      "g": "servicios",
       "cat": "salud",
       "lat": 37.93216,
       "lon": -1.16254,
@@ -187,6 +286,7 @@
     },
     {
       "id": "um",
+      "g": "servicios",
       "cat": "educacion",
       "lat": 38.01471,
       "lon": -1.16764,
@@ -200,6 +300,7 @@
     },
     {
       "id": "ucam",
+      "g": "servicios",
       "cat": "educacion",
       "lat": 37.99126,
       "lon": -1.1852,
@@ -212,7 +313,50 @@
       }
     },
     {
+      "id": "thader",
+      "g": "servicios",
+      "cat": "comercio",
+      "lat": 38.0321584,
+      "lon": -1.1492582,
+      "km": 12.5,
+      "drive": 14,
+      "name": {
+        "es": "Centro Comercial Thader · IKEA",
+        "en": "Thader shopping centre · IKEA",
+        "fr": "Centre commercial Thader · IKEA"
+      }
+    },
+    {
+      "id": "altorreal",
+      "g": "lejos",
+      "cat": "golf",
+      "lat": 38.0713509,
+      "lon": -1.1696986,
+      "km": 17.7,
+      "drive": 16,
+      "name": {
+        "es": "Club de Golf Altorreal",
+        "en": "Altorreal Golf Club",
+        "fr": "Golf d’Altorreal"
+      }
+    },
+    {
+      "id": "mosa",
+      "g": "lejos",
+      "cat": "golf",
+      "lat": 37.8710576,
+      "lon": -1.0959938,
+      "km": 18.2,
+      "drive": 17,
+      "name": {
+        "es": "Mosa Trajectum Golf Resort",
+        "en": "Mosa Trajectum Golf Resort",
+        "fr": "Mosa Trajectum Golf Resort"
+      }
+    },
+    {
       "id": "aeropuerto",
+      "g": "lejos",
       "cat": "transporte",
       "lat": 37.803,
       "lon": -1.125,
@@ -223,7 +367,20 @@
         "en": "Región de Murcia airport (Corvera)",
         "fr": "Aéroport Región de Murcia (Corvera)"
       }
+    },
+    {
+      "id": "marmenor",
+      "g": "lejos",
+      "cat": "playa",
+      "lat": 37.7525092,
+      "lon": -0.841001,
+      "km": 47.6,
+      "drive": 34,
+      "name": {
+        "es": "Playas del Mar Menor · Los Alcázares",
+        "en": "Mar Menor beaches · Los Alcázares",
+        "fr": "Plages de la Mar Menor · Los Alcázares"
+      }
     }
-  ],
-  "source": "Distancias y tiempos en coche según Google Maps (ruta más rápida), 26/09/2026; Santo Ángel y La Alberca medidos hasta su entrada desde el edificio."
+  ]
 }

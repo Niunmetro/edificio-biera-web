@@ -660,3 +660,7 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
 
 /* La cabecera fija y la barra móvil deben quedar por encima del mapa (Leaflet usa z-index hasta 1000) */
 .hdr{z-index:1200}.mbar{z-index:1200}
+
+.poi-g{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--mut);padding:18px 0 6px}
+.poi-g:first-child{padding-top:0}
+.poi-g+.poi-i{border-top:0}

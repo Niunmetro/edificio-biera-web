@@ -44,14 +44,18 @@ f"""      <li class="row" data-d="{u['d']}" data-v="{u['v']}">
     return "\n".join(out)
 
 def poi_label(p, d):
-    parts = [d["map.km"].replace("{km}", num(str(p["km"]).replace(".", ","), d["lang"]))]
+    parts = [d["map.m"].replace("{m}", str(p["m"]))] if p.get("m") else [d["map.km"].replace("{km}", num(str(p["km"]).replace(".", ","), d["lang"]))]
     if p.get("drive"): parts.append(d["map.drive"].replace("{n}", str(p["drive"])))
     if p.get("walk"): parts.append(d["map.walk"].replace("{n}", str(p["walk"])))
     return " · ".join(parts)
 
 def poi_rows(d):
     out = []
+    last_g = None
     for i, p in enumerate(pois["items"]):
+        if p.get("g") and p["g"] != last_g:
+            out.append(f"""          <li class="poi-g" aria-hidden="true">{d["map.g_" + p["g"]]}</li>""")
+            last_g = p["g"]
         top = bool(p.get("top"))
         out.append(f"""          <li class="poi-i{' top' if top else ''}"><button type="button" class="poi-b" data-i="{i}"><span class="poi-n">{p["name"][d["lang"]]}</span><span class="poi-d">{poi_label(p, d)}</span></button></li>""")
     return "\n".join(out)

@@ -258,5 +258,11 @@
   "nav.gal": "Galería",
   "nav.qual": "Calidades",
   "nav.faq": "Preguntas",
-  "nav.contact": "Contacto"
+  "nav.contact": "Contacto",
+  "map.g_zonas": "Zonas",
+  "map.g_comercio": "Comercio y colegios",
+  "map.g_ocio": "Ocio, deporte y naturaleza",
+  "map.g_servicios": "Transporte, salud y universidades",
+  "map.g_lejos": "Golf, aeropuerto y playas",
+  "map.m": "{m} m"
 }
