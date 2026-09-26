@@ -57,7 +57,7 @@ def poi_rows(d):
             out.append(f"""          <li class="poi-g" aria-hidden="true">{d["map.g_" + p["g"]]}</li>""")
             last_g = p["g"]
         top = bool(p.get("top"))
-        out.append(f"""          <li class="poi-i{' top' if top else ''}"><button type="button" class="poi-b" data-i="{i}"><span class="poi-n">{p["name"][d["lang"]]}</span><span class="poi-d">{poi_label(p, d)}</span></button></li>""")
+        out.append(f"""          <li class="poi-i{' poi-top' if top else ''}"><button type="button" class="poi-b" data-i="{i}"><span class="poi-n">{p["name"][d["lang"]]}</span><span class="poi-d">{poi_label(p, d)}</span></button></li>""")
     return "\n".join(out)
 
 def poi_json(d):
