@@ -121,6 +121,23 @@
   </div>
 </section>
 
+<section class="sec video" id="video" aria-labelledby="t-video">
+  <div class="wrap video-in">
+    <div class="video-t rv">
+      <p class="lbl amber">{{video.lbl}}</p>
+      <h2 class="h2 serif" id="t-video">{{video.h2}}</h2>
+      <p class="body">{{video.p}}</p>
+      <p class="cap">{{video.note}}</p>
+    </div>
+    <div class="vframe rv">
+      <video class="vid" autoplay muted loop playsinline preload="metadata" poster="/assets/video/poster.jpg" width="720" height="1280" aria-label="{{video.h2}}">
+        <source src="/assets/video/biera.webm" type="video/webm">
+        <source src="/assets/video/biera.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
 <section class="sec sec-units" id="viviendas" aria-labelledby="t-viviendas">
   <div class="wrap">
     <div class="units-head rv">
@@ -156,6 +173,10 @@
       <figure class="g3 rv"><picture><source srcset="/assets/img/aerea-2.webp" type="image/webp"><img src="/assets/img/aerea-2.jpg" alt="{{gal.alt3}}" loading="lazy" decoding="async" width="837" height="575"></picture></figure>
       <figure class="g4 rv"><picture><source srcset="/assets/img/dormitorio.webp" type="image/webp"><img src="/assets/img/dormitorio.jpg" alt="{{gal.alt4}}" loading="lazy" decoding="async" width="622" height="940"></picture></figure>
       <div class="gq rv"><p class="serif it">{{gal.quote}}</p></div>
+      <figure class="g5 rv"><picture><source srcset="/assets/img/vid-noche.webp" type="image/webp"><img src="/assets/img/vid-noche.jpg" alt="{{gal.alt5}}" loading="lazy" decoding="async"></picture></figure>
+      <figure class="g5 rv"><picture><source srcset="/assets/img/vid-salon1.webp" type="image/webp"><img src="/assets/img/vid-salon1.jpg" alt="{{gal.alt6}}" loading="lazy" decoding="async"></picture></figure>
+      <figure class="g5 rv"><picture><source srcset="/assets/img/vid-salon2.webp" type="image/webp"><img src="/assets/img/vid-salon2.jpg" alt="{{gal.alt7}}" loading="lazy" decoding="async"></picture></figure>
+      <figure class="g5 rv"><picture><source srcset="/assets/img/vid-tarde.webp" type="image/webp"><img src="/assets/img/vid-tarde.jpg" alt="{{gal.alt8}}" loading="lazy" decoding="async"></picture></figure>
     </div>
     <p class="cap">{{gal.note}}</p>
   </div>
@@ -194,17 +215,17 @@
       <li><span>{{loc.d3}}</span><span class="km serif">{{loc.km3}}</span></li>
     </ul>
     <div class="ruler rv">
-      <svg viewBox="0 0 1152 190" width="100%" role="img" aria-label="{{loc.svg}}">
-        <line x1="40" y1="150" x2="1112" y2="150" stroke="#1E2429" stroke-width="1"/>
-        <g stroke="#9AA4AC" stroke-width="1"><line x1="240" y1="146" x2="240" y2="154"/><line x1="440" y1="146" x2="440" y2="154"/><line x1="640" y1="146" x2="640" y2="154"/><line x1="840" y1="146" x2="840" y2="154"/><line x1="1040" y1="146" x2="1040" y2="154"/></g>
-        <g font-family="Jost, sans-serif" font-size="13" fill="#66717B" text-anchor="middle"><text x="240" y="178">1 km</text><text x="440" y="178">2 km</text><text x="640" y="178">3 km</text><text x="840" y="178">4 km</text><text x="1040" y="178">5 km</text></g>
-        <circle cx="40" cy="150" r="7" fill="#1E2429"/>
-        <text x="40" y="118" font-family="Jost, sans-serif" font-size="12" letter-spacing="3" fill="#1E2429">BIERA</text>
-        <g stroke="#56697A" stroke-width="1" fill="#56697A"><circle cx="360" cy="150" r="5"/><line x1="360" y1="145" x2="360" y2="74"/><circle cx="740" cy="150" r="5"/><line x1="740" y1="145" x2="740" y2="44"/><circle cx="1000" cy="150" r="5"/><line x1="1000" y1="145" x2="1000" y2="74"/></g>
-        <g font-family="Cormorant Garamond, serif" fill="#1E2429">
-          <text x="360" y="62" font-size="22" text-anchor="middle">{{loc.d1}}</text><text x="360" y="34" font-size="30" text-anchor="middle">{{loc.km1}}</text>
-          <text x="740" y="32" font-size="22" text-anchor="middle">{{loc.d2}}</text><text x="740" y="6" font-size="30" text-anchor="middle" dominant-baseline="hanging">{{loc.km2}}</text>
-          <text x="1000" y="62" font-size="22" text-anchor="middle">{{loc.d3}}</text><text x="1000" y="34" font-size="30" text-anchor="middle">{{loc.km3}}</text>
+      <svg viewBox="0 0 1152 200" width="100%" role="img" aria-label="{{loc.svg}}">
+        <line x1="40" y1="160" x2="1112" y2="160" stroke="#1E2429" stroke-width="1"/>
+        <g stroke="#9AA4AC" stroke-width="1"><line x1="240" y1="156" x2="240" y2="164"/><line x1="440" y1="156" x2="440" y2="164"/><line x1="640" y1="156" x2="640" y2="164"/><line x1="840" y1="156" x2="840" y2="164"/><line x1="1040" y1="156" x2="1040" y2="164"/></g>
+        <g font-family="Jost, sans-serif" font-size="13" fill="#66717B" text-anchor="middle"><text x="240" y="188">1 km</text><text x="440" y="188">2 km</text><text x="640" y="188">3 km</text><text x="840" y="188">4 km</text><text x="1040" y="188">5 km</text></g>
+        <circle cx="40" cy="160" r="7" fill="#1E2429"/>
+        <text x="40" y="128" font-family="Jost, sans-serif" font-size="12" letter-spacing="3" fill="#1E2429">BIERA</text>
+        <g stroke="#56697A" stroke-width="1" fill="#56697A"><circle cx="360" cy="160" r="5"/><line x1="360" y1="155" x2="360" y2="120"/><circle cx="740" cy="160" r="5"/><line x1="740" y1="155" x2="740" y2="70"/><circle cx="1000" cy="160" r="5"/><line x1="1000" y1="155" x2="1000" y2="120"/></g>
+        <g font-family="Cormorant Garamond, serif" fill="#1E2429" text-anchor="middle">
+          <text x="360" y="84" font-size="30">{{loc.km1}}</text><text x="360" y="110" font-size="20">{{loc.d1}}</text>
+          <text x="740" y="34" font-size="30">{{loc.km2}}</text><text x="740" y="60" font-size="20">{{loc.d2}}</text>
+          <text x="1000" y="84" font-size="30">{{loc.km3}}</text><text x="1000" y="110" font-size="20">{{loc.d3}}</text>
         </g>
       </svg>
       <p class="cap">{{loc.note}}</p>

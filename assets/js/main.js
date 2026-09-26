@@ -15,6 +15,7 @@
     if (q) { origen = q.replace(/[^a-z0-9_-]/gi, '').slice(0, 30) || 'directo'; sessionStorage.setItem('biera_o', origen); }
     else { origen = sessionStorage.getItem('biera_o') || (document.referrer && document.referrer.indexOf(location.hostname) < 0 ? 'web:' + new URL(document.referrer).hostname : 'directo'); }
   } catch (e) {}
+  try { var _y = new URLSearchParams(location.search).get('y'); if (_y) { document.querySelector('.pg').style.marginTop = (-_y) + 'px'; } } catch (e) {}
   var origenInput = document.getElementById('origen');
   if (origenInput) origenInput.value = origen;
 
