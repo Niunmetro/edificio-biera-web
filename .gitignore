@@ -4,3 +4,7 @@ Thumbs.db
 .claude/
 _servidor-php/
 FOTOS/
+INPUT/
+*.pdf
+mejorada 1
+output/
