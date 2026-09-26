@@ -89,6 +89,13 @@
 - Vídeo promocional: proyecto Remotion en `promo/` (renders en `promo/out/`).
 - Carpeta `INPUT/` (fuera de git): material recibido del equipo (renders, informes, logotipos).
 
+## 8. Dossier de interiorismo (FOTOS/SANTA CATALINA 10 D -4_compressed.pdf, Ginevra 501)
+
+- Contiene: planos a color amueblados de las 10 viviendas ("Visión Tipo 1–10"), plano ilustrado del sótano, perspectiva aérea a mano, página de materiales, armarios, moodboards y renders de las viviendas 10, 7 y 5, del sótano y de terrazas.
+- **Integrado en la web (26/09):** sección "Más interiores" con 8 renders (vivienda 7 con cocina abierta al salón, vivienda 5, sótano).
+- **NO integrado todavía — los planos a color son de una revisión ANTERIOR a los planos de venta (260521):** sus cifras no coinciden. Ejemplos: V6 útil 98,70 m² (venta: 96,70); V2 buhardilla 18,30 m² (venta: 15,80), garaje V2 27,97 m² (venta: 25,79). Usarlos solo si IH confirma que son la versión definitiva o tras rehacer las cotas.
+- Página de materiales: "piedra natural en encimeras de cocina" figura como **recomendación** (la cocina se entrega sin amueblar) → no se publica. Armarios ("madera beige, tirador gola negro, amortiguado, vitrinas con luz"): **pendiente confirmar si están incluidos** antes de publicarlo. Sí confirmado por el dossier: grifería, sanitarios y azulejos Porcelanosa; hormigón fratasado en el suelo de garajes; puertas lisas blancas; mecanismos JUNG blancos.
+
 ## 7. Pendientes abiertos
 
 - Render de cabecera con la entrada real (sin escaleras).
@@ -97,3 +104,4 @@
 - Planos definitivos de V6 y V7 (cocina abierta) si María los facilita.
 - Prueba real del formulario desde el móvil de Ángel.
 - Mackenzie: confirmar el email de contacto del dominio en IONOS.
+- Decidir si se usan los planos a color del dossier (revisión anterior, cifras distintas) y si los armarios están incluidos.
