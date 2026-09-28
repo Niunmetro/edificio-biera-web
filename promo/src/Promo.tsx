@@ -13,8 +13,8 @@ loadFonts();
 export type PromoProps = {orientation: Orientation};
 
 // Música: copia recortada (0,9 s → 39,4 s) de «Times», Bigvegie, Freesound 560599, CC0.
-const MUSIC_FILE = 'audio/musica-times-bigvegie-cc0.wav';
-const MUSIC_VOLUME = 0.5;
+const MUSIC_FILE = 'audio/musica-luxury-real-estate-arpmedia-pixabay.wav';
+const MUSIC_VOLUME = 0.7;
 const MUSIC_FADE_IN = 45; // 1,5 s
 const MUSIC_FADE_OUT = 90; // 3 s
 const BLACK_FADE = 28; // fundido a negro final (~0,9 s)
