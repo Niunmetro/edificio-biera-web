@@ -103,6 +103,21 @@
 </div>
 
 <main>
+<section class="promo" id="video" aria-labelledby="t-video">
+  <div class="promo-in">
+    <div class="promo-t">
+      <p class="lbl amber">{{video.lbl}}</p>
+      <h2 class="serif" id="t-video">{{video.h2}}</h2>
+    </div>
+    <figure class="pframe">
+      <video class="vid" id="vid" muted loop playsinline preload="metadata" poster="/assets/video/promo-h.jpg" data-h="/assets/video/promo-h.mp4" data-v="/assets/video/promo-v.mp4" data-ph="/assets/video/promo-h.jpg" data-pv="/assets/video/promo-v.jpg" width="1280" height="720" aria-label="{{video.h2}}"></video>
+      <button class="vsound" type="button" id="vsound" data-on="{{video.sound_on}}" data-off="{{video.sound_off}}"><span class="vs-ic" aria-hidden="true"></span><span class="vs-t">{{video.sound_on}}</span></button>
+      <button class="vtoggle" type="button" id="vtoggle" aria-label="{{video.pause}}" data-pause="{{video.pause}}" data-play="{{video.play}}"></button>
+    </figure>
+    <p class="cap">{{video.note}}</p>
+  </div>
+</section>
+
 <section class="sec" id="proyecto" aria-labelledby="t-proyecto">
   <div class="wrap manif rv">
     <p class="lbl acc">{{proj.lbl}}</p>
@@ -144,24 +159,6 @@
   </div>
 </section>
 
-<section class="sec video" id="video" aria-labelledby="t-video">
-  <div class="wrap video-in">
-    <div class="video-t rv">
-      <p class="lbl amber">{{video.lbl}}</p>
-      <h2 class="h2 serif" id="t-video">{{video.h2}}</h2>
-      <p class="body">{{video.p}}</p>
-    </div>
-    <figure class="vfig rv">
-      <div class="vframe">
-        <video class="vid" id="vid" autoplay muted loop playsinline preload="metadata" poster="/assets/video/poster.jpg" width="720" height="900" aria-label="{{video.h2}}">
-          <source src="/assets/video/biera.mp4?v=2" type="video/mp4">
-        </video>
-        <button class="vtoggle" type="button" id="vtoggle" aria-label="{{video.pause}}" data-pause="{{video.pause}}" data-play="{{video.play}}"></button>
-      </div>
-      <figcaption class="cap">{{video.note}}</figcaption>
-    </figure>
-  </div>
-</section>
 
 <section class="sec sec-units" id="viviendas" aria-labelledby="t-viviendas">
   <div class="wrap">

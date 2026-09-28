@@ -27,7 +27,7 @@
 <link rel="preload" href="/assets/fonts/cormorant-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/cormorant-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/styles.css?v=8f844797">
+<link rel="stylesheet" href="/assets/css/styles.css?v=bc71d9f4">
 <script>document.documentElement.className+=" js"</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ApartmentComplex","name":"Edificio Biera","description":"10 maisons en triplex neuves avec solarium privé et parking à Santa Catalina, Murcie.","numberOfAccommodationUnits":10,"address":{"@type":"PostalAddress","streetAddress":"Carretera de Santa Catalina, esquina C/ Los Mateos","postalCode":"30012","addressLocality":"Murcia","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":37.95958,"longitude":-1.13591},"image":"https://edificiobiera.com/assets/img/og.jpg","url":"https://edificiobiera.com/fr/","offers":{"@type":"AggregateOffer","lowPrice":289000,"priceCurrency":"EUR"}}
@@ -104,6 +104,21 @@
 </div>
 
 <main>
+<section class="promo" id="video" aria-labelledby="t-video">
+  <div class="promo-in">
+    <div class="promo-t">
+      <p class="lbl amber">L’Edificio Biera en 37 secondes</p>
+      <h2 class="serif" id="t-video">Découvrez-le en mouvement.</h2>
+    </div>
+    <figure class="pframe">
+      <video class="vid" id="vid" muted loop playsinline preload="metadata" poster="/assets/video/promo-h.jpg" data-h="/assets/video/promo-h.mp4" data-v="/assets/video/promo-v.mp4" data-ph="/assets/video/promo-h.jpg" data-pv="/assets/video/promo-v.jpg" width="1280" height="720" aria-label="Découvrez-le en mouvement."></video>
+      <button class="vsound" type="button" id="vsound" data-on="Activer le son" data-off="Couper le son"><span class="vs-ic" aria-hidden="true"></span><span class="vs-t">Activer le son</span></button>
+      <button class="vtoggle" type="button" id="vtoggle" aria-label="Mettre la vidéo en pause" data-pause="Mettre la vidéo en pause" data-play="Lire la vidéo"></button>
+    </figure>
+    <p class="cap">Vidéo avec des visuels indicatifs, sans valeur contractuelle. Prix hors TVA.</p>
+  </div>
+</section>
+
 <section class="sec" id="proyecto" aria-labelledby="t-proyecto">
   <div class="wrap manif rv">
     <p class="lbl acc">Le projet</p>
@@ -145,24 +160,6 @@
   </div>
 </section>
 
-<section class="sec video" id="video" aria-labelledby="t-video">
-  <div class="wrap video-in">
-    <div class="video-t rv">
-      <p class="lbl amber">En mouvement</p>
-      <h2 class="h2 serif" id="t-video">Une promenade dans la résidence.</h2>
-      <p class="body">La façade à la tombée du jour, le séjour et les chambres : voici la vie à l’Edificio Biera.</p>
-    </div>
-    <figure class="vfig rv">
-      <div class="vframe">
-        <video class="vid" id="vid" autoplay muted loop playsinline preload="metadata" poster="/assets/video/poster.jpg" width="720" height="900" aria-label="Une promenade dans la résidence.">
-          <source src="/assets/video/biera.mp4?v=2" type="video/mp4">
-        </video>
-        <button class="vtoggle" type="button" id="vtoggle" aria-label="Mettre la vidéo en pause" data-pause="Mettre la vidéo en pause" data-play="Lire la vidéo"></button>
-      </div>
-      <figcaption class="cap">Vidéo aux visuels non contractuels. Prix hors TVA.</figcaption>
-    </figure>
-  </div>
-</section>
 
 <section class="sec sec-units" id="viviendas" aria-labelledby="t-viviendas">
   <div class="wrap">
@@ -615,6 +612,6 @@
 
 </div>
 <script>window.BIERA={"lang": "fr", "action": "https://script.google.com/macros/s/AKfycbwH0q-_CXay633v2sonk-mG-Pwk5WfWceUOL_T7aMZZ30lIga-0zNrffIKxe6H7eX9B4w/exec", "units": {"1": {"name": "Triplex d’angle (ouest), avec double box", "dist": "4 ch. + bureau sous combles · 3 salles de bains + WC", "constr": "165,41", "d": 4, "note": ""}, "2": {"name": "Triplex central", "dist": "4 ch. + bureau sous combles · 3 salles de bains + WC", "constr": "157,56", "d": 4, "note": ""}, "3": {"name": "Triplex central", "dist": "4 ch. + bureau sous combles · 3 salles de bains + WC", "constr": "158,86", "d": 4, "note": ""}, "4": {"name": "Triplex central, box spacieux", "dist": "4 ch. + bureau sous combles · 3 salles de bains + WC", "constr": "158,40", "d": 4, "note": ""}, "5": {"name": "Triplex d’angle (sud-est)", "dist": "4 ch. + bureau sous combles · 3 salles de bains + WC", "constr": "156,19", "d": 4, "note": ""}, "6": {"name": "Triplex façade est", "dist": "3 ch. + bureau sous combles · 2 salles de bains + WC", "constr": "115,23", "d": 3, "note": "Version définitive avec cuisine ouverte sur le séjour : les deux cloisons de cuisine visibles sur le plan ne sont pas réalisées."}, "7": {"name": "Triplex façade est, avec patio", "dist": "3 ch. + bureau sous combles · 2 salles de bains + 2 WC", "constr": "124,59", "d": 3, "note": "Version définitive avec cuisine ouverte sur le séjour : les deux cloisons de cuisine visibles sur le plan ne sont pas réalisées."}, "8": {"name": "Triplex avec box double", "dist": "4 ch. + bureau sous combles · 3 salles de bains + WC", "constr": "158,40", "d": 4, "note": ""}, "9": {"name": "Triplex de l’aile nord", "dist": "4 ch. + bureau sous combles · 3 salles de bains + WC", "constr": "150,17", "d": 4, "note": ""}, "10": {"name": "Triplex d’angle (nord-est), grand solarium", "dist": "4 ch. + bureau sous combles · 3 salles de bains + WC", "constr": "172,18", "d": 4, "note": ""}}, "pois": {"center": {"lat": 37.95958, "lon": -1.13591}, "items": [{"lat": 37.9452, "lon": -1.1318, "km": 1.7, "cat": "barrio", "short": "Santo Ángel", "side": "", "top": true, "name": "Santo Ángel · zone résidentielle", "label": "1,7 km · 4 min en voiture"}, {"lat": 37.945, "lon": -1.1422, "km": 2.0, "cat": "barrio", "short": "La Alberca", "side": "left", "top": true, "name": "La Alberca · zone résidentielle", "label": "2,0 km · 5 min en voiture"}, {"lat": 37.9828, "lon": -1.1316, "km": 3.8, "cat": "centro", "short": "Centro de Murcia", "side": "", "top": true, "name": "Centre de Murcie · centre historique", "label": "3,8 km · 6 min en voiture"}, {"lat": 37.9657, "lon": -1.1326, "km": 1.0, "cat": "barrio", "short": "", "side": "", "top": false, "name": "Ronda Sur · commerces et services", "label": "950 m · 1 min en voiture · 13 min à pied"}, {"lat": 37.9461, "lon": -1.1328, "km": 1.3, "cat": "comercio", "short": "", "side": "", "top": false, "name": "Zone commerciale de Santo Ángel · Mercadona, Burger King, supermarchés", "label": "1,3 km · 2 min en voiture · 18 min à pied"}, {"lat": 37.95905, "lon": -1.13565, "km": 0.1, "cat": "deporte", "short": "", "side": "", "top": false, "name": "Central Training Santa Catalina · arts martiaux et cross training, en face", "label": "100 m · 1 min à pied"}, {"lat": 37.96063, "lon": -1.13311, "km": 0.2, "cat": "comercio", "short": "", "side": "", "top": false, "name": "Makro · par le passage souterrain sous l’autoroute", "label": "230 m · 4 min à pied"}, {"lat": 37.96188, "lon": -1.13326, "km": 0.2, "cat": "educacion", "short": "", "side": "", "top": false, "name": "IES Ingeniero de la Cierva · lycée public", "label": "230 m · 4 min à pied"}, {"lat": 37.938247, "lon": -1.150251, "km": 3.5, "cat": "comercio", "short": "", "side": "", "top": false, "name": "Parc commercial Montevida (La Alberca) · Mercadona, Leroy Merlin", "label": "3,5 km · 6 min en voiture"}, {"lat": 37.9336215, "lon": -1.153176, "km": 5.7, "cat": "educacion", "short": "", "side": "", "top": false, "name": "El Limonar International School · école internationale (La Alberca)", "label": "5,7 km · 7 min en voiture"}, {"lat": 37.9718313, "lon": -1.1601715, "km": 5.1, "cat": "educacion", "short": "", "side": "", "top": false, "name": "Collège Ana María Matute · école bilingue conventionnée", "label": "5,1 km · 11 min en voiture"}, {"lat": 37.9266673, "lon": -1.1608484, "km": 7.1, "cat": "deporte", "short": "", "side": "", "top": false, "name": "Real Sociedad Club de Campo · tennis et padel", "label": "7,1 km · 9 min en voiture"}, {"lat": 37.9826, "lon": -1.13475, "km": 3.8, "cat": "ocio", "short": "", "side": "", "top": false, "name": "Jardin du Malecón", "label": "3,8 km · 5 min en voiture"}, {"lat": 37.9375233, "lon": -1.1182251, "km": 4.2, "cat": "naturaleza", "short": "", "side": "", "top": false, "name": "Sanctuaire de la Fuensanta", "label": "4,2 km · 9 min en voiture"}, {"lat": 37.92881, "lon": -1.13965, "km": 4.6, "cat": "naturaleza", "short": "", "side": "", "top": false, "name": "Parc régional d’El Valle · centre d’accueil", "label": "4,6 km · 9 min en voiture"}, {"lat": 38.0097822, "lon": -1.1634708, "km": 11.0, "cat": "ocio", "short": "", "side": "", "top": false, "name": "Terra Natura Murcia · parc animalier", "label": "11,0 km · 14 min en voiture"}, {"lat": 37.9764, "lon": -1.1294, "km": 2.8, "cat": "transporte", "short": "", "side": "", "top": false, "name": "Gare del Carmen (AVE et trains régionaux)", "label": "2,8 km · 7 min en voiture"}, {"lat": 37.96947, "lon": -1.12809, "km": 1.8, "cat": "salud", "short": "", "side": "", "top": false, "name": "Hôpital Mesa del Castillo", "label": "1,8 km · 4 min en voiture"}, {"lat": 37.93216, "lon": -1.16254, "km": 6.3, "cat": "salud", "short": "", "side": "", "top": false, "name": "Hôpital Virgen de la Arrixaca", "label": "6,3 km · 7 min en voiture"}, {"lat": 38.01471, "lon": -1.16764, "km": 9.4, "cat": "educacion", "short": "", "side": "", "top": false, "name": "Université de Murcie · campus d’Espinardo", "label": "9,4 km · 9 min en voiture"}, {"lat": 37.99126, "lon": -1.1852, "km": 11.3, "cat": "educacion", "short": "", "side": "", "top": false, "name": "UCAM · campus de Los Jerónimos", "label": "11,3 km · 11 min en voiture"}, {"lat": 38.0321584, "lon": -1.1492582, "km": 12.5, "cat": "comercio", "short": "", "side": "", "top": false, "name": "Centre commercial Thader · IKEA", "label": "12,5 km · 14 min en voiture"}, {"lat": 38.0713509, "lon": -1.1696986, "km": 17.7, "cat": "golf", "short": "", "side": "", "top": false, "name": "Golf d’Altorreal", "label": "17,7 km · 16 min en voiture"}, {"lat": 37.8710576, "lon": -1.0959938, "km": 18.2, "cat": "golf", "short": "", "side": "", "top": false, "name": "Mosa Trajectum Golf Resort", "label": "18,2 km · 17 min en voiture"}, {"lat": 37.803, "lon": -1.125, "km": 24.9, "cat": "transporte", "short": "", "side": "", "top": false, "name": "Aéroport Región de Murcia (Corvera)", "label": "24,9 km · 23 min en voiture"}, {"lat": 37.7525092, "lon": -0.841001, "km": 47.6, "cat": "playa", "short": "", "side": "", "top": false, "name": "Plages de la Mar Menor · Los Alcázares", "label": "47,6 km · 34 min en voiture"}]}, "t": {"map.here": "Edificio Biera", "f.ok.p_wa": "Nous avons bien reçu votre demande concernant l’Edificio Biera{ref}. Daniel León, de JD León Inmobiliaria, vous écrira sur WhatsApp au {tel}. Si vous préférez, écrivez-lui directement sur <a class=\"u\" href=\"{wa}\">WhatsApp</a> ou appelez le <a class=\"u\" href=\"tel:+34640512434\">640 51 24 34</a>.", "f.err.name": "Indiquez votre nom.", "f.err.tel": "Indiquez un numéro de téléphone valide.", "f.err.email": "Vérifiez l’adresse email.", "f.err.priv": "Pour continuer, veuillez accepter les informations relatives à la protection des données.", "f.err.send": "Impossible d’envoyer la demande. Appelez ou écrivez à Daniel au", "f.sending": "Envoi en cours…", "f.ok.p": "Nous avons bien reçu votre demande concernant l’Edificio Biera{ref}. Daniel León, de JD León Inmobiliaria, vous appellera au {tel}. Si vous préférez, écrivez-lui sur <a class=\"u\" href=\"{wa}\">WhatsApp</a> ou appelez le <a class=\"u\" href=\"tel:+34640512434\">640 51 24 34</a>.", "f.ok.ref": " (référence {ref})", "wa.text": "Bonjour Daniel, je vous écris depuis le site de l’Edificio Biera et je souhaiterais recevoir des informations, sans engagement.", "wa.text_unit": "Bonjour Daniel, je vous écris depuis le site de l’Edificio Biera et je souhaiterais recevoir des informations, sans engagement, sur le logement {v}.", "units.count": "{n} logements", "units.count1": "1 logement", "units.viv": "Logement", "units.plan_alt": "Plan de vente du logement {v}", "cta.plan": "Voir le plan"}};</script>
-<script src="/assets/js/main.js?v=8f844797" defer></script>
+<script src="/assets/js/main.js?v=bc71d9f4" defer></script>
 </body>
 </html>

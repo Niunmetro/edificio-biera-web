@@ -205,8 +205,8 @@
   "bar.call": "Llamar",
   "bar.wa": "WhatsApp",
   "bar.main": "Te llamamos",
-  "video.lbl": "En movimiento",
-  "video.h2": "Un paseo por el edificio.",
+  "video.lbl": "Edificio Biera en 37 segundos",
+  "video.h2": "Descúbrelo en movimiento.",
   "video.p": "La fachada al caer la tarde, el salón y los dormitorios: así se vive en el Edificio Biera.",
   "video.note": "Vídeo con infografías orientativas, sin carácter contractual. Precios sin IVA.",
   "gal.alt5": "Fachada del edificio iluminada al anochecer",
@@ -283,5 +283,7 @@
   "more.d7": "Vivienda 5 · dormitorio doble",
   "more.d8": "Sótano · garajes cerrados",
   "wab.label": "Escríbenos por WhatsApp",
-  "wab.sub": "Información sin compromiso"
+  "wab.sub": "Información sin compromiso",
+  "video.sound_on": "Activar sonido",
+  "video.sound_off": "Silenciar"
 }

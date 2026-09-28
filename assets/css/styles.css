@@ -703,3 +703,26 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
   .wab-tip{display:none}
 }
 @media (prefers-reduced-motion:reduce){.wab-ic::after{animation:none}}
+
+/* ===== Vídeo promocional (justo después de la portada) ===== */
+.promo{background:var(--night);color:var(--paper);padding:56px 0 48px}
+.promo-in{width:min(1280px,100% - 2*var(--gut));margin-inline:auto;display:flex;flex-direction:column;gap:22px}
+.promo-t{display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.promo-t h2{font-size:var(--fs-2);line-height:1.1;font-weight:400;margin:0}
+.pframe{position:relative;margin:0;aspect-ratio:16/9;background:#0f1214;box-shadow:0 30px 80px rgba(0,0,0,.45);overflow:hidden}
+.pframe .vid{width:100%;height:100%;object-fit:cover;display:block}
+.pframe .vtoggle{right:18px;bottom:18px}
+.vsound{position:absolute;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px 0 14px;border-radius:999px;border:1px solid rgba(247,245,241,.55);background:rgba(21,25,28,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#F7F5F1;font:500 12px/1 'Jost',sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .25s}
+.vsound:hover{background:rgba(21,25,28,.75)}
+.vs-ic{width:18px;height:18px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 9h4l5-4v14l-5-4H4z'/%3E%3Cpath d='M17 9l4 6M21 9l-4 6' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 9h4l5-4v14l-5-4H4z'/%3E%3Cpath d='M17 9l4 6M21 9l-4 6' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E") center/contain no-repeat}
+.vsound.on .vs-ic{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 9h4l5-4v14l-5-4H4z'/%3E%3Cpath d='M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 9h4l5-4v14l-5-4H4z'/%3E%3Cpath d='M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12' stroke='black' stroke-width='2' fill='none'/%3E%3C/svg%3E")}
+.promo .cap{color:#8A949C;margin:0}
+@media (max-width:760px){
+  .promo{padding:28px 0 32px}
+  .promo-in{width:calc(100% - 24px);gap:16px}
+  .promo-t{flex-direction:column;gap:6px}
+  .promo-t h2{font-size:26px}
+  .pframe{aspect-ratio:9/16;max-height:82svh;margin-inline:auto;width:min(100%,calc(82svh * 9 / 16))}
+  .vsound{left:12px;bottom:12px}
+  .pframe .vtoggle{right:12px;bottom:12px}
+}

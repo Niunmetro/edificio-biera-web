@@ -205,10 +205,10 @@
   "bar.call": "Call",
   "bar.wa": "WhatsApp",
   "bar.main": "We'll call you",
-  "video.lbl": "In motion",
-  "video.h2": "A walk through the building.",
+  "video.lbl": "Edificio Biera in 37 seconds",
+  "video.h2": "See it in motion.",
   "video.p": "The façade at dusk, the living room and the bedrooms: this is life at Edificio Biera.",
-  "video.note": "Illustrative CGI video, for guidance only. Prices exclude VAT.",
+  "video.note": "Video with indicative visuals, not contractual. Prices exclude VAT.",
   "gal.alt5": "The building’s façade lit up at nightfall",
   "gal.alt6": "Living room with round mirror, armchair and staircase",
   "gal.alt7": "Living room with sofa and kitchen beyond, a child playing",
@@ -283,5 +283,7 @@
   "more.d7": "Home 5 · twin bedroom",
   "more.d8": "Basement · private garages",
   "wab.label": "Message us on WhatsApp",
-  "wab.sub": "Information with no obligation"
+  "wab.sub": "Information with no obligation",
+  "video.sound_on": "Turn sound on",
+  "video.sound_off": "Mute"
 }
