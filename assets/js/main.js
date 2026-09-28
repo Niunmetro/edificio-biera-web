@@ -198,7 +198,7 @@
   isMobile.addEventListener ? isMobile.addEventListener('change', upd) : isMobile.addListener(upd);
 
   // Vídeo: pausa/reproducción, arranque cuando entra en pantalla y respeto a "reducir movimiento"
-  var vid = document.getElementById('vid'), vt = document.getElementById('vtoggle'), vs = document.getElementById('vsound');
+  var vid = document.getElementById('vid'), vt = document.getElementById('vtoggle'), vs = document.getElementById('vsound'), syncS = function () {};
   if (vid) {
     // Vídeo promocional: vertical en móvil, horizontal en pantallas anchas
     var pickSrc = function () {
@@ -208,14 +208,19 @@
     pickSrc();
     if (isMobile.addEventListener) isMobile.addEventListener('change', pickSrc);
     if (vs) {
-      var syncS = function () { vs.classList.toggle('on', !vid.muted); vs.querySelector('.vs-t').textContent = vid.muted ? vs.getAttribute('data-on') : vs.getAttribute('data-off'); };
+      syncS = function () { vs.classList.toggle('on', !vid.muted); vs.querySelector('.vs-t').textContent = vid.muted ? vs.getAttribute('data-on') : vs.getAttribute('data-off'); };
       vs.addEventListener('click', function () { vid.muted = !vid.muted; if (!vid.muted) { vid.volume = 1; if (vid.paused) vid.play().catch(function () {}); track('video_sonido'); } syncS(); });
       syncS();
     }
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) { vid.removeAttribute('autoplay'); vid.loop = false; vid.pause(); }
     var sync = function () { var p = vid.paused; if (vt) { vt.classList.toggle('paused', p); vt.setAttribute('aria-label', p ? vt.getAttribute('data-play') : vt.getAttribute('data-pause')); } };
-    var go = function () { var p = vid.play(); if (p && p.catch) p.catch(sync); };
+    // Primer arranque: intenta con sonido (lo permiten los navegadores si el usuario ya ha interactuado); si no, en silencio
+    var tried = false;
+    var go = function () {
+      if (!tried) { tried = true; vid.muted = false; var p0 = vid.play(); if (p0 && p0.catch) p0.then(function () { if (vs) syncS(); }).catch(function () { vid.muted = true; if (vs) syncS(); vid.play().catch(sync); }); return; }
+      var p = vid.play(); if (p && p.catch) p.catch(sync);
+    };
     vid.addEventListener('play', sync); vid.addEventListener('pause', sync);
     if (vt) vt.addEventListener('click', function () { vid.paused ? go() : vid.pause(); });
     if (!reduce && 'IntersectionObserver' in window) new IntersectionObserver(function (e) { e[0].isIntersecting ? go() : vid.pause(); }, { threshold: .25 }).observe(vid);
