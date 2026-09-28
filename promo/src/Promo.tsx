@@ -127,7 +127,7 @@ const PriceText: React.FC<{o: Orientation; dur: number}> = ({o, dur}) => {
           whiteSpace: 'nowrap',
         }}
       >
-        <span style={{fontSize: big, lineHeight: 1, letterSpacing: '-0.01em'}}>330.000&nbsp;€</span>
+        <span style={{fontSize: big, lineHeight: 1, letterSpacing: '-0.01em'}}>289.000&nbsp;€</span>
         <span style={{fontSize: big * 0.4, lineHeight: 1, letterSpacing: '0.02em'}}>+ IVA</span>
       </div>
     </CaptionBlock>

@@ -682,3 +682,24 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
 .more figcaption{font-size:13px;line-height:1.4;color:var(--mut)}
 @media (max-width:1100px){.more{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.more{gap:10px}.more figcaption{font-size:13px}}
+
+/* ===== Burbuja flotante de WhatsApp ===== */
+.wab{position:fixed;right:max(22px,env(safe-area-inset-right));bottom:calc(22px + env(safe-area-inset-bottom));z-index:1250;display:flex;align-items:center;gap:12px;text-decoration:none;transition:bottom .35s var(--ease)}
+.wab-ic{position:relative;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(21,25,28,.28),0 2px 6px rgba(21,25,28,.18);transition:transform .25s var(--ease),box-shadow .25s}
+.wab-ic svg{width:32px;height:32px}
+.wab:hover .wab-ic{transform:scale(1.07);box-shadow:0 10px 30px rgba(21,25,28,.34)}
+.wab:focus-visible .wab-ic{outline:3px solid var(--ink);outline-offset:3px}
+.wab-ic::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 0 rgba(37,211,102,.5);animation:wab-pulse 2.8s ease-out 3}
+@keyframes wab-pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.wab-tip{display:flex;flex-direction:column;gap:2px;background:var(--cal);color:var(--ink);padding:10px 16px;border-radius:14px;box-shadow:0 6px 20px rgba(21,25,28,.16);font-size:13px;line-height:1.3;white-space:nowrap;opacity:0;transform:translateX(8px);pointer-events:none;transition:opacity .25s,transform .25s}
+.wab-tip b{font-weight:600}
+.wab-tip span{color:var(--mut);font-size:12px}
+.wab:hover .wab-tip,.wab:focus-visible .wab-tip{opacity:1;transform:none}
+.pg:has(#plan[open]) .wab{display:none}
+@media (max-width:760px){
+  .wab{right:14px;bottom:calc(14px + env(safe-area-inset-bottom))}
+  .pg:has(.mbar.on) .wab{bottom:calc(72px + env(safe-area-inset-bottom))}
+  .wab-ic{width:56px;height:56px}
+  .wab-tip{display:none}
+}
+@media (prefers-reduced-motion:reduce){.wab-ic::after{animation:none}}

@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="/assets/css/styles.css?v={{v}}">
 <script>document.documentElement.className+=" js"</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ApartmentComplex","name":"Edificio Biera","description":"{{ld.description}}","numberOfAccommodationUnits":10,"address":{"@type":"PostalAddress","streetAddress":"Carretera de Santa Catalina, esquina C/ Los Mateos","postalCode":"30012","addressLocality":"Murcia","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":37.95958,"longitude":-1.13591},"image":"https://edificiobiera.com/assets/img/og.jpg","url":"https://edificiobiera.com{{path}}","offers":{"@type":"AggregateOffer","lowPrice":330000,"priceCurrency":"EUR"}}
+{"@context":"https://schema.org","@type":"ApartmentComplex","name":"Edificio Biera","description":"{{ld.description}}","numberOfAccommodationUnits":10,"address":{"@type":"PostalAddress","streetAddress":"Carretera de Santa Catalina, esquina C/ Los Mateos","postalCode":"30012","addressLocality":"Murcia","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":37.95958,"longitude":-1.13591},"image":"https://edificiobiera.com/assets/img/og.jpg","url":"https://edificiobiera.com{{path}}","offers":{"@type":"AggregateOffer","lowPrice":289000,"priceCurrency":"EUR"}}
 </script>
 <script type="application/ld+json">{{faq_ld}}</script>
 </head>
@@ -39,10 +39,10 @@
 <header class="hero" id="inicio">
   <div class="hero-media">
     <picture>
-      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.webp" type="image/webp">
-      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.jpg">
-      <source srcset="/assets/img/fachada.webp" type="image/webp">
-      <img class="bg" src="/assets/img/fachada.jpg" alt="{{hero.alt}}" fetchpriority="high" width="1600" height="1022">
+      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.webp?v=2" type="image/webp">
+      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.jpg?v=2">
+      <source srcset="/assets/img/fachada.webp?v=2" type="image/webp">
+      <img class="bg" src="/assets/img/fachada.jpg?v=2" alt="{{hero.alt}}" fetchpriority="high" width="1600" height="1022">
     </picture>
     <div class="scrim" aria-hidden="true"></div>
   </div>
@@ -385,6 +385,11 @@
     </div>
   </div>
 </footer>
+
+<a class="wab" href="https://wa.me/34640512434" data-wa data-track="burbuja-whatsapp" rel="noopener" target="_blank" aria-label="{{wab.label}}">
+  <span class="wab-tip"><b>{{wab.label}}</b><span>{{wab.sub}}</span></span>
+  <span class="wab-ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C8.86 3 3.03 8.8 3.03 15.95c0 2.29.6 4.52 1.75 6.49L3 29l6.73-1.76a13.1 13.1 0 0 0 6.3 1.6h.01c7.18 0 13-5.8 13-12.95C29.04 8.8 23.22 3 16.04 3Zm0 23.66h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.23-4 1.04 1.07-3.88-.26-.4a10.7 10.7 0 0 1-1.65-5.74c0-5.94 4.85-10.77 10.8-10.77 2.88 0 5.6 1.12 7.63 3.16a10.7 10.7 0 0 1 3.16 7.62c0 5.94-4.85 10.7-10.84 10.7Zm5.93-8.07c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.73.16-.22.33-.84 1.06-1.03 1.27-.19.22-.38.24-.7.08-.33-.16-1.38-.51-2.62-1.62-.97-.86-1.62-1.93-1.81-2.25-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.54.11-.22.05-.41-.03-.57-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.55-.73-.56h-.62c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71 0 1.6 1.17 3.15 1.33 3.36.16.22 2.3 3.5 5.56 4.9.78.34 1.39.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.93-.79 2.2-1.55.27-.76.27-1.41.19-1.55-.08-.13-.3-.21-.62-.37Z"/></svg></span>
+</a>
 
 <nav class="mbar" id="mbar" aria-label="{{con.lbl}}">
   <a href="tel:+34640512434" data-track="barra-llamar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>{{bar.call}}</a>

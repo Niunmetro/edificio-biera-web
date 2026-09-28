@@ -17,7 +17,7 @@
 | Garajes | 6 garajes cerrados en sótano **con escalera propia**: V1 54 m² (doble), V2 26 m², V3 25 m², V4 28 m², V5 28 m², V8 47 m² (doble). V6, V7, V9 y V10: plaza de aparcamiento. | Láminas |
 | Superficies | Construida vivienda (sin solárium ni sótano) / útil: V1 165,41/141,13 · V2 157,56/140,00 · V3 158,86/139,11 · V4 158,40/138,61 · V5 156,19/133,89 · V6 115,23/96,70 · V7 124,59/100,29 · V8 158,40/124,77 · V9 150,17/121,42 · V10 172,18/145,31 | Láminas |
 | Orientación | V1–V5 fachada sur (V5 esquina sureste) · V6–V7 fachada este · V8–V9 fachada norte · V10 esquina nordeste | Planos / medición |
-| Precio | **"Desde 330.000 € + IVA"** (IVA 10 % no incluido). No se publican precios por vivienda ni precio con IVA. | Decisión gestores |
+| Precio | **"Desde 289.000 € + IVA" (desde 28/09/2026; antes 330.000 €)** (IVA 10 % no incluido). No se publican precios por vivienda ni precio con IVA. | Decisión gestores |
 | Cocina | **Se entrega sin amueblar.** | Presupuesto aprobado 25/08 |
 | Acabados | Suelos y baños Porcelanosa Grupo (Linkfloor L'Antic Colonial, Noken serie Vela), mecanismos JUNG LS 990, vidrio Guardian, carpintería de aluminio con rotura de puente térmico y persianas de aluminio. **Los acabados están definidos: el comprador NO elige materiales.** | Memoria de calidades |
 | Showroom | **Existe** visita al showroom de Porcelanosa organizada por JD León para ver los acabados. No para elegirlos. | Pablo, 26/09 |
@@ -63,7 +63,7 @@
 | Vídeo de Canva de JD León | Reel propio con renders | Decía "trastero", "4 habitaciones" y precio sin "+ IVA" |
 | Foto aérea original | Versión retocada (gimnasio real enfrente) | El entorno original no era fiel |
 | Cocina con exceso de focos | Versión del equipo | Pablo |
-| Precio "desde 363.000 € con IVA" (propuesta GPT) | No publicado | Pendiente confirmación fiscal; la política es "desde 330.000 € + IVA" |
+| Precio "desde 363.000 € con IVA" (propuesta GPT) | No publicado | Pendiente confirmación fiscal; la política es "desde 289.000 € + IVA" |
 | Precios por vivienda (propuesta GPT) | No publicados | Decisión de los gestores |
 | "Obra nueva" cuestionado por GPT (edificio que estaba sin terminar) | Sin cambios | Dato no acreditado; no tocar sin arquitecto/jurídico |
 
@@ -71,7 +71,7 @@
 
 1. Solo datos de esta ficha o verificados en láminas/memoria. Sin inventar.
 2. Nada de datos internos (memorias de terceros, comisiones, precios de lista, hojas de gestores).
-3. Precio siempre "desde 330.000 € + IVA". Nunca comisión de agencia en precios.
+3. Precio siempre "desde 289.000 € + IVA". Nunca comisión de agencia en precios.
 4. Sin certificado energético hasta que exista. Sin fechas de entrega distintas a la acordada.
 5. Cocina sin amueblar; acabados definidos (showroom solo para verlos).
 6. Todos los contactos van a JD León (info@jdleon.com · 640 51 24 34). Leads registrados en la hoja "Contactos web Edificio Biera".
