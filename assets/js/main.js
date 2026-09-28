@@ -205,7 +205,7 @@
       var v = isMobile.matches, src = vid.getAttribute(v ? 'data-v' : 'data-h');
       if (vid.getAttribute('src') !== src) { var was = !vid.paused; vid.setAttribute('poster', vid.getAttribute(v ? 'data-pv' : 'data-ph')); vid.src = src; vid.setAttribute('width', v ? 720 : 1280); vid.setAttribute('height', v ? 1280 : 720); if (was) vid.play().catch(function () {}); }
     };
-    pickSrc();
+    vid.muted = true; pickSrc();
     if (isMobile.addEventListener) isMobile.addEventListener('change', pickSrc);
     if (vs) {
       syncS = function () { vs.classList.toggle('on', !vid.muted); vs.querySelector('.vs-t').textContent = vid.muted ? vs.getAttribute('data-on') : vs.getAttribute('data-off'); };
@@ -215,15 +215,20 @@
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) { vid.removeAttribute('autoplay'); vid.loop = false; vid.pause(); }
     var sync = function () { var p = vid.paused; if (vt) { vt.classList.toggle('paused', p); vt.setAttribute('aria-label', p ? vt.getAttribute('data-play') : vt.getAttribute('data-pause')); } };
-    // Primer arranque: intenta con sonido (lo permiten los navegadores si el usuario ya ha interactuado); si no, en silencio
-    var tried = false;
-    var go = function () {
-      if (!tried) { tried = true; vid.muted = false; var p0 = vid.play(); if (p0 && p0.catch) p0.then(function () { if (vs) syncS(); }).catch(function () { vid.muted = true; if (vs) syncS(); vid.play().catch(sync); }); return; }
-      var p = vid.play(); if (p && p.catch) p.catch(sync);
+    var go = function () { vid.muted = vid.muted; var p = vid.play(); if (p && p.catch) p.catch(sync); };
+    // El vídeo arranca en silencio (única forma permitida por los navegadores) y activa el sonido
+    // al primer toque o clic del visitante en la página, salvo que lo haya silenciado a mano.
+    var userMuted = false, inView = false;
+    if (vs) vs.addEventListener('click', function () { userMuted = !vid.muted; }, true);
+    var unmuteOnGesture = function (e) {
+      if (vs && vs.contains(e.target)) return;
+      if (!userMuted && inView && vid.muted) { vid.muted = false; vid.volume = 1; vid.play().catch(function () { vid.muted = true; }); syncS(); track('video_sonido', { x: 'auto' }); }
+      if (!vid.muted || userMuted) { ['pointerdown', 'keydown', 'touchstart'].forEach(function (t) { document.removeEventListener(t, unmuteOnGesture, true); }); }
     };
+    ['pointerdown', 'keydown', 'touchstart'].forEach(function (t) { document.addEventListener(t, unmuteOnGesture, true); });
     vid.addEventListener('play', sync); vid.addEventListener('pause', sync);
     if (vt) vt.addEventListener('click', function () { vid.paused ? go() : vid.pause(); });
-    if (!reduce && 'IntersectionObserver' in window) new IntersectionObserver(function (e) { e[0].isIntersecting ? go() : vid.pause(); }, { threshold: .25 }).observe(vid);
+    if (!reduce && 'IntersectionObserver' in window) new IntersectionObserver(function (e) { inView = e[0].isIntersecting; inView ? go() : vid.pause(); }, { threshold: .25 }).observe(vid);
     sync();
   }
 
