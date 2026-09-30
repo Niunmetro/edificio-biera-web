@@ -105,3 +105,17 @@
 - Prueba real del formulario desde el móvil de Ángel.
 - Mackenzie: confirmar el email de contacto del dominio en IONOS.
 - Decidir si se usan los planos a color del dossier (revisión anterior, cifras distintas) y si los armarios están incluidos.
+
+## 9. Nota técnica del dossier v-1 (30/09/2026, "SANTA CATALINA 10 D -1.pdf", pág. 56)
+- Preinstalación de aire acondicionado (la maquinaria la compra el cliente). → Web corregida: antes decía "aire acondicionado por conductos".
+- Cocinas orientativas, a cargo del cliente (recomiendan ACM carpintería).
+- Iluminación: un punto de luz central por estancia; más puntos o LED con coste de modificación.
+- Suelo vinílico laminado Linkfloor Town (colocación horizontal o vertical tras estudio técnico).
+- Ventanas de aluminio con rotura de puente térmico, doble cristal de seguridad, gris antracita.
+- Balcones con cristal de seguridad y barandilla gris antracita (acero inox y galvanizado).
+- Garajes: puertas seccionales motorizadas; puertas cortafuegos de acero galvanizado garaje–vivienda; suelo de hormigón fratasado.
+- Fibra, iluminación de emergencia en zonas comunes, instalaciones estancas en exteriores.
+- Porcelanosa: porcelánico en escaleras comunes y terrazas, vinilo madera en interiores, grifería, sanitarios, mamparas; mecanismos Jung.
+- El cliente puede añadir por su cuenta una puerta baja exterior o puerta de cristal delante de la de seguridad.
+- Los planos a color de este dossier siguen siendo la revisión anterior (V6 98,70 m² útiles frente a 96,70 en planos de venta).
+- "LIBRO EDIFICIO 10 VIVIENDAS SANTA CATALINA.pdf" llegó vacío (0 bytes): pedir de nuevo.
