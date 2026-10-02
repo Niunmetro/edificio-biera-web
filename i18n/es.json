@@ -1,9 +1,9 @@
 {
   "lang": "es",
   "path": "/",
-  "meta.title": "Edificio Biera · 10 tríplex de obra nueva en Santa Catalina, Murcia",
+  "meta.title": "Tríplex de obra nueva en Murcia desde 289.000 € | Edificio Biera, Santa Catalina",
   "meta.description": "Edificio Biera: 10 tríplex de obra nueva con solárium privado y aparcamiento en Santa Catalina, al sur de Murcia. 3 y 4 dormitorios más estudio en buhardilla, desde 289.000 € + IVA. Información y visitas: JD León Inmobiliaria, 640 51 24 34.",
-  "meta.og_title": "Edificio Biera · Tríplex de obra nueva en Murcia",
+  "meta.og_title": "Edificio Biera · Tríplex de obra nueva en Murcia desde 289.000 €",
   "meta.og_description": "10 tríplex con solárium privado en Santa Catalina, Murcia. Desde 289.000 € + IVA.",
   "ld.description": "10 viviendas tríplex de obra nueva con solárium privado y aparcamiento en Santa Catalina, Murcia.",
   "lang.label": "Idioma",
@@ -285,5 +285,10 @@
   "wab.label": "Escríbenos por WhatsApp",
   "wab.sub": "Información sin compromiso",
   "video.sound_on": "Activar sonido",
-  "video.sound_off": "Silenciar"
+  "video.sound_off": "Silenciar",
+  "hero.h1_seo": "Tríplex de obra nueva en Santa Catalina, Murcia",
+  "ld.unit": "Tríplex",
+  "ld.room4": "4 dormitorios + estudio en buhardilla",
+  "ld.room3": "3 dormitorios + estudio en buhardilla",
+  "og.alt": "Fachada del Edificio Biera, tríplex de obra nueva en Santa Catalina, Murcia"
 }

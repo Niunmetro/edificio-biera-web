@@ -1,9 +1,9 @@
 {
   "lang": "en",
   "path": "/en/",
-  "meta.title": "Edificio Biera · 10 new-build triplex townhouses in Santa Catalina, Murcia",
+  "meta.title": "New-build triplex homes in Murcia from €289,000 | Edificio Biera, Santa Catalina",
   "meta.description": "Edificio Biera: 10 new-build triplex townhouses with a private roof terrace and parking in Santa Catalina, south of Murcia. 3 and 4 bedrooms plus attic study, from €289,000 + VAT. Information and viewings: JD León Inmobiliaria, 640 51 24 34.",
-  "meta.og_title": "Edificio Biera · New-build triplex townhouses in Murcia",
+  "meta.og_title": "Edificio Biera · New-build triplex homes in Murcia from €289,000",
   "meta.og_description": "10 triplex townhouses with a private roof terrace in Santa Catalina, Murcia. From €289,000 + VAT.",
   "ld.description": "10 new-build triplex townhouses with private roof terrace and parking in Santa Catalina, Murcia.",
   "lang.label": "Language",
@@ -285,5 +285,10 @@
   "wab.label": "Message us on WhatsApp",
   "wab.sub": "Information with no obligation",
   "video.sound_on": "Turn sound on",
-  "video.sound_off": "Mute"
+  "video.sound_off": "Mute",
+  "hero.h1_seo": "New-build triplex homes in Santa Catalina, Murcia",
+  "ld.unit": "Triplex",
+  "ld.room4": "4 bedrooms + attic study",
+  "ld.room3": "3 bedrooms + attic study",
+  "og.alt": "Façade of Edificio Biera, new-build triplex homes in Santa Catalina, Murcia"
 }

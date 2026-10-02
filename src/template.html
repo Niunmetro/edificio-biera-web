@@ -20,7 +20,15 @@
 <meta property="og:image" content="https://edificiobiera.com/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{og.alt}}">
+<meta property="og:site_name" content="Edificio Biera">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{meta.og_title}}">
+<meta name="twitter:description" content="{{meta.og_description}}">
+<meta name="twitter:image" content="https://edificiobiera.com/assets/img/og.jpg">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="preload" as="image" href="/assets/img/fachada-m.webp?v=3" media="(max-width:760px)" type="image/webp">
+<link rel="preload" as="image" href="/assets/img/fachada.webp?v=3" media="(min-width:761px)" type="image/webp">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/cormorant-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -29,9 +37,10 @@
 <link rel="stylesheet" href="/assets/css/styles.css?v={{v}}">
 <script>document.documentElement.className+=" js"</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ApartmentComplex","name":"Edificio Biera","description":"{{ld.description}}","numberOfAccommodationUnits":10,"address":{"@type":"PostalAddress","streetAddress":"Carretera de Santa Catalina, esquina C/ Los Mateos","postalCode":"30012","addressLocality":"Murcia","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":37.95958,"longitude":-1.13591},"image":"https://edificiobiera.com/assets/img/og.jpg","url":"https://edificiobiera.com{{path}}","offers":{"@type":"AggregateOffer","lowPrice":289000,"priceCurrency":"EUR"}}
+{"@context":"https://schema.org","@type":"ApartmentComplex","@id":"https://edificiobiera.com/#edificio","name":"Edificio Biera","description":"{{ld.description}}","numberOfAccommodationUnits":10,"address":{"@type":"PostalAddress","streetAddress":"Carretera de Santa Catalina, esquina C/ Los Mateos","postalCode":"30012","addressLocality":"Murcia","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":37.95958,"longitude":-1.13591},"image":"https://edificiobiera.com/assets/img/og.jpg","url":"https://edificiobiera.com{{path}}","offers":{"@type":"AggregateOffer","lowPrice":289000,"priceCurrency":"EUR","offeredBy":{"@id":"https://edificiobiera.com/#jdleon"}}}
 </script>
 <script type="application/ld+json">{{faq_ld}}</script>
+<script type="application/ld+json">{{units_ld}}</script>
 </head>
 <body>
 <div class="pg">
@@ -65,8 +74,7 @@
   </div>
   <div class="bottom">
     <div class="intro">
-      <p class="lbl kick"><span>{{hero.kick1}}</span><span class="sep"> · </span><span>{{hero.kick2}}</span></p>
-      <h1 class="h1 serif it">{{hero.h1}}</h1>
+      <h1 class="h1 serif it"><span class="lbl kick">{{hero.h1_seo}}</span>{{hero.h1}}</h1>
     </div>
     <div class="price">
       <span class="lbl">{{hero.from}}</span>
@@ -110,7 +118,7 @@
       <h2 class="serif" id="t-video">{{video.h2}}</h2>
     </div>
     <figure class="pframe">
-      <video class="vid" id="vid" muted loop playsinline preload="metadata" poster="/assets/video/promo-h.jpg" data-h="/assets/video/promo-h.mp4" data-v="/assets/video/promo-v.mp4" data-ph="/assets/video/promo-h.jpg" data-pv="/assets/video/promo-v.jpg" width="1280" height="720" aria-label="{{video.h2}}"></video>
+      <video class="vid" id="vid" muted loop playsinline preload="none" poster="/assets/video/promo-h.jpg" data-h="/assets/video/promo-h.mp4" data-v="/assets/video/promo-v.mp4" data-ph="/assets/video/promo-h.jpg" data-pv="/assets/video/promo-v.jpg" width="1280" height="720" aria-label="{{video.h2}}"></video>
       <button class="vsound" type="button" id="vsound" data-on="{{video.sound_on}}" data-off="{{video.sound_off}}"><span class="vs-ic" aria-hidden="true"></span><span class="vs-t">{{video.sound_on}}</span></button>
       <button class="vtoggle" type="button" id="vtoggle" aria-label="{{video.pause}}" data-pause="{{video.pause}}" data-play="{{video.play}}"></button>
     </figure>

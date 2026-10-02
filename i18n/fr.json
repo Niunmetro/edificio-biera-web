@@ -1,9 +1,9 @@
 {
   "lang": "fr",
   "path": "/fr/",
-  "meta.title": "Edificio Biera · 10 triplex neufs à Santa Catalina, Murcie",
+  "meta.title": "Triplex neufs à Murcie dès 289 000 € | Edificio Biera, Santa Catalina",
   "meta.description": "Edificio Biera : 10 maisons en triplex neuves avec solarium privé et parking à Santa Catalina, au sud de Murcie. 3 et 4 chambres avec bureau sous combles, à partir de 289 000 € + TVA. Informations et visites : JD León Inmobiliaria, 640 51 24 34.",
-  "meta.og_title": "Edificio Biera · Maisons en triplex neuves à Murcie",
+  "meta.og_title": "Edificio Biera · Triplex neufs à Murcie dès 289 000 €",
   "meta.og_description": "10 maisons en triplex avec solarium privé à Santa Catalina, Murcie. À partir de 289 000 € + TVA.",
   "ld.description": "10 maisons en triplex neuves avec solarium privé et parking à Santa Catalina, Murcie.",
   "lang.label": "Langue",
@@ -285,5 +285,10 @@
   "wab.label": "Écrivez-nous sur WhatsApp",
   "wab.sub": "Informations sans engagement",
   "video.sound_on": "Activer le son",
-  "video.sound_off": "Couper le son"
+  "video.sound_off": "Couper le son",
+  "hero.h1_seo": "Triplex neufs à Santa Catalina, Murcie",
+  "ld.unit": "Triplex",
+  "ld.room4": "4 chambres + bureau sous combles",
+  "ld.room3": "3 chambres + bureau sous combles",
+  "og.alt": "Façade de l’Edificio Biera, triplex neufs à Santa Catalina, Murcie"
 }

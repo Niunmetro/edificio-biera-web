@@ -1,5 +1,5 @@
 """Genera index.html (es), en/index.html y fr/index.html a partir de src/template.html y los diccionarios de i18n/."""
-import json, os, re, sys, html, hashlib
+import json, os, re, sys, html, hashlib, datetime
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 V = hashlib.sha1(open(os.path.join(ROOT, "assets/css/styles.css"), "rb").read() + open(os.path.join(ROOT, "assets/js/main.js"), "rb").read()).hexdigest()[:8]
@@ -64,6 +64,22 @@ def poi_rows(d):
 def poi_json(d):
     return {"center": pois["center"], "items": [{"lat": p["lat"], "lon": p["lon"], "km": p["km"], "cat": p.get("cat", ""), "short": p.get("short", ""), "side": p.get("side", ""), "top": bool(p.get("top")), "name": p["name"][d["lang"]], "label": poi_label(p, d)} for p in pois["items"]]}
 
+def units_ld(d):
+    path = "" if d["lang"] == "es" else d["lang"] + "/"
+    agent = {"@type": "RealEstateAgent", "@id": "https://edificiobiera.com/#jdleon", "name": "JD León Inmobiliaria", "telephone": "+34640512434", "email": "info@jdleon.com",
+             "address": {"@type": "PostalAddress", "streetAddress": "Av. de Madrid, 21 bajo", "postalCode": "30500", "addressLocality": "Molina de Segura", "addressRegion": "Murcia", "addressCountry": "ES"},
+             "areaServed": "Murcia"}
+    units_l = []
+    for u in units:
+        baths = {"d4a": 4, "d3a": 3, "d3b": 4}[u["dist"]]
+        units_l.append({"@type": "SingleFamilyResidence", "name": f"Edificio Biera · {d['ld.unit']} {u['v']:02d}",
+                        "url": f"https://edificiobiera.com/{path}#v{u['v']:02d}",
+                        "floorSize": {"@type": "QuantitativeValue", "value": float(u["constr"].replace(",", ".")), "unitCode": "MTK"},
+                        "numberOfBedrooms": u["d"], "numberOfBathroomsTotal": baths,
+                        "description": d["ld.room4"] if u["d"] == 4 else d["ld.room3"],
+                        "containedInPlace": {"@id": "https://edificiobiera.com/#edificio"}})
+    return json.dumps({"@context": "https://schema.org", "@graph": [agent] + units_l}, ensure_ascii=False)
+
 def faq_ld(d):
     strip = lambda s: re.sub(r"<[^>]+>", "", s).replace("\u00a0", " ")
     items = [{"@type": "Question", "name": strip(d[f"faq.q{i}"]), "acceptedAnswer": {"@type": "Answer", "text": strip(d[f"faq.a{i}"])}} for i in range(1, 7)]
@@ -87,6 +103,7 @@ for lang, outp, og in LANGS:
     d = load(f"i18n/{lang}.json")
     d["units.rows"] = rows(d)
     d["faq_ld"] = faq_ld(d)
+    d["units_ld"] = units_ld(d)
     d["poi.rows"] = poi_rows(d)
     d["units.options"] = options(d)
     d["js_json"] = js_json(d)
@@ -116,13 +133,15 @@ for lang, outp, og in LANGS:
     print(f"{outp}: {len(out):,} bytes")
 
 with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8", newline="\n") as f:
-    f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n')
+    f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n')
     for lang, outp, og in LANGS:
         loc = "https://edificiobiera.com/" + ("" if lang == "es" else lang + "/")
-        f.write(f"  <url><loc>{loc}</loc><lastmod>2026-09-26</lastmod>")
+        f.write(f"  <url><loc>{loc}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod>")
         for l2, o2, _ in LANGS:
             f.write(f'<xhtml:link rel="alternate" hreflang="{l2}" href="https://edificiobiera.com/{"" if l2 == "es" else l2 + "/"}"/>')
         f.write('<xhtml:link rel="alternate" hreflang="x-default" href="https://edificiobiera.com/"/>')
+        for img in ("fachada.jpg", "foto-aerea-tarde.jpg", "foto-salon.jpg", "foto-cocina.jpg", "foto-terraza.jpg", "foto-dormitorio.jpg", "foto-bano.jpg", "foto-fachada-noche.jpg"):
+            f.write(f"<image:image><image:loc>https://edificiobiera.com/assets/img/{img}</image:loc></image:image>")
         f.write("</url>\n")
     f.write("</urlset>\n")
 

@@ -726,3 +726,6 @@ a.u:hover,button.u:hover{background-size:0 1px;background-position:100% 100%}
   .vsound{left:12px;bottom:12px}
   .pframe .vtoggle{right:12px;bottom:12px}
 }
+
+/* H1 con palabras clave: la línea pequeña forma parte del h1 */
+.h1 .kick{display:block;font-family:'Jost',sans-serif;font-style:normal;font-weight:500;margin-bottom:18px;line-height:1.5}
