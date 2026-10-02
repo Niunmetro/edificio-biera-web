@@ -119,3 +119,11 @@
 - El cliente puede añadir por su cuenta una puerta baja exterior o puerta de cristal delante de la de seguridad.
 - Los planos a color de este dossier siguen siendo la revisión anterior (V6 98,70 m² útiles frente a 96,70 en planos de venta).
 - "LIBRO EDIFICIO 10 VIVIENDAS SANTA CATALINA.pdf" llegó vacío (0 bytes): pedir de nuevo.
+
+## 10. SEO (02/10/2026)
+- Google ya indexa la portada (Search Console: "La URL está en Google"). Sitemap leído correctamente (3 páginas).
+- Title ES: "Tríplex de obra nueva en Murcia desde 289.000 € | Edificio Biera, Santa Catalina" (EN/FR equivalentes).
+- H1 incluye "Tríplex de obra nueva en Santa Catalina, Murcia" + el lema.
+- Datos estructurados: ApartmentComplex (con oferta desde 289.000 €), RealEstateAgent (JD León), 10 viviendas (SingleFamilyResidence con m², dormitorios y baños), FAQPage.
+- Sitemap con imágenes y fecha automática. Reindexación solicitada el 02/10.
+- Pendiente fuera de la web: ficha de Google Business, enlaces desde portales/redes/JD León hacia edificiobiera.com.
