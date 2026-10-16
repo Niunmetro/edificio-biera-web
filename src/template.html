@@ -27,7 +27,7 @@
 <meta name="twitter:description" content="{{meta.og_description}}">
 <meta name="twitter:image" content="https://edificiobiera.com/assets/img/og.jpg">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="preload" as="image" href="/assets/img/fachada-m.webp?v=3" media="(max-width:760px)" type="image/webp">
+<link rel="preload" as="image" href="/assets/img/fachada-m.webp?v=4" media="(max-width:760px)" type="image/webp">
 <link rel="preload" as="image" href="/assets/img/fachada.webp?v=3" media="(min-width:761px)" type="image/webp">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
@@ -48,8 +48,8 @@
 <header class="hero" id="inicio">
   <div class="hero-media">
     <picture>
-      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.webp?v=3" type="image/webp">
-      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.jpg?v=3">
+      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.webp?v=4" type="image/webp">
+      <source media="(max-width: 760px)" srcset="/assets/img/fachada-m.jpg?v=4">
       <source srcset="/assets/img/fachada.webp?v=3" type="image/webp">
       <img class="bg" src="/assets/img/fachada.jpg?v=3" alt="{{hero.alt}}" fetchpriority="high" width="2000" height="1277">
     </picture>
@@ -118,7 +118,7 @@
       <h2 class="serif" id="t-video">{{video.h2}}</h2>
     </div>
     <figure class="pframe">
-      <video class="vid" id="vid" muted loop playsinline preload="none" poster="/assets/video/promo-h.jpg" data-h="/assets/video/promo-h.mp4" data-v="/assets/video/promo-v.mp4" data-ph="/assets/video/promo-h.jpg" data-pv="/assets/video/promo-v.jpg" width="1280" height="720" aria-label="{{video.h2}}"></video>
+      <video class="vid" id="vid" muted loop playsinline preload="none" data-h="/assets/video/promo-h.mp4" data-v="/assets/video/promo-v.mp4" data-ph="/assets/video/promo-h.webp" data-pv="/assets/video/promo-v.webp" width="1280" height="720" aria-label="{{video.h2}}"></video>
       <button class="vsound" type="button" id="vsound" data-on="{{video.sound_on}}" data-off="{{video.sound_off}}"><span class="vs-ic" aria-hidden="true"></span><span class="vs-t">{{video.sound_on}}</span></button>
       <button class="vtoggle" type="button" id="vtoggle" aria-label="{{video.pause}}" data-pause="{{video.pause}}" data-play="{{video.play}}"></button>
     </figure>
