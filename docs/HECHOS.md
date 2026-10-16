@@ -133,3 +133,8 @@
 - Lighthouse móvil: rendimiento 91 → 97-99 (LCP 2,4 s → ~2,0 s); accesibilidad, buenas prácticas y SEO 100.
 - Cambios: portada móvil más ligera (105 → 40 KB), pósters del vídeo en WebP y solo el del formato activo, La Alberca en el texto de ubicación, datos estructurados VideoObject.
 - No tocar: título, H1, datos estructurados de viviendas/agencia y FAQ (funcionan y están validados).
+
+## 12. Aclaraciones JD León (15–16/10/2026)
+- Baños: se entregan con sanitarios, mueble de lavabo, grifería y mamparas (Porcelanosa). Confirmado por Ángel.
+- No usar "se vende completa": la FAQ detalla qué incluye y qué no (sin cocina, sin electrodomésticos, sin maquinaria de aire; con preinstalación de aire).
+- Arras: dato interno, NO se publica en la web.
