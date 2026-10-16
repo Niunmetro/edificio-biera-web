@@ -127,3 +127,9 @@
 - Datos estructurados: ApartmentComplex (con oferta desde 289.000 €), RealEstateAgent (JD León), 10 viviendas (SingleFamilyResidence con m², dormitorios y baños), FAQPage.
 - Sitemap con imágenes y fecha automática. Reindexación solicitada el 02/10.
 - Pendiente fuera de la web: ficha de Google Business, enlaces desde portales/redes/JD León hacia edificiobiera.com.
+
+## 11. Revisión SEO (16/10/2026)
+- Search Console: 3/3 páginas indexadas (ES, EN, FR), 0 errores. 12 clics y 36 impresiones en 28 días, posición media 3,5; las búsquedas que entran son de marca ("biera"); las genéricas aún no posicionan.
+- Lighthouse móvil: rendimiento 91 → 97-99 (LCP 2,4 s → ~2,0 s); accesibilidad, buenas prácticas y SEO 100.
+- Cambios: portada móvil más ligera (105 → 40 KB), pósters del vídeo en WebP y solo el del formato activo, La Alberca en el texto de ubicación, datos estructurados VideoObject.
+- No tocar: título, H1, datos estructurados de viviendas/agencia y FAQ (funcionan y están validados).
